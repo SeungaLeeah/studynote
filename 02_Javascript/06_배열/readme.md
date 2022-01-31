@@ -47,6 +47,8 @@ let myArr;
 
 선언과 할당이 나누어져 있는 경우 `const` 로 선언할 수 없다.
 
+배열은 할당의 양 만큼 캐비넷이 생기는 것이다.
+
 myArr = [1, 2, 3.14, true, false, "hello", "world"];
 
 #### 선언과 할당의 통합
@@ -58,6 +60,8 @@ let myArr = [1, 2, 3, 5, 7];
 #### Array 클래스를 사용한 할당
 
 `new Array(...)` 형식으로 생성한다.
+
+`new Array[]...]`은 [] 적힌 수 만큼 빈 칸을 생성함.
 
 ```js
 let newArr1 = new Array("hello", "world", 1, 2, 3, true, false);
