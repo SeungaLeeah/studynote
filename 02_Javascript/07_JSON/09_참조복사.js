@@ -27,6 +27,12 @@ const d2 = d1;
 console.log(d1);
 console.log(d2);
 
+d1[0] += 10;
+d1[1] += 10;
+d1[2] += 10;
+console.log(d1);
+console.log(d2);
+
 /** 배열끼리의 값복사 방법(=깊은복사) */
 const a1 = [1,2,3];
 
