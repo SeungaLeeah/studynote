@@ -37,8 +37,8 @@ http://serch.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&quer
 
  // 인코딩 된 문자열을 원래의 문자열로 역변환 (디코딩)
  console.group('decodeURIComponent')
- console.log(decodeURIComponent(enc1));
- console.log(decodeURIComponent(enc2));
- console.log(decodeURIComponent(enc3));
- console.log(decodeURIComponent(enc4));
+ console.log(decodeURI(enc1));
+ console.log(decodeURI(enc2));
+ console.log(decodeURI(enc3));
+ console.log(decodeURI(enc4));
  console.groupEnd();

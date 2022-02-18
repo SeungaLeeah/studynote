@@ -19,9 +19,9 @@ class Marin extends Terran {
 }
 
 class Tank extends Terran{
-    attacka(target){
+    attack(target){
         super.attack(target);
-        console.log(">>>>> 탱크 포격");
+        console.log('>>>>> 탱크 포격');
     }
 }
 

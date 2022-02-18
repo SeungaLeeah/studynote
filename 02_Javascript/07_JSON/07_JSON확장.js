@@ -17,7 +17,7 @@ foo.email = "hell@world.com";
 console.log(foo);
 
 /** 3) 빈 객체 확장 */
-const myJson = {};; //빈 객체
+const myJson = {}; //빈 객체
 console.log(myJson);
 
 for (let i=0; i<10; i++){

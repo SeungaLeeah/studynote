@@ -86,6 +86,12 @@ console.log("모든 글자의 대문자 변환 : " + up);
 const low = msg.toLowerCase();
 console.log("모든 글자의 소문자 변환 : " + low);
 
+// 문자열의 앞/뒤 공백 지우기
+const src1 = "  Hello World ";
+const src2 = src1.trim();
+console.log(src1);
+console.log(src2);
+
 // 문자열에 포함된 구분자를 기준으로 문자열을 잘라 배열로 변환한다.
 const txt = "HTML,CSS,Javascript";
 const arr = txt.split(",");

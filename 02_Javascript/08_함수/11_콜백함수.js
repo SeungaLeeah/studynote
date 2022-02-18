@@ -8,7 +8,7 @@ function something(x,y,cb){
 }
 
 // 콜백함수 유형 1 - 직접 함수를 정의함
-function plus(a,b) { return a + b; }
+function plus(a,b) { return a + b }
 function minus(a,b) { return a - b }
 
 something(100,50, plus);

@@ -10,19 +10,19 @@ const bbs ={
 };
 
 console.log("게시판이름:"+bbs.title);
-console.log("전체 게시물 수: " + bbs.count);
+console.log("전체 게시물 수: " + bbs.title.length);
 
 //일반 for 문
 console.group("일반 for문");
-for (let i=0; i<bbs.item.length; i++){
-    console.log("["+bbs.item[i].id+"]"+bbs.item[i].subject);
+for (let i=0; i<bbs.title.length; i++){
+    console.log("["+bbs.title[i].id+"]"+bbs.title[i].subject);
 }
 
 console. groupEnd();
 
 //for~of문
 console.group('for~of문');
-for(let k of bbs.item){
+for(let k of bbs.title){
     console.log("[" + k.id +"]"+ k.subject);
 }
 console.groupEnd();
