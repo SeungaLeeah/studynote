@@ -33,7 +33,7 @@ const found = arr3.find(function(v){
     console.log(v);
     // v를 우리가 원하는 조건에 충족하는짖 검사하여 true/false를 리턴
     // true를 리턴하는 순간 배열의 탐색을 중단한다.(break와 동일한 기능)
-    if(v % 2 ==0){
+    if(v % 2 == 0){
         // true가 리턴되는 경우 v는 버려진다.
         return false;
     }
