@@ -121,3 +121,14 @@
     </body>
 </html>
 ```
+
+## #03. HTML 작성에 도움을 주는 Visual Studio Code Extension
+
+| 이름 | 설명 |
+|---|---|
+| Auto Close Tag | 시작태그를 작성하면 종료태그를 자동으로 추가해준다. |
+| Auto Rename Tag | 시작태그를 수정하면 종료태그도 자동으로 수정해준다. 단, 한글인 경우는 동작안함. |
+| Color Highlight | 색상 코드 값을 실제 그 색상으로 강조한다. |
+| Prettier - Code formatter | 코드의 줄바꿈, 들여쓰기등을 자동으로 정렬한다.<br/>사용방법: `Ctrl+Shift+P` > `Format Document` 명령 선택 |
+| Highlight Matching Tag | 선택한 태그와 함께 반대쪽 시작(혹은 종료)태그를 색상으로 강조한다. |
+| Live Server | 웹 페이지의 변경사항을 감지하여 페이지를 자동으로 새로고침 한다 |
