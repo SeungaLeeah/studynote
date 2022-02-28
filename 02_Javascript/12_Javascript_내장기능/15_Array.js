@@ -60,8 +60,8 @@ console.log(results);
 const arr5 = [2,1,15];
 // 퀵정렬 알고리즘을 사용하여 배열 자체를 정렬한다.
 // --> 배열의 모든 원소를 문자열로 취급하기 때문에 글자 정렬기준이 적용된다.
-// arr.sort():
-// console.log(arr5);
+ //arr5.sort();
+ //console.log(arr5);
 
 // sort 함수도 정렬 조건을 콜백함수로 처리한다.
 arr5.sort(function(a,b){
