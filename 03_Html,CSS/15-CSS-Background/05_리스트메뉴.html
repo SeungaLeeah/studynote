@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style type="text/css">
+        /*공통속성*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        /*메뉴영역 표시*/
+        #navi {
+            background: url(img/list_bg.png) repeat;
+            width: auto;
+            height: 184px;
+        }
+        #navi ul{
+            background: url(img/menu.png) no-repeat left top;
+            width: auto;
+            height: 184px;
+        }
+        /*메뉴박스*/
+        #navi il{
+            width: auto;
+            height: 46px;
+            background: url(img/list_right.png) no-repeat right center;
+        }
+        /*메뉴박스 > 각 항목 > 링크*/
+        #navi li>a{
+            display: block;
+            width: auto;
+            height: 45px;
+            cursor: pointer;
+            /*for FF*/
+            text-indent: -10000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navi">
+    <ul>
+        <li>
+            <a href="#">웹표준/웹디자인</a>
+        </li>
+        <li>
+            <a href="#">소셜미디어마케팅</a>
+        </li>
+        <li>
+            <a href="#">IT/모바일</a>
+        </li>
+        <li>
+            <a href="#">QA</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

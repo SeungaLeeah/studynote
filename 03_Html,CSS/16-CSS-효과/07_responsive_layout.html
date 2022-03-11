@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+           box-sizing: border-box;
+       } 
+       .menu{
+           float: left;
+           width: 20%;
+           text-align: center;
+       }
+       .menu a {
+           background-color: #ffa59c;
+           padding: 8px;
+           margin-top: 7px;
+           display: block;
+           width: 100%;
+           color: white;
+           text-decoration: none;
+       }
+       .main{
+           float: left;
+           width: 60%;
+           padding: 0 20px;
+       }
+       .right {
+           background-color: #eee4e1;
+           float: left;
+           width: 20%;
+           padding: 15px;
+           margin-top: 7px;
+           text-align: center;
+       }
+       @media only screen and (max-width: 620px){
+           /*For mobile phones*/
+           .menu,
+           .main,
+           .right{
+               width: 100%;
+           }
+       }
+    </style>
+</head>
+<body>
+    <div style="background-color: #04328D; padding: 15px; text-align: center;">
+        <h1>Hello World</h1>
+    </div>
+    <div style="overflow: auto">
+        <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+    <div class="main">
+        <h2>Lorum Ipsum</h2>
+        <p>Lorem ipsum sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisomd tincidunt ut laorret aolore magna aliquam erat volutpat.</p>
+    </div>
+    <div class="right">
+        <h2>About</h2>
+        <p>Lorem ipsum sit amet, consectetuer adipiscing elit</p>
+    </div>
+</div>
+    <div style="background-color: #d45468; text-align: center; padding: 10px; margin-top: 7px;">copyright</div>
+</body>
+</html>
