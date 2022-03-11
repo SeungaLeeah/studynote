@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Untitled1</title>
+    <style type="text/css">
+        /*Color List*/
+.row0col0{background-color: #2F4673; }
+.row0col1{background-color: #E96C77; }
+.row0col2{background-color: #FF9786; }
+.row0col3{background-color: #FFDC7D; }
+.row0col4{background-color: #17395C; }
+.row0col5{background-color: #EFB758; }
+.row1col0{background-color: #C24229; }
+.row1col1{background-color: #69797A; }
+.row1col2{background-color: #A38B70; }
+.row1col3{background-color: #C99988; }
+.row1col4{background-color: #A1B2A5; }
+.row1col5{background-color: #C75D2C; }
+.row2col0{background-color: #D2D2D4; }
+.row2col1{background-color: #192C2F; }
+.row2col2{background-color: #E7BFA6; }
+.row2col3{background-color: #CE9D9B; }
+.row2col4{background-color: #B3BBB9; }
+.row2col5{background-color: #DCD2C2; }
+.row3col0{background-color: #EAE0EE; }
+.row3col1{background-color: #FAE0E1; }
+.row3col2{background-color: #E6EDEC; }
+.row3col3{background-color: #F0EEED; }
+.row3col4{background-color: #313B99; }
+.row3col5{background-color: #E5BD1D; }
+.row4col0{background-color: #CCC5BA; }
+.row4col1{background-color: #E5B38E; }
+.row4col2{background-color: #A86C43; }
+.row4col3{background-color: #353D28; }
+.row4col4{background-color: #D08422; }
+.row4col5{background-color: #C39FA6; }
+.row5col0{background-color: #F4E4DC; }
+.row5col1{background-color: #E6D1B6; }
+.row5col2{background-color: #E7B763; }
+.row5col3{background-color: #C67A62; }
+.row5col4{background-color: #7F938E; }
+.row5col5{background-color: #C19387; }
+.row6col0{background-color: #EAE9E6; }
+.row6col1{background-color: #3E4143; }
+.row6col2{background-color: #E3B3AB; }
+.row6col3{background-color: #B395B4; }
+.row6col4{background-color: #F0A742; }
+.row6col5{background-color: #092147; }
+.row7col0{background-color: #1A488E; }
+.row7col1{background-color: #97B2DE; }
+.row7col2{background-color: #FC4D36; }
+.row7col3{background-color: #FFE3DF; }
+.row7col4{background-color: #FFD6DA; }
+.row7col5{background-color: #FFC6D0; }
+.row8col0{background-color: #E1F7E7; }
+.row8col1{background-color: #D1EAF5; }
+.row8col2{background-color: #C3D6F2; }
+.row8col3{background-color: #789CCE; }
+.row8col4{background-color: #2B78A2; }
+.row8col5{background-color: #6EA8C9; }
+.row9col0{background-color: #B6DEE7; }
+.row9col1{background-color: #FCD9DD; }
+.row9col2{background-color: #F9E2CF; }
+.row9col3{background-color: #F2CDAF; }
+.row9col4{background-color: #7DABD0; }
+.row9col5{background-color: #CFE7EA; }
+.row0col0{background-color: #DFAB9E; }
+.row0col1{background-color: #D8982A; }
+.row0col2{background-color: #B66531; }
+.row0col3{background-color: #B6BC98; }
+.row0col4{background-color: #F1D08F; }
+.row0col5{background-color: #E9B993; }
+.row1col0{background-color: #A9B8C0; }
+.row1col1{background-color: #597075; }
+.row1col2{background-color: #DEB7A5; }
+.row1col3{background-color: #C47B6E; }
+.row1col4{background-color: #EFA77E; }
+.row1col5{background-color: #FBC1AD; }
+.row2col0{background-color: #F56E4A; }
+.row2col1{background-color: #FFDF6F; }
+.row2col2{background-color: #E5E1E0; }
+.row2col3{background-color: #78AAC3; }
+.row2col4{background-color: #C4DEEE; }
+.row2col5{background-color: #97C8D6; }
+.row3col0{background-color: #EEAB73; }
+.row3col1{background-color: #F3CD86; }
+.row3col2{background-color: #F5A281; }
+.row3col3{background-color: #134080; }
+.row3col4{background-color: #1D6590; }
+.row3col5{background-color: #EF978F; }
+.row4col0{background-color: #FFC2AD; }
+.row4col1{background-color: #FDDFAC; }
+.row4col2{background-color: #1E2236; }
+.row4col3{background-color: #1E7C88; }
+.row4col4{background-color: #034B5D; }
+.row4col5{background-color: #A6522B; }
+.row5col0{background-color: #FC9D6F; }
+.row5col1{background-color: #E87A54; }
+.row5col2{background-color: #DA5E3C; }
+.row5col3{background-color: #B3D3E1; }
+.row5col4{background-color: #D65335; }
+.row5col5{background-color: #F7C45F; }
+.row6col0{background-color: #28364A; }
+.row6col1{background-color: #F8E00E; }
+.row6col2{background-color: #939599; }
+.row6col3{background-color: #F0ECEA; }
+.row6col4{background-color: #373948; }
+.row6col5{background-color: #890A03; }
+.row7col0{background-color: #D87D00; }
+.row7col1{background-color: #F2AB26; }
+.row7col2{background-color: #3C4B4D; }
+.row7col3{background-color: #9DB7C7; }
+.row7col4{background-color: #FFAF59; }
+.row7col5{background-color: #BC3A37; }
+.row8col0{background-color: #C6D7DC; }
+.row8col1{background-color: #566573; }
+.row8col2{background-color: #F6EFE2; }
+.row8col3{background-color: #F8E00E; }
+.row8col4{background-color: #BFD695; }
+.row8col5{background-color: #F7B8A1; }
+.row9col0{background-color: #F08865; }
+.row9col1{background-color: #041C3B; }
+.row9col2{background-color: #AECCE3; }
+.row9col3{background-color: #E0DFDE; }
+.row9col4{background-color: #F6D7C3; }
+.row9col5{background-color: #ACBFEA; }
+.row0col0{background-color: #C8D5F6; }
+.row0col1{background-color: #FED7DD; }
+.row0col2{background-color: #FFC5CE; }
+.row0col3{background-color: #FFACBB; }
+.row0col4{background-color: #FFA59C; }
+.row0col5{background-color: #04328D; }
+.row1col0{background-color: #D45468; }
+.row1col1{background-color: #EEE4E1; }
+.row1col2{background-color: #2557AB; }
+.row1col3{background-color: #DCE2E6; }
+.row1col4{background-color: #F4F6F7; }
+.row1col5{background-color: #FF7F57; }
+.row2col0{background-color: #2F4673; }
+.row2col1{background-color: #E06C77; }
+.row2col2{background-color: #FF9786; }
+.row2col3{background-color: #FFDC7C; }
+.row2col4{background-color: #17395C; }
+.row2col5{background-color: #EFB758; }
+.row3col0{background-color: #C24229; }
+.row3col1{background-color: #2557AB; }
+.row3col2{background-color: #DCE2E6; }
+.row3col3{background-color: #F4F6F7; }
+.row3col4{background-color: #FF7F57; }
+.row3col5{background-color: #FFA59C; }
+.row4col0{background-color: #04328D; }
+.row4col1{background-color: #D45468; }
+.row4col2{background-color: #EEE4E1; }
+.row4col3{background-color: #B2D3E1; }
+.row4col4{background-color: #F5E7E3; }
+.row4col5{background-color: #E7CEBF; }
+.row5col0{background-color: #D65353; }
+.row5col1{background-color: #F7C45F; }
+.row5col2{background-color: #28364A; }
+.row5col3{background-color: #E98176; }
+.row5col4{background-color: #E0AD70; }
+.row5col5{background-color: #5D678F; }
+.row6col0{background-color: #F0A4AB; }
+.row6col1{background-color: #F9DC86; }
+.row6col2{background-color: #D9E080; }
+.row6col3{background-color: #C9D2D1; }
+.row6col4{background-color: #5D7599; }
+.row6col5{background-color: #ABB6C8; }
+.row7col0{background-color: #DADADA; }
+.row7col1{background-color: #F7F0C6; }
+.row7col2{background-color: #C2C4B6; }
+.row7col3{background-color: #7E0306; }
+.row7col4{background-color: #D53E0F; }
+.row7col5{background-color: #FA8743; }
+.row8col0{background-color: #FFDECD; }
+.row8col1{background-color: #F0213B; }
+.row8col2{background-color: #FFB137; }
+.row8col3{background-color: #4152A5; }
+.row8col4{background-color: #F36747; }
+.row8col5{background-color: #F197A4; }
+.row9col0{background-color: #9595D2; }
+.row9col1{background-color: #D9ECF2; }
+.row9col2{background-color: #F56A79; }
+.row9col3{background-color: #FF414D; }
+.row9col4{background-color: #1AA6B7; }
+.row9col5{background-color: #002D40; }
+.row0col0{background-color: #405DE6; }
+.row0col1{background-color: #5851D8; }
+.row0col2{background-color: #C13584; }
+.row0col3{background-color: #E1306C; }
+.row0col4{background-color: #F56040; }
+.row0col5{background-color: #F77737; }
+.row1col0{background-color: #FCAF45; }
+.row1col1{background-color: #FC9F66; }
+.row1col2{background-color: #FAC357; }
+.row1col3{background-color: #FAE39C; }
+.row1col4{background-color: #002782; }
+.row1col5{background-color: #FAB0B3; }
+.row2col0{background-color: #FFDD02; }
+.row2col1{background-color: #00919C; }
+.row2col2{background-color: #254252; }
+.row2col3{background-color: #171C2D; }
+.row2col4{background-color: #E37239; }
+.row2col5{background-color: #F9982F; }
+.row3col0{background-color: #EAB56F; }
+.row3col1{background-color: #346B6D; }
+.row3col2{background-color: #2A445E; }
+.row3col3{background-color: #F3AA20; }
+.row3col4{background-color: #841E62; }
+.row3col5{background-color: #58094F; }
+.row4col0{background-color: #00589B; }
+.row4col1{background-color: #00A0B0; }
+.row4col2{background-color: #CF5C78; }
+.row4col3{background-color: #939597; }
+.row4col4{background-color: #012169; }
+.row4col5{background-color: #0001AE; }
+.row5col0{background-color: #FF003E; }
+.row5col1{background-color: #AFC4F9; }
+.row5col2{background-color: #475FE9; }
+.row5col3{background-color: #C7C7CC; }
+.row5col4{background-color: #FF0000; }
+.row5col5{background-color: #0344DC; }
+.row6col0{background-color: #4E639E; }
+.row6col1{background-color: #E54616; }
+.row6col2{background-color: #760F00; }
+.row6col3{background-color: #7FBFDD; }
+.row6col4{background-color: #012169; }
+.row6col5{background-color: #FFC145; }
+.row7col0{background-color: #FF6B6C; }
+.row7col1{background-color: #4455F0; }
+.row7col2{background-color: #EF972F; }
+.row7col3{background-color: #CD97E3; }
+.row7col4{background-color: #FF5E29; }
+.row7col5{background-color: #FF8257; }
+.row8col0{background-color: #26547C; }
+.row8col1{background-color: #7FB685; }
+.row8col2{background-color: #C4D7F2; }
+.row8col3{background-color: #009CCF; }
+.row8col4{background-color: #002F49; }
+.row8col5{background-color: #72C2F4; }
+.row9col0{background-color: #4E639E; }
+.row9col1{background-color: #E54616; }
+.row9col2{background-color: #7FBFDD; }
+.row9col3{background-color: #FF997C; }
+.row9col4{background-color: #760F00; }
+.row9col5{background-color: #F0213B; }
+.row0col0{background-color: #E9311A; }
+.row0col1{background-color: #ECAE7D; }
+.row0col2{background-color: #8DB4AD; }
+.row0col3{background-color: #026C80; }
+.row0col4{background-color: #064C72; }
+.row0col5{background-color: #FE7748; }
+.row1col0{background-color: #70B0B0; }
+.row1col1{background-color: #F8D941; }
+.row1col2{background-color: #FD9F9D; }
+.row1col3{background-color: #EE8C68; }
+.row1col4{background-color: #BA443C; }
+.row1col5{background-color: #AB1E3E; }
+.row2col0{background-color: #96A46B; }
+.row2col1{background-color: #204132; }
+.row2col2{background-color: #B63D42; }
+.row2col3{background-color: #DB8B56; }
+.row2col4{background-color: #B9C4CA; }
+.row2col5{background-color: #EDC796; }
+.row3col0{background-color: #FFD700; }
+.row3col1{background-color: #FA8400; }
+.row3col2{background-color: #FFBF00; }
+.row3col3{background-color: #80B700; }
+.row3col4{background-color: #244016; }
+.row3col5{background-color: #6B3500; }
+.row4col0{background-color: #637A8C; }
+.row4col1{background-color: #485B59; }
+.row4col2{background-color: #355E6C; }
+.row4col3{background-color: #354042; }
+.row4col4{background-color: #C2301E; }
+.row4col5{background-color: #5B5B54; }
+.row5col0{background-color: #5E8898; }
+.row5col1{background-color: #222D2E; }
+.row5col2{background-color: #641D14; }
+.row5col3{background-color: #8A0E0A; }
+.row5col4{background-color: #627272; }
+.row5col5{background-color: #25340F; }
+.row6col0{background-color: #ECBA66; }
+.row6col1{background-color: #232D34; }
+.row6col2{background-color: #E2C1F3; }
+.row6col3{background-color: #F5E45F; }
+.row6col4{background-color: #00C69E; }
+.row6col5{background-color: #FD7A39; }
+.row7col0{background-color: #07BFFF; }
+.row7col1{background-color: #FE51B0; }
+.row7col2{background-color: #287F8E; }
+.row7col3{background-color: #C0B65A; }
+.row7col4{background-color: #E06547; }
+.row7col5{background-color: #A6D2D4; }
+.row8col0{background-color: #E5CEC6; }
+.row8col1{background-color: #B2B7BF; }
+.row8col2{background-color: #81A0BA; }
+.row8col3{background-color: #B7A793; }
+.row8col4{background-color: #C43362; }
+.row8col5{background-color: #F2F0EB; }
+.row9col0{background-color: #879F84; }
+.row9col1{background-color: #00585E; }
+.row9col2{background-color: #6E7CA0; }
+.row9col3{background-color: #688197; }
+.row9col4{background-color: #418FDE; }
+.row9col5{background-color: #FF9E1B; }
+.row0col0{background-color: #CA3422; }
+.row0col1{background-color: #76C1B2; }
+.row0col2{background-color: #71B0B4; }
+.row0col3{background-color: #6FA287; }
+.row0col4{background-color: #E9738D; }
+.row0col5{background-color: #003349; }
+.row1col0{background-color: #00656E; }
+.row1col1{background-color: #853F84; }
+.row1col2{background-color: #FDC04E; }
+.row1col3{background-color: #89BD2B; }
+.row1col4{background-color: #84DCEA; }
+.row1col5{background-color: #695650; }
+.row2col0{background-color: #626367; }
+.row2col1{background-color: #856A57; }
+.row2col2{background-color: #BABEBF; }
+.row2col3{background-color: #AC6C29; }
+.row2col4{background-color: #EFEBE7; }
+.row2col5{background-color: #E7C9CA; }
+.row3col0{background-color: #C5AECF; }
+.row3col1{background-color: #D3C9BE; }
+.row3col2{background-color: #F8DE8D; }
+.row3col3{background-color: #F3774D; }
+.row3col4{background-color: #92AF88; }
+.row3col5{background-color: #06038D; }
+.row4col0{background-color: #2E334E; }
+.row4col1{background-color: #12403C; }
+.row4col2{background-color: #619187; }
+.row4col3{background-color: #00656E; }
+.row4col4{background-color: #87B9BB; }
+.row4col5{background-color: #557088; }
+.row5col0{background-color: #9096B2; }
+.row5col1{background-color: #D3C2BE; }
+.row5col2{background-color: #B9CFBA; }
+.row5col3{background-color: #D4CF69; }
+.row5col4{background-color: #7DAC66; }
+.row5col5{background-color: #676D17; }
+.row6col0{background-color: #384D0C; }
+.row6col1{background-color: #0C1C02; }
+.row6col2{background-color: #36383F; }
+.row6col3{background-color: #2E4E9E; }
+.row6col4{background-color: #37AA85; }
+.row6col5{background-color: #FEBABA; }
+.row7col0{background-color: #FF5736; }
+.row7col1{background-color: #4848AA; }
+.row7col2{background-color: #1F77FA; }
+.row7col3{background-color: #4FE7AF; }
+.row7col4{background-color: #0C4EBC; }
+.row7col5{background-color: #0C81E4; }
+.row8col0{background-color: #927AC3; }
+.row8col1{background-color: #E28899; }
+.row8col2{background-color: #2B2A8D; }
+.row8col3{background-color: #ED311E; }
+.row8col4{background-color: #4E817A; }
+.row8col5{background-color: #FFA939; }
+.row9col0{background-color: #27284D; }
+.row9col1{background-color: #A53E4F; }
+.row9col2{background-color: #A4CE4E; }
+.row9col3{background-color: #4328B8; }
+.row9col4{background-color: #19AE3C; }
+.row9col5{background-color: #FF6A5F; }
+
+
+        /*--------------*/
+        body {
+            
+            margin: 0;
+            padding: 0;
+           
+            background: #262626;
+            color: white;
+            font-family: sans-serif;
+            font-size: 75%;
+            text-align: left;
+        }
+        h1 {
+            margin: 0.4em 0.3em;
+            font-size: 420%;
+        }
+
+        div.title {
+            display: inline-block;
+            margin: 0;
+            height: auto;
+            width: 100%;
+            background: black;
+        }
+        p 
+        {
+            margin: 0.5em;
+        }
+        p.link 
+        {
+                margin: 0.5em 1.4em 1em 1.4em;
+                color: cyan;
+                font-size: 130%;
+            }
+        table {
+            margin: 2em 5em;
+            border: none;
+            font-size: 130%;
+            width: 61.8%;
+        }
+        th {
+            text-align:left;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            white-space: nowrap;
+        }
+        td.ccolor {   
+            height: 3em;
+        }
+        td.cname {
+            width: auto;
+            height: 1.5em;
+            font-size: 100%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body >
+    <div class="title">
+        <h1>UI Color</h1>
+        <p class="link">View App Details: <a href="https://www.microsoft.com/store/apps/9nblggh5ktlk">https://www.microsoft.com/store/apps/9nblggh5ktlk</a></p>
+    </div>
+    <table>
+  <tr>
+    <td class="ccolor row0col0"></td>
+    <td class="ccolor row0col1"></td>
+    <td class="ccolor row0col2"></td>
+    <td class="ccolor row0col3"></td>
+    <td class="ccolor row0col4"></td>
+    <td class="ccolor row0col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#2F4673</td>
+    <td class="cname">#E96C77</td>
+    <td class="cname">#FF9786</td>
+    <td class="cname">#FFDC7D</td>
+    <td class="cname">#17395C</td>
+    <td class="cname">#EFB758</td>
+  </tr>
+  <tr>
+    <td class="ccolor row1col0"></td>
+    <td class="ccolor row1col1"></td>
+    <td class="ccolor row1col2"></td>
+    <td class="ccolor row1col3"></td>
+    <td class="ccolor row1col4"></td>
+    <td class="ccolor row1col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#C24229</td>
+    <td class="cname">#69797A</td>
+    <td class="cname">#A38B70</td>
+    <td class="cname">#C99988</td>
+    <td class="cname">#A1B2A5</td>
+    <td class="cname">#C75D2C</td>
+  </tr>
+  <tr>
+    <td class="ccolor row2col0"></td>
+    <td class="ccolor row2col1"></td>
+    <td class="ccolor row2col2"></td>
+    <td class="ccolor row2col3"></td>
+    <td class="ccolor row2col4"></td>
+    <td class="ccolor row2col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#D2D2D4</td>
+    <td class="cname">#192C2F</td>
+    <td class="cname">#E7BFA6</td>
+    <td class="cname">#CE9D9B</td>
+    <td class="cname">#B3BBB9</td>
+    <td class="cname">#DCD2C2</td>
+  </tr>
+  <tr>
+    <td class="ccolor row3col0"></td>
+    <td class="ccolor row3col1"></td>
+    <td class="ccolor row3col2"></td>
+    <td class="ccolor row3col3"></td>
+    <td class="ccolor row3col4"></td>
+    <td class="ccolor row3col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#EAE0EE</td>
+    <td class="cname">#FAE0E1</td>
+    <td class="cname">#E6EDEC</td>
+    <td class="cname">#F0EEED</td>
+    <td class="cname">#313B99</td>
+    <td class="cname">#E5BD1D</td>
+  </tr>
+  <tr>
+    <td class="ccolor row4col0"></td>
+    <td class="ccolor row4col1"></td>
+    <td class="ccolor row4col2"></td>
+    <td class="ccolor row4col3"></td>
+    <td class="ccolor row4col4"></td>
+    <td class="ccolor row4col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#CCC5BA</td>
+    <td class="cname">#E5B38E</td>
+    <td class="cname">#A86C43</td>
+    <td class="cname">#353D28</td>
+    <td class="cname">#D08422</td>
+    <td class="cname">#C39FA6</td>
+  </tr>
+  <tr>
+    <td class="ccolor row5col0"></td>
+    <td class="ccolor row5col1"></td>
+    <td class="ccolor row5col2"></td>
+    <td class="ccolor row5col3"></td>
+    <td class="ccolor row5col4"></td>
+    <td class="ccolor row5col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#F4E4DC</td>
+    <td class="cname">#E6D1B6</td>
+    <td class="cname">#E7B763</td>
+    <td class="cname">#C67A62</td>
+    <td class="cname">#7F938E</td>
+    <td class="cname">#C19387</td>
+  </tr>
+  <tr>
+    <td class="ccolor row6col0"></td>
+    <td class="ccolor row6col1"></td>
+    <td class="ccolor row6col2"></td>
+    <td class="ccolor row6col3"></td>
+    <td class="ccolor row6col4"></td>
+    <td class="ccolor row6col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#EAE9E6</td>
+    <td class="cname">#3E4143</td>
+    <td class="cname">#E3B3AB</td>
+    <td class="cname">#B395B4</td>
+    <td class="cname">#F0A742</td>
+    <td class="cname">#092147</td>
+  </tr>
+  <tr>
+    <td class="ccolor row7col0"></td>
+    <td class="ccolor row7col1"></td>
+    <td class="ccolor row7col2"></td>
+    <td class="ccolor row7col3"></td>
+    <td class="ccolor row7col4"></td>
+    <td class="ccolor row7col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#1A488E</td>
+    <td class="cname">#97B2DE</td>
+    <td class="cname">#FC4D36</td>
+    <td class="cname">#FFE3DF</td>
+    <td class="cname">#FFD6DA</td>
+    <td class="cname">#FFC6D0</td>
+  </tr>
+  <tr>
+    <td class="ccolor row8col0"></td>
+    <td class="ccolor row8col1"></td>
+    <td class="ccolor row8col2"></td>
+    <td class="ccolor row8col3"></td>
+    <td class="ccolor row8col4"></td>
+    <td class="ccolor row8col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#E1F7E7</td>
+    <td class="cname">#D1EAF5</td>
+    <td class="cname">#C3D6F2</td>
+    <td class="cname">#789CCE</td>
+    <td class="cname">#2B78A2</td>
+    <td class="cname">#6EA8C9</td>
+  </tr>
+  <tr>
+    <td class="ccolor row9col0"></td>
+    <td class="ccolor row9col1"></td>
+    <td class="ccolor row9col2"></td>
+    <td class="ccolor row9col3"></td>
+    <td class="ccolor row9col4"></td>
+    <td class="ccolor row9col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#B6DEE7</td>
+    <td class="cname">#FCD9DD</td>
+    <td class="cname">#F9E2CF</td>
+    <td class="cname">#F2CDAF</td>
+    <td class="cname">#7DABD0</td>
+    <td class="cname">#CFE7EA</td>
+  </tr>
+  <tr>
+    <td class="ccolor row0col0"></td>
+    <td class="ccolor row0col1"></td>
+    <td class="ccolor row0col2"></td>
+    <td class="ccolor row0col3"></td>
+    <td class="ccolor row0col4"></td>
+    <td class="ccolor row0col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#DFAB9E</td>
+    <td class="cname">#D8982A</td>
+    <td class="cname">#B66531</td>
+    <td class="cname">#B6BC98</td>
+    <td class="cname">#F1D08F</td>
+    <td class="cname">#E9B993</td>
+  </tr>
+  <tr>
+    <td class="ccolor row1col0"></td>
+    <td class="ccolor row1col1"></td>
+    <td class="ccolor row1col2"></td>
+    <td class="ccolor row1col3"></td>
+    <td class="ccolor row1col4"></td>
+    <td class="ccolor row1col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#A9B8C0</td>
+    <td class="cname">#597075</td>
+    <td class="cname">#DEB7A5</td>
+    <td class="cname">#C47B6E</td>
+    <td class="cname">#EFA77E</td>
+    <td class="cname">#FBC1AD</td>
+  </tr>
+  <tr>
+    <td class="ccolor row2col0"></td>
+    <td class="ccolor row2col1"></td>
+    <td class="ccolor row2col2"></td>
+    <td class="ccolor row2col3"></td>
+    <td class="ccolor row2col4"></td>
+    <td class="ccolor row2col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#F56E4A</td>
+    <td class="cname">#FFDF6F</td>
+    <td class="cname">#E5E1E0</td>
+    <td class="cname">#78AAC3</td>
+    <td class="cname">#C4DEEE</td>
+    <td class="cname">#97C8D6</td>
+  </tr>
+  <tr>
+    <td class="ccolor row3col0"></td>
+    <td class="ccolor row3col1"></td>
+    <td class="ccolor row3col2"></td>
+    <td class="ccolor row3col3"></td>
+    <td class="ccolor row3col4"></td>
+    <td class="ccolor row3col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#EEAB73</td>
+    <td class="cname">#F3CD86</td>
+    <td class="cname">#F5A281</td>
+    <td class="cname">#134080</td>
+    <td class="cname">#1D6590</td>
+    <td class="cname">#EF978F</td>
+  </tr>
+  <tr>
+    <td class="ccolor row4col0"></td>
+    <td class="ccolor row4col1"></td>
+    <td class="ccolor row4col2"></td>
+    <td class="ccolor row4col3"></td>
+    <td class="ccolor row4col4"></td>
+    <td class="ccolor row4col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FFC2AD</td>
+    <td class="cname">#FDDFAC</td>
+    <td class="cname">#1E2236</td>
+    <td class="cname">#1E7C88</td>
+    <td class="cname">#034B5D</td>
+    <td class="cname">#A6522B</td>
+  </tr>
+  <tr>
+    <td class="ccolor row5col0"></td>
+    <td class="ccolor row5col1"></td>
+    <td class="ccolor row5col2"></td>
+    <td class="ccolor row5col3"></td>
+    <td class="ccolor row5col4"></td>
+    <td class="ccolor row5col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FC9D6F</td>
+    <td class="cname">#E87A54</td>
+    <td class="cname">#DA5E3C</td>
+    <td class="cname">#B3D3E1</td>
+    <td class="cname">#D65335</td>
+    <td class="cname">#F7C45F</td>
+  </tr>
+  <tr>
+    <td class="ccolor row6col0"></td>
+    <td class="ccolor row6col1"></td>
+    <td class="ccolor row6col2"></td>
+    <td class="ccolor row6col3"></td>
+    <td class="ccolor row6col4"></td>
+    <td class="ccolor row6col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#28364A</td>
+    <td class="cname">#F8E00E</td>
+    <td class="cname">#939599</td>
+    <td class="cname">#F0ECEA</td>
+    <td class="cname">#373948</td>
+    <td class="cname">#890A03</td>
+  </tr>
+  <tr>
+    <td class="ccolor row7col0"></td>
+    <td class="ccolor row7col1"></td>
+    <td class="ccolor row7col2"></td>
+    <td class="ccolor row7col3"></td>
+    <td class="ccolor row7col4"></td>
+    <td class="ccolor row7col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#D87D00</td>
+    <td class="cname">#F2AB26</td>
+    <td class="cname">#3C4B4D</td>
+    <td class="cname">#9DB7C7</td>
+    <td class="cname">#FFAF59</td>
+    <td class="cname">#BC3A37</td>
+  </tr>
+  <tr>
+    <td class="ccolor row8col0"></td>
+    <td class="ccolor row8col1"></td>
+    <td class="ccolor row8col2"></td>
+    <td class="ccolor row8col3"></td>
+    <td class="ccolor row8col4"></td>
+    <td class="ccolor row8col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#C6D7DC</td>
+    <td class="cname">#566573</td>
+    <td class="cname">#F6EFE2</td>
+    <td class="cname">#F8E00E</td>
+    <td class="cname">#BFD695</td>
+    <td class="cname">#F7B8A1</td>
+  </tr>
+  <tr>
+    <td class="ccolor row9col0"></td>
+    <td class="ccolor row9col1"></td>
+    <td class="ccolor row9col2"></td>
+    <td class="ccolor row9col3"></td>
+    <td class="ccolor row9col4"></td>
+    <td class="ccolor row9col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#F08865</td>
+    <td class="cname">#041C3B</td>
+    <td class="cname">#AECCE3</td>
+    <td class="cname">#E0DFDE</td>
+    <td class="cname">#F6D7C3</td>
+    <td class="cname">#ACBFEA</td>
+  </tr>
+  <tr>
+    <td class="ccolor row0col0"></td>
+    <td class="ccolor row0col1"></td>
+    <td class="ccolor row0col2"></td>
+    <td class="ccolor row0col3"></td>
+    <td class="ccolor row0col4"></td>
+    <td class="ccolor row0col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#C8D5F6</td>
+    <td class="cname">#FED7DD</td>
+    <td class="cname">#FFC5CE</td>
+    <td class="cname">#FFACBB</td>
+    <td class="cname">#FFA59C</td>
+    <td class="cname">#04328D</td>
+  </tr>
+  <tr>
+    <td class="ccolor row1col0"></td>
+    <td class="ccolor row1col1"></td>
+    <td class="ccolor row1col2"></td>
+    <td class="ccolor row1col3"></td>
+    <td class="ccolor row1col4"></td>
+    <td class="ccolor row1col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#D45468</td>
+    <td class="cname">#EEE4E1</td>
+    <td class="cname">#2557AB</td>
+    <td class="cname">#DCE2E6</td>
+    <td class="cname">#F4F6F7</td>
+    <td class="cname">#FF7F57</td>
+  </tr>
+  <tr>
+    <td class="ccolor row2col0"></td>
+    <td class="ccolor row2col1"></td>
+    <td class="ccolor row2col2"></td>
+    <td class="ccolor row2col3"></td>
+    <td class="ccolor row2col4"></td>
+    <td class="ccolor row2col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#2F4673</td>
+    <td class="cname">#E06C77</td>
+    <td class="cname">#FF9786</td>
+    <td class="cname">#FFDC7C</td>
+    <td class="cname">#17395C</td>
+    <td class="cname">#EFB758</td>
+  </tr>
+  <tr>
+    <td class="ccolor row3col0"></td>
+    <td class="ccolor row3col1"></td>
+    <td class="ccolor row3col2"></td>
+    <td class="ccolor row3col3"></td>
+    <td class="ccolor row3col4"></td>
+    <td class="ccolor row3col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#C24229</td>
+    <td class="cname">#2557AB</td>
+    <td class="cname">#DCE2E6</td>
+    <td class="cname">#F4F6F7</td>
+    <td class="cname">#FF7F57</td>
+    <td class="cname">#FFA59C</td>
+  </tr>
+  <tr>
+    <td class="ccolor row4col0"></td>
+    <td class="ccolor row4col1"></td>
+    <td class="ccolor row4col2"></td>
+    <td class="ccolor row4col3"></td>
+    <td class="ccolor row4col4"></td>
+    <td class="ccolor row4col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#04328D</td>
+    <td class="cname">#D45468</td>
+    <td class="cname">#EEE4E1</td>
+    <td class="cname">#B2D3E1</td>
+    <td class="cname">#F5E7E3</td>
+    <td class="cname">#E7CEBF</td>
+  </tr>
+  <tr>
+    <td class="ccolor row5col0"></td>
+    <td class="ccolor row5col1"></td>
+    <td class="ccolor row5col2"></td>
+    <td class="ccolor row5col3"></td>
+    <td class="ccolor row5col4"></td>
+    <td class="ccolor row5col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#D65353</td>
+    <td class="cname">#F7C45F</td>
+    <td class="cname">#28364A</td>
+    <td class="cname">#E98176</td>
+    <td class="cname">#E0AD70</td>
+    <td class="cname">#5D678F</td>
+  </tr>
+  <tr>
+    <td class="ccolor row6col0"></td>
+    <td class="ccolor row6col1"></td>
+    <td class="ccolor row6col2"></td>
+    <td class="ccolor row6col3"></td>
+    <td class="ccolor row6col4"></td>
+    <td class="ccolor row6col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#F0A4AB</td>
+    <td class="cname">#F9DC86</td>
+    <td class="cname">#D9E080</td>
+    <td class="cname">#C9D2D1</td>
+    <td class="cname">#5D7599</td>
+    <td class="cname">#ABB6C8</td>
+  </tr>
+  <tr>
+    <td class="ccolor row7col0"></td>
+    <td class="ccolor row7col1"></td>
+    <td class="ccolor row7col2"></td>
+    <td class="ccolor row7col3"></td>
+    <td class="ccolor row7col4"></td>
+    <td class="ccolor row7col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#DADADA</td>
+    <td class="cname">#F7F0C6</td>
+    <td class="cname">#C2C4B6</td>
+    <td class="cname">#7E0306</td>
+    <td class="cname">#D53E0F</td>
+    <td class="cname">#FA8743</td>
+  </tr>
+  <tr>
+    <td class="ccolor row8col0"></td>
+    <td class="ccolor row8col1"></td>
+    <td class="ccolor row8col2"></td>
+    <td class="ccolor row8col3"></td>
+    <td class="ccolor row8col4"></td>
+    <td class="ccolor row8col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FFDECD</td>
+    <td class="cname">#F0213B</td>
+    <td class="cname">#FFB137</td>
+    <td class="cname">#4152A5</td>
+    <td class="cname">#F36747</td>
+    <td class="cname">#F197A4</td>
+  </tr>
+  <tr>
+    <td class="ccolor row9col0"></td>
+    <td class="ccolor row9col1"></td>
+    <td class="ccolor row9col2"></td>
+    <td class="ccolor row9col3"></td>
+    <td class="ccolor row9col4"></td>
+    <td class="ccolor row9col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#9595D2</td>
+    <td class="cname">#D9ECF2</td>
+    <td class="cname">#F56A79</td>
+    <td class="cname">#FF414D</td>
+    <td class="cname">#1AA6B7</td>
+    <td class="cname">#002D40</td>
+  </tr>
+  <tr>
+    <td class="ccolor row0col0"></td>
+    <td class="ccolor row0col1"></td>
+    <td class="ccolor row0col2"></td>
+    <td class="ccolor row0col3"></td>
+    <td class="ccolor row0col4"></td>
+    <td class="ccolor row0col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#405DE6</td>
+    <td class="cname">#5851D8</td>
+    <td class="cname">#C13584</td>
+    <td class="cname">#E1306C</td>
+    <td class="cname">#F56040</td>
+    <td class="cname">#F77737</td>
+  </tr>
+  <tr>
+    <td class="ccolor row1col0"></td>
+    <td class="ccolor row1col1"></td>
+    <td class="ccolor row1col2"></td>
+    <td class="ccolor row1col3"></td>
+    <td class="ccolor row1col4"></td>
+    <td class="ccolor row1col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FCAF45</td>
+    <td class="cname">#FC9F66</td>
+    <td class="cname">#FAC357</td>
+    <td class="cname">#FAE39C</td>
+    <td class="cname">#002782</td>
+    <td class="cname">#FAB0B3</td>
+  </tr>
+  <tr>
+    <td class="ccolor row2col0"></td>
+    <td class="ccolor row2col1"></td>
+    <td class="ccolor row2col2"></td>
+    <td class="ccolor row2col3"></td>
+    <td class="ccolor row2col4"></td>
+    <td class="ccolor row2col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FFDD02</td>
+    <td class="cname">#00919C</td>
+    <td class="cname">#254252</td>
+    <td class="cname">#171C2D</td>
+    <td class="cname">#E37239</td>
+    <td class="cname">#F9982F</td>
+  </tr>
+  <tr>
+    <td class="ccolor row3col0"></td>
+    <td class="ccolor row3col1"></td>
+    <td class="ccolor row3col2"></td>
+    <td class="ccolor row3col3"></td>
+    <td class="ccolor row3col4"></td>
+    <td class="ccolor row3col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#EAB56F</td>
+    <td class="cname">#346B6D</td>
+    <td class="cname">#2A445E</td>
+    <td class="cname">#F3AA20</td>
+    <td class="cname">#841E62</td>
+    <td class="cname">#58094F</td>
+  </tr>
+  <tr>
+    <td class="ccolor row4col0"></td>
+    <td class="ccolor row4col1"></td>
+    <td class="ccolor row4col2"></td>
+    <td class="ccolor row4col3"></td>
+    <td class="ccolor row4col4"></td>
+    <td class="ccolor row4col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#00589B</td>
+    <td class="cname">#00A0B0</td>
+    <td class="cname">#CF5C78</td>
+    <td class="cname">#939597</td>
+    <td class="cname">#012169</td>
+    <td class="cname">#0001AE</td>
+  </tr>
+  <tr>
+    <td class="ccolor row5col0"></td>
+    <td class="ccolor row5col1"></td>
+    <td class="ccolor row5col2"></td>
+    <td class="ccolor row5col3"></td>
+    <td class="ccolor row5col4"></td>
+    <td class="ccolor row5col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FF003E</td>
+    <td class="cname">#AFC4F9</td>
+    <td class="cname">#475FE9</td>
+    <td class="cname">#C7C7CC</td>
+    <td class="cname">#FF0000</td>
+    <td class="cname">#0344DC</td>
+  </tr>
+  <tr>
+    <td class="ccolor row6col0"></td>
+    <td class="ccolor row6col1"></td>
+    <td class="ccolor row6col2"></td>
+    <td class="ccolor row6col3"></td>
+    <td class="ccolor row6col4"></td>
+    <td class="ccolor row6col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#4E639E</td>
+    <td class="cname">#E54616</td>
+    <td class="cname">#760F00</td>
+    <td class="cname">#7FBFDD</td>
+    <td class="cname">#012169</td>
+    <td class="cname">#FFC145</td>
+  </tr>
+  <tr>
+    <td class="ccolor row7col0"></td>
+    <td class="ccolor row7col1"></td>
+    <td class="ccolor row7col2"></td>
+    <td class="ccolor row7col3"></td>
+    <td class="ccolor row7col4"></td>
+    <td class="ccolor row7col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FF6B6C</td>
+    <td class="cname">#4455F0</td>
+    <td class="cname">#EF972F</td>
+    <td class="cname">#CD97E3</td>
+    <td class="cname">#FF5E29</td>
+    <td class="cname">#FF8257</td>
+  </tr>
+  <tr>
+    <td class="ccolor row8col0"></td>
+    <td class="ccolor row8col1"></td>
+    <td class="ccolor row8col2"></td>
+    <td class="ccolor row8col3"></td>
+    <td class="ccolor row8col4"></td>
+    <td class="ccolor row8col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#26547C</td>
+    <td class="cname">#7FB685</td>
+    <td class="cname">#C4D7F2</td>
+    <td class="cname">#009CCF</td>
+    <td class="cname">#002F49</td>
+    <td class="cname">#72C2F4</td>
+  </tr>
+  <tr>
+    <td class="ccolor row9col0"></td>
+    <td class="ccolor row9col1"></td>
+    <td class="ccolor row9col2"></td>
+    <td class="ccolor row9col3"></td>
+    <td class="ccolor row9col4"></td>
+    <td class="ccolor row9col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#4E639E</td>
+    <td class="cname">#E54616</td>
+    <td class="cname">#7FBFDD</td>
+    <td class="cname">#FF997C</td>
+    <td class="cname">#760F00</td>
+    <td class="cname">#F0213B</td>
+  </tr>
+  <tr>
+    <td class="ccolor row0col0"></td>
+    <td class="ccolor row0col1"></td>
+    <td class="ccolor row0col2"></td>
+    <td class="ccolor row0col3"></td>
+    <td class="ccolor row0col4"></td>
+    <td class="ccolor row0col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#E9311A</td>
+    <td class="cname">#ECAE7D</td>
+    <td class="cname">#8DB4AD</td>
+    <td class="cname">#026C80</td>
+    <td class="cname">#064C72</td>
+    <td class="cname">#FE7748</td>
+  </tr>
+  <tr>
+    <td class="ccolor row1col0"></td>
+    <td class="ccolor row1col1"></td>
+    <td class="ccolor row1col2"></td>
+    <td class="ccolor row1col3"></td>
+    <td class="ccolor row1col4"></td>
+    <td class="ccolor row1col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#70B0B0</td>
+    <td class="cname">#F8D941</td>
+    <td class="cname">#FD9F9D</td>
+    <td class="cname">#EE8C68</td>
+    <td class="cname">#BA443C</td>
+    <td class="cname">#AB1E3E</td>
+  </tr>
+  <tr>
+    <td class="ccolor row2col0"></td>
+    <td class="ccolor row2col1"></td>
+    <td class="ccolor row2col2"></td>
+    <td class="ccolor row2col3"></td>
+    <td class="ccolor row2col4"></td>
+    <td class="ccolor row2col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#96A46B</td>
+    <td class="cname">#204132</td>
+    <td class="cname">#B63D42</td>
+    <td class="cname">#DB8B56</td>
+    <td class="cname">#B9C4CA</td>
+    <td class="cname">#EDC796</td>
+  </tr>
+  <tr>
+    <td class="ccolor row3col0"></td>
+    <td class="ccolor row3col1"></td>
+    <td class="ccolor row3col2"></td>
+    <td class="ccolor row3col3"></td>
+    <td class="ccolor row3col4"></td>
+    <td class="ccolor row3col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FFD700</td>
+    <td class="cname">#FA8400</td>
+    <td class="cname">#FFBF00</td>
+    <td class="cname">#80B700</td>
+    <td class="cname">#244016</td>
+    <td class="cname">#6B3500</td>
+  </tr>
+  <tr>
+    <td class="ccolor row4col0"></td>
+    <td class="ccolor row4col1"></td>
+    <td class="ccolor row4col2"></td>
+    <td class="ccolor row4col3"></td>
+    <td class="ccolor row4col4"></td>
+    <td class="ccolor row4col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#637A8C</td>
+    <td class="cname">#485B59</td>
+    <td class="cname">#355E6C</td>
+    <td class="cname">#354042</td>
+    <td class="cname">#C2301E</td>
+    <td class="cname">#5B5B54</td>
+  </tr>
+  <tr>
+    <td class="ccolor row5col0"></td>
+    <td class="ccolor row5col1"></td>
+    <td class="ccolor row5col2"></td>
+    <td class="ccolor row5col3"></td>
+    <td class="ccolor row5col4"></td>
+    <td class="ccolor row5col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#5E8898</td>
+    <td class="cname">#222D2E</td>
+    <td class="cname">#641D14</td>
+    <td class="cname">#8A0E0A</td>
+    <td class="cname">#627272</td>
+    <td class="cname">#25340F</td>
+  </tr>
+  <tr>
+    <td class="ccolor row6col0"></td>
+    <td class="ccolor row6col1"></td>
+    <td class="ccolor row6col2"></td>
+    <td class="ccolor row6col3"></td>
+    <td class="ccolor row6col4"></td>
+    <td class="ccolor row6col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#ECBA66</td>
+    <td class="cname">#232D34</td>
+    <td class="cname">#E2C1F3</td>
+    <td class="cname">#F5E45F</td>
+    <td class="cname">#00C69E</td>
+    <td class="cname">#FD7A39</td>
+  </tr>
+  <tr>
+    <td class="ccolor row7col0"></td>
+    <td class="ccolor row7col1"></td>
+    <td class="ccolor row7col2"></td>
+    <td class="ccolor row7col3"></td>
+    <td class="ccolor row7col4"></td>
+    <td class="ccolor row7col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#07BFFF</td>
+    <td class="cname">#FE51B0</td>
+    <td class="cname">#287F8E</td>
+    <td class="cname">#C0B65A</td>
+    <td class="cname">#E06547</td>
+    <td class="cname">#A6D2D4</td>
+  </tr>
+  <tr>
+    <td class="ccolor row8col0"></td>
+    <td class="ccolor row8col1"></td>
+    <td class="ccolor row8col2"></td>
+    <td class="ccolor row8col3"></td>
+    <td class="ccolor row8col4"></td>
+    <td class="ccolor row8col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#E5CEC6</td>
+    <td class="cname">#B2B7BF</td>
+    <td class="cname">#81A0BA</td>
+    <td class="cname">#B7A793</td>
+    <td class="cname">#C43362</td>
+    <td class="cname">#F2F0EB</td>
+  </tr>
+  <tr>
+    <td class="ccolor row9col0"></td>
+    <td class="ccolor row9col1"></td>
+    <td class="ccolor row9col2"></td>
+    <td class="ccolor row9col3"></td>
+    <td class="ccolor row9col4"></td>
+    <td class="ccolor row9col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#879F84</td>
+    <td class="cname">#00585E</td>
+    <td class="cname">#6E7CA0</td>
+    <td class="cname">#688197</td>
+    <td class="cname">#418FDE</td>
+    <td class="cname">#FF9E1B</td>
+  </tr>
+  <tr>
+    <td class="ccolor row0col0"></td>
+    <td class="ccolor row0col1"></td>
+    <td class="ccolor row0col2"></td>
+    <td class="ccolor row0col3"></td>
+    <td class="ccolor row0col4"></td>
+    <td class="ccolor row0col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#CA3422</td>
+    <td class="cname">#76C1B2</td>
+    <td class="cname">#71B0B4</td>
+    <td class="cname">#6FA287</td>
+    <td class="cname">#E9738D</td>
+    <td class="cname">#003349</td>
+  </tr>
+  <tr>
+    <td class="ccolor row1col0"></td>
+    <td class="ccolor row1col1"></td>
+    <td class="ccolor row1col2"></td>
+    <td class="ccolor row1col3"></td>
+    <td class="ccolor row1col4"></td>
+    <td class="ccolor row1col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#00656E</td>
+    <td class="cname">#853F84</td>
+    <td class="cname">#FDC04E</td>
+    <td class="cname">#89BD2B</td>
+    <td class="cname">#84DCEA</td>
+    <td class="cname">#695650</td>
+  </tr>
+  <tr>
+    <td class="ccolor row2col0"></td>
+    <td class="ccolor row2col1"></td>
+    <td class="ccolor row2col2"></td>
+    <td class="ccolor row2col3"></td>
+    <td class="ccolor row2col4"></td>
+    <td class="ccolor row2col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#626367</td>
+    <td class="cname">#856A57</td>
+    <td class="cname">#BABEBF</td>
+    <td class="cname">#AC6C29</td>
+    <td class="cname">#EFEBE7</td>
+    <td class="cname">#E7C9CA</td>
+  </tr>
+  <tr>
+    <td class="ccolor row3col0"></td>
+    <td class="ccolor row3col1"></td>
+    <td class="ccolor row3col2"></td>
+    <td class="ccolor row3col3"></td>
+    <td class="ccolor row3col4"></td>
+    <td class="ccolor row3col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#C5AECF</td>
+    <td class="cname">#D3C9BE</td>
+    <td class="cname">#F8DE8D</td>
+    <td class="cname">#F3774D</td>
+    <td class="cname">#92AF88</td>
+    <td class="cname">#06038D</td>
+  </tr>
+  <tr>
+    <td class="ccolor row4col0"></td>
+    <td class="ccolor row4col1"></td>
+    <td class="ccolor row4col2"></td>
+    <td class="ccolor row4col3"></td>
+    <td class="ccolor row4col4"></td>
+    <td class="ccolor row4col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#2E334E</td>
+    <td class="cname">#12403C</td>
+    <td class="cname">#619187</td>
+    <td class="cname">#00656E</td>
+    <td class="cname">#87B9BB</td>
+    <td class="cname">#557088</td>
+  </tr>
+  <tr>
+    <td class="ccolor row5col0"></td>
+    <td class="ccolor row5col1"></td>
+    <td class="ccolor row5col2"></td>
+    <td class="ccolor row5col3"></td>
+    <td class="ccolor row5col4"></td>
+    <td class="ccolor row5col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#9096B2</td>
+    <td class="cname">#D3C2BE</td>
+    <td class="cname">#B9CFBA</td>
+    <td class="cname">#D4CF69</td>
+    <td class="cname">#7DAC66</td>
+    <td class="cname">#676D17</td>
+  </tr>
+  <tr>
+    <td class="ccolor row6col0"></td>
+    <td class="ccolor row6col1"></td>
+    <td class="ccolor row6col2"></td>
+    <td class="ccolor row6col3"></td>
+    <td class="ccolor row6col4"></td>
+    <td class="ccolor row6col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#384D0C</td>
+    <td class="cname">#0C1C02</td>
+    <td class="cname">#36383F</td>
+    <td class="cname">#2E4E9E</td>
+    <td class="cname">#37AA85</td>
+    <td class="cname">#FEBABA</td>
+  </tr>
+  <tr>
+    <td class="ccolor row7col0"></td>
+    <td class="ccolor row7col1"></td>
+    <td class="ccolor row7col2"></td>
+    <td class="ccolor row7col3"></td>
+    <td class="ccolor row7col4"></td>
+    <td class="ccolor row7col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#FF5736</td>
+    <td class="cname">#4848AA</td>
+    <td class="cname">#1F77FA</td>
+    <td class="cname">#4FE7AF</td>
+    <td class="cname">#0C4EBC</td>
+    <td class="cname">#0C81E4</td>
+  </tr>
+  <tr>
+    <td class="ccolor row8col0"></td>
+    <td class="ccolor row8col1"></td>
+    <td class="ccolor row8col2"></td>
+    <td class="ccolor row8col3"></td>
+    <td class="ccolor row8col4"></td>
+    <td class="ccolor row8col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#927AC3</td>
+    <td class="cname">#E28899</td>
+    <td class="cname">#2B2A8D</td>
+    <td class="cname">#ED311E</td>
+    <td class="cname">#4E817A</td>
+    <td class="cname">#FFA939</td>
+  </tr>
+  <tr>
+    <td class="ccolor row9col0"></td>
+    <td class="ccolor row9col1"></td>
+    <td class="ccolor row9col2"></td>
+    <td class="ccolor row9col3"></td>
+    <td class="ccolor row9col4"></td>
+    <td class="ccolor row9col5"></td>
+  </tr>
+  <tr>
+    <td class="cname">#27284D</td>
+    <td class="cname">#A53E4F</td>
+    <td class="cname">#A4CE4E</td>
+    <td class="cname">#4328B8</td>
+    <td class="cname">#19AE3C</td>
+    <td class="cname">#FF6A5F</td>
+  </tr>
+</table>
+</body > 
+</html >

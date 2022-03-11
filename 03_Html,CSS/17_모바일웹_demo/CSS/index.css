@@ -1,66 +1,64 @@
 @charset "utf-8";
-/* 배경 
---------------------------- */
-body{
-    background: #46464D url(../img/top_bg2.png) repeat-x;
+
+/* 상단 > 버튼 
+--------------------------------------------*/
+#header span{
+    display: none;
 }
 
-/* 상단 타이틀
---------------------------- */
-#header{
-    width: 318px;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* 상단 타이틀 > 제목(로고)
---------------------------- */
-#header h1{
-    background: url(../img/top_bg.png) no-repeat;
-    width: auto;
-    height: 85px;
-    text-indent: -10000px;
-    margin-bottom: 15px;
-}
-
-/* 상단 타이틀 > 버튼용 li
---------------------------- */
-#header li{
-    display: inline;
-    padding: 0 3px;
-}
-
-/* 내용(메인메뉴)
---------------------------- */
+/* 내용영역
+--------------------------------------------*/
 #content{
-    background: url(../img/list_bg.png) repeat;
-    width: auto;
-    height: 184px;
+    background: url(../img/bg_body.gif) repeat-x;
 }
 
-/* 내용(메인메뉴) > 목록박스
---------------------------- */
-#content ul {
-    background: url(../img/menu.png) no-repeat;
+/* 내용영역 > 서브타이틀
+--------------------------------------------*/
+#content h2{
     width: auto;
-    height: 184px;
-}
-/* 내용(메인메뉴)>목록박스 > 각항목<li>
---------------------------- */
-#content ul li {
-    width: auto;
-    height: 46px;
-    background: url(../img/list_right.png) right center no-repeat;
-}
-
-
-/* 내용(메인메뉴)>목록박스 > 각항목<li> > 링크
---------------------------- */
-#content ul li a {
-    display: block;
-    width: auto;
-    height: 45px;
+    height: 270px;
+    background: url(../img/bg_visual.jpg) center top no-repeat;
     text-indent: -10000px;
+}
+
+/* 내용영역 > 버튼메뉴 박스
+--------------------------------------------*/
+#content ul {
+    text-align: center;
+}
+
+/* 내용영역 > 버튼메뉴 박스 > 개별항목
+--------------------------------------------*/
+#content ul li{
+    display: inline-block;
+    padding: 20px 2px 0px 2px;
+}
+/* 내용영역 > 버튼메뉴 박스 > 개별항목 > 링크
+--------------------------------------------*/
+#content ul li a{
+    display: block;
+    width: 65px;
+    height: 90px;
+    margin: auto;
+    text-indent: -10000px;
+    overflow: hidden;
+    background: url(../img/lnb.png) no-repeat;
     cursor: pointer;
+}
+
+/* 내용영역 > 버튼메뉴 박스 > 개별항목 > 개별 링크 배경이미지 좌표
+--------------------------------------------*/
+#content ul li a#icon1{
+    background-position: 0px 0;
+}
+#content ul li a#icon2{
+    background-position: -66px 0;
+}
+
+#content ul li a#icon3{
+    background-position: -136px 0;
+}
+
+#content ul li a#icon4{
+    background-position: -206px 0;
 }
