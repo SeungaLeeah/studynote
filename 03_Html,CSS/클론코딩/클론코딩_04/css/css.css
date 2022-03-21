@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+
+/*header*/
+#header{
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/wedding_couple.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color: white;
+    filter: grayscale(50%);
+}
+
+#header #top{
+display: block;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   text-align: center;
+   letter-spacing: 5px;
+   transform: translate(-50%, -50%);
+  
+}
+
+#top h1{
+    font-size: 90px;
+    margin: 10px;
+ 
+}
+#top .mid{
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 10px;
+    line-height: 100px;
+}
+#top .bold{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#header::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both
+}
+
+
+
+#bnt{
+    font-family: 'Raleway', sans-serif;
+    position:fixed;  
+    bottom:0px; 
+    width:100%; 
+    display: block;
+    z-index: 1;
+ }
+#bnt #menu{
+    text-align: center;
+    padding: 8px 16px;
+    text-align: center;
+    color: black;
+    background-color:white;
+    opacity: 80%;
+   height: 60px;
+    width: 100%;
+    line-height: 40px;
+}
+#bnt #menu a{
+    display: block;
+    float: left;
+    font-size: 25px;
+    color: gray;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    width: 23%;
+}
+#bnt #menu a:hover{
+    background-color:lightgray;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+#bnt #menu .rsvp:hover{
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+#btn.bold::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both
+}
+
+
+#main{
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: auto;
+    background-color: #EEE4E1;
+    height: 100%;
+    text-align: center;
+    padding: 64px 16px;
+    min-width: 980px;
+}
+#main #page{
+    width: 980px;
+    margin: auto;
+    color: #757575;
+}
+
+#main #page h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+#main #page .wedding{
+    margin: 32px 0;
+    width: 100%;
+    filter: grayscale(70%);
+    
+}
+
+#main #page .box{
+    width: auto;
+    text-align: left;
+    margin: 15px 0;
+    display: block;
+}
+
+#page .box i{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#page .click{
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 30px 0;
+    margin: auto;
+    font-size: 20px;
+} 
+
+#page .click:hover{
+    background-color: #eee;
+    color: black;
+}
+
+
+
+#invite{
+    font-family: 'Raleway', sans-serif;
+    background: url(../img/flowers.jpg) no-repeat center;
+    height: 110vh;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+#invite h1{
+    display: block;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   text-align: center;
+   letter-spacing: 5px;
+   transform: translate(-50%, -50%);
+   font-size: 80px;
+}
+#invite h2{
+    display: block;
+   position: absolute;
+   left: 50%;
+   top: 60%;
+   text-align: center;
+   letter-spacing: 5px;
+   transform: translate(-50%, -50%);
+   font-size: 40px;
+}
+#invite::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both
+}
+
+#info {
+    font-family: 'Raleway', sans-serif;
+    background-color: #EEE4E1;
+    text-align: center;
+    padding: 30px 16px;
+    margin: auto;
+    color: #757575;
+}
+#info h1{
+font-size: 50px;
+margin: 10px 0;
+}
+
+#info .hall{
+    padding: 64px 16px;
+}
+
+#info .text{
+    display: block;
+    text-align: center;
+    width: 980px;
+    margin: auto;
+}
+
+#info .when{
+    display: block;
+    float: left;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#info .when h2{
+    font-size: 36px;
+    margin: 10px 0;
+    line-height: 50px;
+    color: black;
+}
+
+#info .when p{
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 30px;
+}
+#info .where{
+    display: block;
+    float: left;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#info .where h2{
+    font-size: 36px;
+    margin: 10px 0;
+    line-height: 50px;
+    color: black;
+}
+
+#info .where p{
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 30px;
+}
+
+#info::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both
+}
+
+
+#copy{
+    width: auto;
+    height: 358px;
+    background-color: #EEE1E1;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: block;
+    padding: 30px 16px;
+    color: black;
+}
+
+#copy h1{
+    display: block;
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: black;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#copy p{
+    margin: 18px 0;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 36px
+}
+
+#copy button{
+    border: none;
+    font-size: 24px;
+    padding: 25px 45px;
+    margin: 18px 0;
+    color: white;
+    background-color: #FFA59C;
+}
+
+#copy button:hover{
+    background-color: #eee;
+    color: black;
+}
+
+#copy::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both
+}
+
+#copy::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both
+}
+
+.underline{
+    height: 110px;
+    background-color: black;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding-top: 55px;
+    color: white;
+}
+.underline a{
+    font-size: 24px;
+    color: white;
+    display: inline;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both
+}
+
+.underline a:hover{
+    color: green;
+    cursor: pointer;
+}
+#blank{
+    height: 20px;
+}
