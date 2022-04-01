@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin:  0 ;
+        }
+        .collapsible-title{
+            background-color: #777;
+            cursor: pointer;
+            color: white;
+            padding: 18px;
+            border: none;
+            width: 100%;
+            font-weight: normal;
+            margin: 0;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        .active,
+        .collapsible-title:hover{
+            background-color: #555;
+        }
+        .content{
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+       
+        .appendChild{
+            display: block;
+            padding: 10px 30px;
+            border: none;
+            font-size: 25px;
+            background-color: gray;
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="appendChild1">
+    <h2>Animated Collapsibles</h2>  
+    <p>A Collapsibles:</p>
+    <button type="button" class="appendChild">click</button>
+    <div class="collapse">
+        <h1 class="collapsible-title">Open Collapsible</h1>
+        <div class="content">
+            <p>Lorem ipusum dolorsit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commdo consequat.
+            </p>
+        </div>
+    </div>
+</div>
+    <script>
+            const getItem = (clsName) => {
+            // JS에게 <li>태그를 코딩시킴
+            const li = document.createElement('li');
+            // CSS 클래스 추가시 add()함수에게 갯수제한 없이 콤마로 구분하여 여러개 지정 가능함.
+            li.classList.add('item', clsName);
+            //사용자가 입력한 내용을 <li>태그에 표시함
+            li.innerHTML = comment.value; 
+
+            //<li>에 클릭 이벤트 적용
+            li.addEventListener('click', (e)=>{
+                //클릭된 자기 스스로를 제거함
+                e.currentTarget.remove();
+            });
+            
+            return li;
+             };
+            document.querySelectorAll('.appendChild').forEach((v,i)=>{
+            v.addEventListener('click', (e)=>{
+                //클릭된 자기자신
+                const li = getItem('.collapse');
+                // 스스로에게 active클래스에 대한 적용 여부 변경
+                current.classList.toggle('active');
+
+                //클릭된 자신의 상위 요소인 <div class="collapse">
+                const parent = current.closest('.appendChild2');
+
+                //제어할 대상을 탐색
+                const content = parent.querySelector('.collapse');
+
+                //content에 maxHeight 속성이 있다면 (혹은 0이라면)
+                if(content.style.maxHeight){
+                    content.style.maxHeight = null;
+                }else{
+                    content.style.maxHeight = content.scrollHeight + 'px'
+                }
+            });
+        });
+    </script>
+</body>
+</html>
