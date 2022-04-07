@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="loading"></div>
+    <h1>Simple Axios</h1>
+    <a href="#" class="mylink" data-deptno="101">컴퓨터공학과</a>
+    <a href="#" class="mylink" data-deptno="102">멀티미디어과</a>
+    <a href="#" class="mylink" data-deptno="201">전자공학과</a>
+    <a href="#" class="mylink" data-deptno="202">기계공학과</a>
+
+    <div id="dept-item">
+        <dt>학과번호</dt>
+        <dd class="id"></dd>
+        <dt>학과명</dt>
+        <dd class="dname"></dd>
+        <dt>학과위치</dt>
+        <dd class="loc"></dd>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const mylink = document.querySelectorAll('.mylink');
+
+        mylink.forEach((v,i)=>{
+            v.addEventListener('click', (e)=> {
+                e.preventDefault();
+
+                //로딩바 표시하기
+                const loading = document.querySelector('#loading');
+                loading.classList.add('active');
+
+               // 링크에 숨겨진 data-deptno의 값을 가져옴
+                const deptno = e.currentTarget.dataset.deptno;
+                console.log(deptno);
+
+                //HTML의 4대 접속 방식 GET, POST, PUT, DELETE가 각각 함수로 존재.
+                axios
+                    .get(`http://localhost:3000/department/${deptno}`)
+                    //.then((response)=>{
+                    .then(({data})=>{
+                        // console.log(response);
+                        // 이 값이 백엔드에서 읽어온 내용
+                        console.log(data);
+
+                        document.querySelector('.id').innerHTML = data.id;
+                        document.querySelector('.dname').innerHTML = data.dname;
+                        document.querySelector('.loc').innerHTML = data.loc;
+
+                        document.querySelector('#dept-item').style.display = 'block';
+                    })
+                    .catch((error)=>{
+                        console.error(error);
+                        console.error(error.response.status);
+                        console.error(error.response.statusText);
+                        console.error(error.response.data);
+                        alert(error.response.statusText);
+                    })
+                    .finally(()=>{
+                        // 성공, 실패 여부에 상관없이 마지막에 실행되는 함수
+                        loading.classList.remove('active');
+                    });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -47,48 +47,52 @@
         <tbody id="list-body"></tbody>
     </table>
 
-    <script src="libs/ajaxPromiseHelper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        document.querySelector('#btn').addEventListener('click', async (e)=>{
+        document.querySelector('#btn').addEventListener('click', (e)=>{
             //로딩바 표시하기
             const loading = document.querySelector('#loading');
             loading.classList.add('active');
 
-            //Ajax 응답 결과를 저장할 Json
-            let json = null;
-            
-            try{
-                json = await ajaxPromiseHelper('http://localhost:3000/department');
-                console.log(json);   
-            } catch (e) {
-                console.error(e);
-                alert(e.msg);
-            } finally{
+        axios
+        .get('http://localhost:3000/department')   
+        .then(({data})=>{
+
+            if(data !=null){
+            const listBody = document.querySelector('#list-body');
+            console.log(data)
+
+            data.map((v,i)=>{
+                const tr = document.createElement('tr');
+
+                const td1 = document.createElement('td');
+                td1.innerHTML = v.id;
+
+                const td2 =document.createElement('td');
+                td2.innerHTML = v.dname;
+
+                const td3 =document.createElement('td');
+                td3.innerHTML = v.loc;
+
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tr.appendChild(td3);
+
+                listBody.appendChild(tr);
+                });
+                }
+             })
+            .catch((error)=>{
+                console.error(error);
+                console.error(error.response.status);
+                console.error(error.response.statusText);
+                console.error(error.response.data);
+                alert(error.response.statusText);
+            }) 
+            .finally(()=>{
                 //로딩바 닫기
                 loading.classList.remove('active');
-            }
-            if(json !=null){
-                const listBody = document.querySelector('#list-body');
-
-                json.map((v,i)=>{
-                    const tr = document.createElement('tr');
-
-                    const td1 = document.createElement('td');
-                    td1.innerHTML = v.id;
-
-                    const td2 =document.createElement('td');
-                    td2.innerHTML = v.dname;
-
-                    const td3 =document.createElement('td');
-                    td3.innerHTML = v.loc;
-
-                    tr.appendChild(td1);
-                    tr.appendChild(td2);
-                    tr.appendChild(td3);
-
-                    listBody.appendChild(tr);
-                });
-            }
+            });
         });
     </script>
 </body>

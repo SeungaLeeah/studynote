@@ -54,7 +54,7 @@
                     status.innerHTML = '';
 
                     // 링크에 openstreetmap으로의 URL을 href속성으로 지정함 (18=확대비율)
-                    mapLink.href = 'https://www.openstreetmap.org/#map=18/${latitude}/${longitude}';
+                    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
                     mapLink.innerHTML = `위도:${latitude}, 경도:${longitude}`;
 
                 }

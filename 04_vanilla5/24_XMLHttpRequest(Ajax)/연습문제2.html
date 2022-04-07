@@ -47,9 +47,10 @@
         <tbody id="list-body"></tbody>
     </table>
 
-    <script src="libs/ajaxPromiseHelper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
         document.querySelector('#btn').addEventListener('click', async (e)=>{
+
             //로딩바 표시하기
             const loading = document.querySelector('#loading');
             loading.classList.add('active');
@@ -58,19 +59,25 @@
             let json = null;
             
             try{
-                json = await ajaxPromiseHelper('http://localhost:3000/department');
+                json = await axios.get('http://localhost:3000/department');
                 console.log(json);   
             } catch (e) {
                 console.error(e);
-                alert(e.msg);
+                console.error(e.response.status);
+                console.error(e.response.statusText);
+                console.error(e.response.data);
+                alert(error.response.statusText);
             } finally{
                 //로딩바 닫기
                 loading.classList.remove('active');
             }
             if(json !=null){
                 const listBody = document.querySelector('#list-body');
+                console.log(json.data);
 
-                json.map((v,i)=>{
+                const {id, dname, loc}  = json.data;
+
+                json.data.map((v,i)=>{
                     const tr = document.createElement('tr');
 
                     const td1 = document.createElement('td');
