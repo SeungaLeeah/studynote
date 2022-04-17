@@ -1,0 +1,256 @@
+@charset "utf-8";
+/** 
+* @filename    : naver.css
+* @author      : 이승아(leeah0913@gmail.com)
+* @description : 정규표현식 검사 수행
+*/
+
+
+
+body{
+    font-family: Dotum,'돋움',Helvetica,sans-serif;    text-align: center;
+    width: 1400px;
+    margin: auto;
+    padding: 0 10px;
+    background-color: #f3f3f9;
+    height: 100%;
+}
+
+select{
+    border: solid 1px #dadada;
+    color: darkgray;
+}
+
+#header{
+    width: 100%;
+    margin: auto;
+}
+#header #logo-main{
+    text-indent: -10000px;
+}
+
+
+#header #logo-main_img{
+    width: 35%;
+    padding-top: 80px;
+}
+
+#join-form{
+    width: 50%;
+    margin: auto;
+    padding: 80px 10px;
+}
+
+.form-group::after{
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+
+.form-group{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-group select{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 14px;
+    height: 62px;
+    background-color: white;
+    text-indent: 10px;
+    font-size: 18px;
+    line-height: 18px;
+}
+.col-md-2{
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    padding-top: 7px;
+    text-align: left;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 5px;
+    font-weight: bold;
+}
+
+.form-group .col-md-10{
+    margin: auto;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;   
+    padding: 0 0 30px 0;
+    line-height: 50px;
+    position: relative;
+}
+
+
+ .form-control .id-info{
+    padding-right: 110px;
+}
+
+.info{
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 25px;
+    color: #8e8e8e;
+
+}
+.form-control .user_pw_icon{
+    padding-right: 40px;
+}
+
+
+.pw_box i{
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -22px;
+    cursor: pointer;
+    color: #8e8e8e;
+}
+
+.col-md-2 .identify{
+    color: darkgray;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.col-md-10 .user-birth{
+    width: 32%;
+}
+
+.col-md-10 #month{
+    height: 65px;
+    padding-top: 8px;
+    font-size: 25px;
+}
+
+.tel{
+    padding: 15px 0;
+    display: block;
+    position: relative;
+   
+}
+
+.col-md-10 .tel-check{
+    display: inline-block;
+    width: 77%;
+    padding: 10px 15px 10px 14px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background: #fff;
+    box-sizing: border-box;
+    text-indent: -2px;
+}
+
+#tel_btn {
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #03c75a;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-indent: 0px;
+}
+
+.col-md-10 .tel-option {
+    font-size: 25px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 25px;
+    border: 1px solid #eee;
+    height: 50px;
+    background-color: white;
+    text-indent: 20px;
+    border: solid 1px #dadada;
+    color: darkgray;
+}
+
+.text-center #form-submit{
+    width: 100%;
+    height: 70px;
+    background-color: #03c75a;
+    color: white;
+    font-size: 20px;
+    margin-right: 20x;
+    border: none;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+
+footer{
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    margin-top: -70px;
+}
+
+#underline{
+    width: 100%;
+    margin: 30px 0;
+}
+#underline span{
+    border-right: 1px solid gray;
+    font-size: 14px;
+    width: 20%;
+    padding: 0 20px;
+    color: gray;
+}
+
+#underline span:hover{
+    text-decoration: underline;
+    color: #03c75a;
+    cursor: pointer;
+}
+
+#underline span:nth-child(2){
+    font-weight: bold;
+}
+#underline span:nth-child(4){
+    border: none;
+}
+
+footer #copyright{
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+footer #copyright a{
+   font-weight: bold;
+}
+
+footer #copyright a{
+    text-decoration: none;
+}
+
+footer #copyright a:hover{
+    text-decoration: underline;
+    color: #03c75a;
+}
+
+footer #copyright img{
+    width: 5%;
+}

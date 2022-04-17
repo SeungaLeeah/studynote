@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 정보 관리</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div data-include="inc/header.html"></div>
+
+        <!-- body -->
+        <section>
+            <p>
+                <a href="add.html">새 학과 추가</a>
+            </p>
+            <table class="table">
+                <colgroup>
+                    <col width="8.3%"/>
+                    <col width="9%"/>
+                    <col width="8.3%"/>
+                    <col width="6%"/>
+                    <col width="8.3%"/>
+                    <col width="8.3%"/>
+                    <col width="12%"/>
+                    <col width="5%"/>
+                    <col width="7%"/>
+                    <col width="9%"/>
+                    <col width="9%"/>
+                    <col width="8.3%"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="text-center">학생번호</th>
+                        <th class="text-center">이름</th>
+                        <th class="text-center">아이디</th>
+                        <th class="text-center">학년</th>
+                        <th class="text-center">주민번호</th>
+                        <th class="text-center">생년월일</th>
+                        <th class="text-center">전화번호</th>
+                        <th class="text-center">키</th>
+                        <th class="text-center">몸무게</th>
+                        <th class="text-center">학과번호</th>
+                        <th class="text-center">담당교수 일련번호</th>
+                        <th class="text-center">-</th>
+                    </tr>
+                </thead>
+                <tbody id="listBody"></tbody>
+            </table>
+        </section>
+
+        <!-- footer -->
+        <div data-include="inc/footer.html"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script>
+        // 페이지가 실행되면서 자동으로 동작해야 하므로 즉시 실행 함수 형태로 구현.
+        (async()=>{
+            // ajax 결과가 저장될 json
+            let json = null;
+
+            // ajax 요청
+            try{
+                json = await axios.get('http://localhost:3000/student');
+            }catch(e){
+                console.error(e);
+                    alert('요청을 처리하는데 실패했습니다.');
+                    return;
+                }
+                // ajax 결과가 존재한다면?
+                if(json != null){
+                    const listBody = document.querySelector("#listBody");
+                    const {data}=json;
+
+                    data.forEach((v,i) => {
+                        const tr = document.createElement("tr");
+                       
+                        // 학생번호를 출력한 후 첫 번째 칸을 tr에 추가
+                        const td1 = document.createElement("td");
+                        td1.innerHTML = v.id;
+                        tr.appendChild(td1);
+
+                        // 두 번째 칸을 생성 후 tr에 추가
+                        const td2 = document.createElement("td");
+                        tr.appendChild(td2);
+
+                        // 상세보기를 위한 링크로 구현된 학과 이름을 두 번째 칸에 추가
+                        // -> 어떤 학과를 열람할 것인가를 의미하는 id 값을 GET 파라미터로 전당함.
+                        // 대체로 id하는 이름의 변수는 그 대상을 식별하기 위한 고유한 값을 의미 (=일련번호)
+                        const a1 = document.createElement("a");
+                        a1.setAttribute('href', `view.html?id=${"v.id"}`);
+                        a1.innerHTML = v.name;
+                        td2.appendChild(a1);
+
+                        // 아이디를 포함하는 세 번째 칸을 tr에 추가
+                        const td3 = document.createElement("td");
+                        td3.innerHTML = v.userid;
+                        tr.appendChild(td3);
+
+                        // 학년을 포함하는 네 번째 칸을 tr에 추가
+                        const td4 = document.createElement("td");
+                        td4.innerHTML = v.grade;
+                        tr.appendChild(td4);
+
+                         // 주민번호를 포함하는 다섯 번째 칸을 tr에 추가
+                         const td5 = document.createElement("td");
+                        td5.innerHTML = v.idnum;
+                        tr.appendChild(td5);
+
+                         // 생년월일을 포함하는 여섯 번째 칸을 tr에 추가
+                         const td6 = document.createElement("td");
+                        td6.innerHTML = v.birthdate;
+                        tr.appendChild(td6);
+
+                         // 전화번호을 포함하는 일곱 번째 칸을 tr에 추가
+                         const td7 = document.createElement("td");
+                        td7.innerHTML = v.tel;
+                        tr.appendChild(td7);
+
+                         // 키를 포함하는 여덟 번째 칸을 tr에 추가
+                         const td8 = document.createElement("td");
+                        td8.innerHTML = v.height;
+                        tr.appendChild(td8);
+
+                        // 키를 포함하는 여덟 번째 칸을 tr에 추가
+                        const td9 = document.createElement("td");
+                        td9.innerHTML = v.weight;
+                        tr.appendChild(td9);
+
+
+                         // 학과번호를 포함하는 열번째 칸을 tr에 추가
+                         const td10 = document.createElement("td");
+                        td10.innerHTML = v.deptno;
+                        tr.appendChild(td10);
+
+                         // 담당교수의 일련번호를 포함하는 열한 번째 칸을 tr에 추가
+                         const td11 = document.createElement("td");
+                        td11.innerHTML = v.profno;
+                        tr.appendChild(td11);
+
+                        //열두번째 번째 칸을 tr에 추가
+                        const td12 = document.createElement('td');
+                        tr.appendChild(td12);
+                        
+
+                        // 어떤 항목을 수정할 것인지를 GET 파라미터로 담은 링크를 열두 번째 칸에 추가
+                        const a2 = document.createElement("a");
+                        a2.setAttribute('href', `edit.html?id=${v.id}`);
+                        a2.innerHTML= '수정';
+                        td12.appendChild(a2);
+
+                        // 어떤 항목을 삭제할 것인지를 dataset으로 저장하고 있는 링크를 열두 번째 칸에 추가
+                        const a3 = document.createElement("a");
+                        a3.setAttribute('href', `#`);
+                        a3.dataset.id = v.id;
+                        a3.dataset.name = v.name;
+                        a3.innerHTML = '삭제';
+                        a3.classList.add('btn-delete');
+                        td12.appendChild(a3);
+
+                        // 구성된 tr을 tbody에 추가
+                        listBody.appendChild(tr);
+
+                        // 삭제된 버튼에 대한 클릭 이벤트 구현
+                        a3.addEventListener('click', async e =>{
+                            e.preventDefault();
+                            const current = e.currentTarget;
+                            const id = current.dataset.id;
+                            const name = current.dataset.name;
+
+                            if(!confirm(`정말 ${name}(을)를 삭제하시겠습니까?`)){
+                                return;
+                            }
+                            let json = null;
+
+                            try{
+                                json = axios.delete(`http://localhost:3000/student/${id}`);
+                            }catch(e){
+                                console.error(e);
+                                alert('요청을 처리하는데 실패했습니다.');
+                                return;
+                            }
+                            if(json != null){
+                                // 클릭된 링크를 기준으로 가장 가까운 tr 태그를 상위 요소 중에서 찾아 제거함.
+                                current.closest('tr').remove();
+                            }
+                        });
+
+                    });
+                }
+            })();
+    </script>
+</body>
+</html>
