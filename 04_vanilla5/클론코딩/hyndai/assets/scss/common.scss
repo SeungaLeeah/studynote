@@ -1,0 +1,27 @@
+// color
+$colorBlue:	#002c5f;
+$colorAqua:#00aad2;
+$colorWarmGray:#f6f3f2;
+$colorBrown:#dfd5cf;
+$colorWhite:#ffffff;
+$colorBlack:#000000;
+$colorGray:#7e7e7e;
+$colorDarkGray:#535353;
+$colorExLightGray:#d9d9d9;
+$colorLightGray: #d5d5d5;
+
+//font-size
+$fontS:12px;
+$fontM: 14px;
+$fontML: 18px;
+$fontL: 40px;
+
+
+//font
+@font-face {
+    font-family: 'Harmonyfont';
+
+    src: url('../fonts/Harmony+B.ttf') format('truetype');
+    src: url('../fonts/Harmony+M.ttf') format('truetype');
+    src: url('../fonts/Harmony+L.ttf') format('truetype');
+}
