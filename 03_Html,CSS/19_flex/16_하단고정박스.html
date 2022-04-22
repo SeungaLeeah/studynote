@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        .map_wrap{
+            /* footer의 부모 속성 */
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .footer{
+            background-color: #06f;
+            height: 100px;
+            /* margin-top은 위쪽으로 여백 다 차지함,
+            원래는 걱정할 수 없는 속성이지만, 부모 속성에 display:flex와 flex-direction:column 속성이
+            적용된 경우에만 가능함. */
+            margin-top: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="map_wrap">
+        <footer class="footer">
+            <h1>하단 고정박스</h1>
+        </footer>
+    </div>
+</body>
+</html>

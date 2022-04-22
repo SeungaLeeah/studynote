@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            border: 2px dotted #06f;
+            padding: 10px;
+            display: flex;
+            /* 부모에 flex-direction: column을 값을 부여하고 */
+            flex-direction: column;
+            height: 300px;
+        }
+        .icon_360{
+            border: 2px solid #f0f;
+            padding: 10px;
+            /* 자식요소에 margin:auto 값을 부여하면 자식요소를 중앙에 배치하기 위한 요소 */
+            margin: auto;
+            width: 360px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <i class="icon icon_360" aria-hidden="true">아이템</i>
+    </div>
+</body>
+</html>
