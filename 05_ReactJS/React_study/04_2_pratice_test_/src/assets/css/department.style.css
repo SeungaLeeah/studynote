@@ -1,0 +1,9 @@
+.tableStyle{
+    border: 1px solid #1A6DED;
+    padding: 7px;
+    cursor: pointer;
+}
+.trStyle{
+    background-color: #1A6DED;
+    color: #fff;
+}

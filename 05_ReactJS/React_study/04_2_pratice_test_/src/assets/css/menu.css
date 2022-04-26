@@ -1,0 +1,23 @@
+.mainLink{
+    font-size: 18px;
+    color: #151817;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mainLink:visited{
+    color: #151817;
+}
+
+.mainLink:hover{
+    color: #fff;
+    background-color: #1A6DED;
+    padding: 5px 7px;
+}
+
+.active{
+    border: 2px dotted #1A6DED;
+    box-sizing: border-box;
+    padding: 3px 5px;
+    background-color: #fff;
+}
