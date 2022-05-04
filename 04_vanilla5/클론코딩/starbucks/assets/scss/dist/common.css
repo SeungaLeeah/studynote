@@ -4,16 +4,10 @@
 * @description : 스타벅스 클론코딩
  */
 /* Main Color */
-/* Main font */
-@font-face {
-  font-family: "Nanum Gothic", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
-}
 /* Default */
 * {
   padding: 0;
   margin: 0;
-  font-family: "Santana";
   list-style: none;
   text-decoration: none;
   font-family: "Nanum Gothic", sans-serif;
@@ -26,18 +20,6 @@ body {
   position: relative;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -48,19 +30,7 @@ body {
   margin: none;
 }
 
-.block {
-  display: block;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
-.text-blind {
+.blind {
   overflow: hidden;
   display: inline-block;
   position: relative;
@@ -70,10 +40,6 @@ body {
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
-}
-
-.blind {
-  display: none;
 }
 
 button {
@@ -97,4 +63,8 @@ a {
 
 li > a {
   display: block;
+}
+
+.text_blind {
+  text-indent: -9999px;
 }

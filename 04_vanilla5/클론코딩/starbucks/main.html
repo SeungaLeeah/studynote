@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks Coffee Korea</title>
+    <title>Starbucks Korea</title>
     <!-- 아이콘 사이트  -->
     <script src="https://kit.fontawesome.com/b8c071f28b.js" crossorigin="anonymous"></script>
     <!-- css 적용 -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
-
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <!-- 주소창 아이콘 삽입 -->
     <link rel="shortcut icon" href="./assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/logo.png">
@@ -24,35 +26,277 @@
     <!-- NAV -->
     <div data-include="inc/nav.html" id="include_nav"></div>
 
-    <!-- Mainbg -->
-    <section1 class="main-bg"></section1>
 
-    <!-- promotion -->
-    <section2 class="promotion"></section2>
+<!-- side card -->
+<div id="side_info" class="side_info">
+    <img src="./assets/img/WIP8gI_20220412094131003.png" alt="find your taste"/>
+    <img src="./assets/img/5vBa7F_20220331095015399.png" alt="현대카드"/>
+</div>
 
-    <!-- sub-promotion -->
-    <section3 class="sub-promotion"></section3>
+<!-- Main -->
+<main>
+    <div id="container" class="containern">
+    <!-- Season new-->
+    <section id="season_new" class="season_new">
+        <div class="new-drinks inner">
+            <div class="text-img">
+                <p class="text_blind">FIND YOUR TASTE</p>
+                <img src="./assets/img/2022_Summer1_main_slogun.png" alt="text-img">
+                <button class="all_info_btn" type="button">자세히 보기</button>
+            </div>
+            <div class="drink-rollin">
+                <p class="text_blind">롤린 민트 초코 콜드 브루</p>
+                <img src="./assets/img/2022_Summer1_main_rollinmint.png" alt="rollinmint">
+            </div>
+            <div class="drink-punch">
+                <p class="text_blind">펀치 그래피티 블렌디드</p>    
+                <img src="./assets/img/2022_Summer1_main_punchgraffiti3.png" alt="punch">
+            </div>
+            <div class="drink-pomelo">
+                <p class="text_blind">포멜로 플로우 그린 티</p>
+                <img src="./assets/img/2022_Summer1_main_pomeloflow.png" alt="pomelo">
+            </div>
+        </div>
+    </section>
 
-    <!-- reward-bg -->
-    <section4 class="reward-bg"></section4>
+  <!-- notices  -->
+    <section id="notices" class="notices">
+        <div class="right">
+        <div class="notices_container inner">
+            <div class="notices_title">
+                <h3 class="text_blind">공지사항</h3>
+            </div>
 
-    <!-- new-bean -->
-    <section5 class="new-bean"></section5>
+    </div>
 
-    <!-- reserve -->
-    <section6 class="reserve"></section6>
+            <div id="notices_slide" class="notices_slide">
+                <ul>
+                    <li class="notices_list"><a href="#">시스템 개선 및 점검 안내</a></li>
+                    <li class="notices_list"><a href="#">홈페이지 이용약관 / 스타벅스 카드 이용약관 개정 안내</a></li>
+                    <li class="notices_list"><a href="#">사이렌 오더/딜리버리 음료 기본 결정 변경 안내 (HOT -> ICE)</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <!-- favorite-bg -->
-    <section7 class="favorite-bg"></section7>
+        <div class="notices_icon">
+            <a href="#"><img src="./assets/img/btn_notice_plus.png" alt="notices_plus"></a>
+        </div>
 
-    <!-- magazine -->
-    <section8 class="magazine"></section8>
+<!-- promotion bar -->
+        <div class="promotion">
+            <div class="promotion_wrap clean">
+                <div class="promotion_title">
+                    <h3>스타벅스 프로모션</h3>
+                </div>
+                <div class="promotion_btn">
+                    <img src="./assets/img/btn_prom_down.png" alt="prom_down" id="promotiom_btn">
+                </div>
+            </div>
+        </div>
 
-    <!-- near-store -->
-    <section9 class="near-store"></section9>
+<!-- promotion_banner -->
+        <div id="promotion_banner" class="promotion_banner">
+            <div class="promotion_container">
+                <!-- promotion_contents -->
+                <div class="promotion_contents">
+                    <div class="contents_slide">
+                        <a href="#">
+                            <img src="./assets/img/fs8Fa0_20220411134210197.jpg" alt="">
+                            <button class="all_info_btn" type="button">자세히 보기</button>
+                            <h2 class="text_blind">
+                                스타벅스와 함께 내가 좋아하는 것을 즐기는 나만의 여름!
+                                <p>기간: 2022년 4월 12~ 2022년 6월 13일</p>
+                            </h2>
+                        </a>
+                    </div>
+                    <div class="contents_slide">
+                        <a href="#">
+                            <img src="./assets/img/Y7YBKr_20220404160419657.jpg" alt="reserve_summer">
+                            <button class="all_info_btn" type="button">자세히 보기</button>
+                            <h2 class="text_blind">
+                                STARBUCKS RESERVE SUMMER 스타벅스 리저브 서머 원두&커피
+                                <p>기간:2022년 4월 5일~ 2022년 8월 25일</p>
+                            </h2>
+                        </a>
+                    </div>
+                    <div class="contents_slide">
+                        <a href="#">
+                            <img src="./assets/img/wW63vb_20211231154557623.jpg" alt="bonus_star">
+                            <button class="all_info_btn" type="button">자세히 보기</button>
+                            <h2 class="text_blind">
+                                회원 계정에 등록된 스타벅스 카드로 결제 시, 1만원당 별 1개를 즉시 추가로 드립니다.
+                                <p>기간:2022년 1월1일~2022년 12월 31일</p>
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- promotion_pause_btn -->
+                <div class="promotion_pause">
+                    <div class="promotion_info_btn">
+                        <div class="promotion_stop_btn">
+                            <img src="./assets/img/main_prom_stop.png" alt="prom_stop">
+                        </div>
+                        <div class="promotion_start_btn">
+                            <img src="./assets/img//main_prom_play.png" alt="prom_play">
+                        </div>
+                    </div>
+                        <div class="promotion_info"></div>
+                </div>
+            </div>
 
+            <!-- promotion_arrow_btn -->
+            <div class="promotion_arrow_btn">
+                <div class="arrow_left_btn">
+                    <img src="./assets/img/arrow_left_on.png" alt="arrow_left_on">
+                </div>
+                <div class="arrow_right_btn">
+                    <img src="./assets/img/arrow_right_on.png" alt="arrow_right_on">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- reward -->
+    <section id="reward" class="reward">
+        <div class="reward_conents inner">
+
+            <div class="reward_img clean">
+                <img src="./assets/img/rewards-logo.png" alt="rewards-logo">
+            </div>
+            <div class="reward_info">
+                <div class="reward_info_text1">
+                    <h2>스타벅스만의 특별한 혜택, 스타벅스 리워드</h2>
+                    <p>
+                        스타벅스 회원이세요? 로그인을 통해 나만의 리워드를 확인해보세요.
+                        <br/>
+                        스타벅스 회원이 아니세요? 가입을 통해 리워드 혜택을 즐기세요.
+                    </p>
+                </div>
+                <div class="reward_info_buttons">
+                    <button type="button" class="singup">회원가입</button>
+                    <button type="button" class="login">로그인</button>
+                </div>
+                <div class="reward_gift">
+                    <p>
+                        회원 가입 후, 스타벅스 e-Gift Card를 <b>"나에게 선물하기"로 구매하시고, 편리하게 등록하세요!</b>
+                        <br/>
+                    </p>    
+                </div>
+                <div class="reward_btn">
+                    <button type="button" class="gift_btn">e-Gift Card 선물하기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- coffee_bean -->
+    <section id="sulawesi" class="sulawesi">
+        <img src="./assets/img/2022_Summer1_bean_bg_left.png" alt="왼쪽배경"/>
+        <img src="./assets/img/2022_Summer1_bean_bg_right.png" alt="오른쪽배경"/>
+        <div class="sulawesi inner">
+            <div class="new_bean">
+                <img src="./assets/img/2022_Summer1_bean_bean.png" alt=""/>
+            </div>
+            <div class="bean_info">
+                <img src="./assets/img/2022_Summer1_bean_text.png" alt="원두"/>
+                <p class="text_blind">여름의 시작을 함께할</p>
+                <h2 class="text_blind">술라웨시 토라자 250g</h2>
+                <p class="text_blind">
+                    블랙 세서미의 고소한 풍미와 구운 마쉬멜로의
+                    <br/>
+                    끝맛이 조화로운 시즌 한정 원두를 만나보세요.
+                </p>
+            </div>
+            <div class="bean_info_btn">
+                <a class="all_info_btn" href="#">자세히 보기</a>
+            </div>
+        </div>
+    </section>
+
+<!-- new_reserve --> 
+    <section id="reserve" class="reserve">
+        <img src="./assets/img/reserve_2022_indonesia_leaf1.png" alt="왼쪽배경1"/>
+        <img src="./assets/img/reserve_2022_indonesia_leaf2.png" alt="왼쪽배경2"/>
+        <img class="reserve_coffee" src="./assets/img/reserve_2022_indonesia_visual3.png" alt="커피사진"/>
+        <div class="indonesia inner">
+            <img src="./assets/img/reserve_2022_indonesia_title.png" class="reserve_title"/>
+            < class="text_blind">INDONESIA <br/> WEST JAVA</p>
+            <div class="reserve_info"><a href="#" class="all_info_btn">자세히 보기</a></div>
+        </div>
+    </section>
+
+<!-- pick_your_favorite -->
+    <section id="pick" class="pick">
+        <div class="pick_container inner">
+            <div class="pick_title">
+                <img src="./assets/img/fav_prod_txt01.png" alt="메인 텍스트"/>
+                <p class="text_blind">PICK YOUR FAVORITE</p>
+                <img src="./assets/img/fav_prod_txt02.png" alt="서브 텍스트"/>
+                <h3 class="text_blind">다양한 메뉴를 스타벅스에서 즐겨보세요</h3>
+                <p class="text_blind">
+                    스타벅스만의 특별함을 경험할 수 있는 <b>최상의 선택 음료</b><br/>
+                    스타벅스 커피와 완벽한 어울림을 <b>자랑하는 푸드</b><br/>
+                    다양한 시도와 디자인으로 <b>가치를 더하는 상품</b><br/>
+                    소중한 사람에게 마음을 전하는 가장 좋은 방법 <b>스타벅스 카드</b><br/>
+            </p>
+                <div class="pick_info">
+                    <a href="#" class="all_info_btn">자세히 보기</a>
+                </div>
+            </div>
+            <div class="pick_img">
+                <img src="./assets/img/2022_Summer1_pick_img.png">
+            </div>
+        </div>
+    </section>
+    
+<!-- reserve_magazine -->
+    <section id="reserve_magazine" class="reserve_magazine">
+        <div class="magazine inner">
+            <div class="magazine_info">
+                <img src="./assets/img/reserve_text_pc_220120.png" alt="리저브 매거진"/>
+                <h2 class="text_blind">RESERVE MAGAZINE</h2>
+                <p class="text_blind">리저브 매거진에서 일상 속 특별함을 만나보세요.</p>
+                <div class="magazine_info_btn">
+                    <a href="#" class="all_info_btn bg_black">자세히 보기</a>
+                </div>
+            </div>
+            <div class="magazine_img">
+                <img src="./assets/img/reserve_visual_pc_220119.png">
+            </div>
+        </div>
+    </section>
+
+<!-- store -->
+    <section id="store" class="store">
+        <div class="store_container inner">
+            <div class="store_img">
+                <img src="./assets/img/store_exp_img01.png" />
+                <img src="./assets/img/store_exp_img02.png" />
+                <img src="./assets/img/store_exp_img03.png" />
+                <img src="./assets/img/store_exp_img04.png" />
+            </div>
+            <div class="store_text">
+                <img src="./assets/img/store_txt01.png" class="store_title1"/>
+                <h3 class="text_blind">스타벅스를 가까이에서 경험해보세요</h3>
+                <h4 class="text_blind">고객과 가장 가까이 있는 매장을 찾아보세요</h4>
+                <img src="./assets/img/store_txt02.png" class="store_title2"/>
+                <p class="text_blind">
+                    차별화된 커피 경험을 누릴 수 있는 <b>리저브 매장</b><br/>
+                    다양한 방법으로 편리하게 즐길 수 있는 <b>드라이브 스루 매장</b><br/>
+                    함께해서 더 따뜻할 수 있는 지역사회 소통 공간 <b>커뮤니티 매장</b><br/>
+                </p>
+                <div class="store_search">
+                    <a href="#" class="all_info_btn bg_black">매장 찾기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</main>
     <!-- footer -->
-    <div data-include="./inc/footer.html" id="include_footer"></div>
+    <div data-include="inc/footer.html" id="include_footer"></div>
     
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

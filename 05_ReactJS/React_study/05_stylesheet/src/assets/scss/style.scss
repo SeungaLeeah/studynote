@@ -1,0 +1,23 @@
+@import './colors.scss';
+@import './common.scss';
+
+.myScss{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .myScssBox{     // .myScss .myScssBox
+        cursor: pointer;    
+
+        //--> .red 클래스가 .box와 함께 사용되었을 때
+        // -> .myScss .myScssBox.red
+        //.myScss{ 안에 있는 .myScssBox{}는 자손셀렉터를 의미함}
+        // -> &가 붙어있는 애들은 띄어쓰기가 아니라 붙여서 써줘야함
+        &.red   { background-color: $red; @include myMixin(1);}
+        &.green { background-color: $green; @include myMixin(2);}
+        &.blue { background-color: $blue; @include myMixin(3);}
+        &.orange { background-color: $orange; @include myMixin(4);} 
+        &.yellow { background-color: $yellow; @include myMixin(5);}
+        &.pink { background-color: $pink; @include myMixin(6);}  
+    }
+}

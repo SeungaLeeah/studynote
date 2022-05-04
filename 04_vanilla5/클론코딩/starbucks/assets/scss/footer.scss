@@ -1,0 +1,121 @@
+/* @filename   : footer.scss
+* @author      : 이승아
+* @description : 스타벅스 클론코딩
+ */
+
+@import './common.scss';
+
+/* Footer 통합 구현 */
+
+h3,
+img{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 0 5px 0;
+    letter-spacing: 1px;
+}
+a{
+    color: $colorWhite;
+    word-spacing: -3px;
+    letter-spacing: -1px;
+    font-size: 12px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+footer{
+    width: 100%;
+    height: 534px;
+    line-height: 22px;
+
+    .footer-container{
+        background-color: $colorHoverBg;
+        position: relative;
+        bottom: 0;
+        display: block;
+        color: $colorWhite;
+        word-spacing: -2px;
+        font-size: 12px;
+        height: 100%;
+
+        /* 회사 소개 */
+        .company-info{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        /* 정부 소개 */
+        .goverment{
+            background-color: #282828;
+            height: 85px;
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+            
+
+            .goverment-info>ul{
+                    display: flex;
+                    flex-direction: row;
+                    img{
+                        width:100%
+                    }
+            }
+        }
+
+        .policy{
+            margin-top: 30px;
+
+            .footer-text{
+                display: flex;
+                justify-content: space-between;
+                
+                li{
+                    box-sizing: border-box;
+                    border-left:1px solid rgba(113, 113, 113, 0.3) ;
+                    padding-left: 15px;
+                    font-size: 12px;
+
+                    &:first-child{
+                        border-left: none;
+                    }    
+                }
+                .main-color{
+                    color: rgb(0, 225, 79);
+                    font-weight: bolder;
+                }
+            }
+            .footer-buttons{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+                li{
+                    padding: 10px 5px;
+                    button{
+                        border: 2px solid $colorWhite;
+                        background-color: $colorHoverBg;
+                        padding: 7px 20px;
+                        border-radius: 3px;
+                        text-align: center;
+                    }
+                }
+            }
+            .company-number{
+                display: flex;
+                justify-content: center;
+                
+                li{
+                    padding: 5px 12px;
+                    opacity: 0.5;
+                }
+            }
+            .copyright{
+                text-align: center;
+                opacity: 0.5;
+            }
+        }
+    }
+}

@@ -33,18 +33,11 @@ $colorBlack:#000;
 $colorWhite:#fff;
 $colorBackground:#f6f5ef;
 
- /* Main font */
- @font-face{
-    font-family: 'Nanum Gothic', sans-serif;
-    src:url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-}
-
-
+ 
 /* Default */
 * { 
     padding: 0;
     margin: 0;  
-    font-family: "Santana"; 
     list-style: none; 
     text-decoration: none;
     font-family: 'Nanum Gothic', sans-serif;
@@ -57,17 +50,6 @@ body{
     position: relative;
 }
 
-.text-center { 
-    text-align: center; 
-}
-
-.text-right {
-    text-align: right; 
-}
-
-.text-left {
-    text-align: left; 
-}
 
 .inner{
     width: 1100px;
@@ -79,18 +61,7 @@ body{
     margin: none;
 }
 
-.block {
-    display: block; 
-}
-
-.pull-left {
-    float: left; 
-    }
-.pull-right {
-    float: right; 
-    }
-
-.text-blind{
+.blind{
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -101,10 +72,6 @@ body{
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
 }
-.blind{
-    display: none;
-}
-
 
 button{
     border: none;
@@ -127,4 +94,9 @@ a{
 
 li>a{
     display: block;
+}
+
+   
+.text_blind{
+    text-indent: -9999px;
 }
