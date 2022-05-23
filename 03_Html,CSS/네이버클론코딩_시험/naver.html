@@ -176,9 +176,12 @@
                     /*생년월일 검사*/
                     regexHelper.birthYear('#year', '태어난 년도를 정확하게 입력하세요.');
                     regexHelper.maxLength('#year', 4, '태어난 년도 4자리를 정확하게 입력하세요.');
+                    regexHelper.value('#month','태어난 월을 선택해주세요.')
                     regexHelper.birthDay('#day','태어난 일을 정확하게 입력하세요.');
                     regexHelper.maxLength('#day', 2, '태어난 일 2자리를 정확하게 입력하세요.');
 
+                    /*성별 검사*/
+                    
                     /* 이메일 검사 */
                     regexHelper.value('#email', '이메일을 입력하세요.');
                     regexHelper.email('#email', '이메일 주소가 잘못되었습니다.');

@@ -24,34 +24,26 @@ const data ={
             "http://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom_220429.png?v=220228"
         ],
             
-      },
-
-      baneer:{
-        top: "http://www.baskinrobbins.co.kr/upload/main/1714824579.jpg"
-      },
-      event:{
-         title: "http://www.baskinrobbins.co.kr/assets/images/main/h_event.png"
-        },
+    },
 
     menu:{
-        bgImg:"http://www.baskinrobbins.co.kr/assets/images/main/bg_menu.jpg",
-        title:"http://www.baskinrobbins.co.kr/assets/images/main/h_menu.png",
-        mainImg:"http://www.baskinrobbins.co.kr/assets/images/main/img_menu_list_220429.png?v=220429"
+        title:["http://www.baskinrobbins.co.kr/assets/images/main/h_menu.png"],
+        mainImg:["http://www.baskinrobbins.co.kr/assets/images/main/img_menu_list_220429.png?v=220429"]
     },
     store:
         {
-            title:"http://www.baskinrobbins.co.kr/assets/images/main/h_store.png",
-            Img:"http://www.baskinrobbins.co.kr/assets/images/main/img_store.jpg"
+            title:["http://www.baskinrobbins.co.kr/assets/images/main/h_store.png"],
+            Img:["http://www.baskinrobbins.co.kr/assets/images/main/img_store.jpg"]
         },
     
     delivery:  
         {
-            order:"http://www.baskinrobbins.co.kr/assets/images/main/h_happyorder_delivery.png",
-            tel:"http://www.baskinrobbins.co.kr/assets/images/main/img_happyorder_delivery.png"
+            order:["http://www.baskinrobbins.co.kr/assets/images/main/h_happyorder_delivery.png"],
+            tel:["http://www.baskinrobbins.co.kr/assets/images/main/img_happyorder_delivery.png"]
         },
 
     sns:{
-        title:"http://www.baskinrobbins.co.kr/assets/images/main/h_sns.png",
+        title:["http://www.baskinrobbins.co.kr/assets/images/main/h_sns.png"],
         icon:[
             "http://www.baskinrobbins.co.kr/assets/images/main/sns_facebook.png",
             "http://www.baskinrobbins.co.kr/assets/images/main/sns_twitter.png",
@@ -59,7 +51,7 @@ const data ={
             "http://www.baskinrobbins.co.kr/assets/images/main/sns_instagram.png",
             "http://www.baskinrobbins.co.kr/assets/images/main/sns_youtube.png"
         ],
-        sub:"http://www.baskinrobbins.co.kr/assets/images/main/tit_sns.png"
+        sub:["http://www.baskinrobbins.co.kr/assets/images/main/tit_sns.png"]
     },
     footer:{
         brandLogo:[
@@ -70,7 +62,7 @@ const data ={
             "http://www.baskinrobbins.co.kr/assets/images/common/btn_ccm_2.png",
             "http://www.baskinrobbins.co.kr/assets/images/common/btn_ksa.png"
         ],
-        footerLogo: "http://www.baskinrobbins.co.kr/assets/images/common/footer_logo.png"
+        footerLogo: ["http://www.baskinrobbins.co.kr/assets/images/common/footer_logo.png"]
     }
 }; 
 

@@ -26,7 +26,7 @@ const StoreContainer = styled.div`
   }
   `;
 const StoreSection = () => {
-  const {store:{title,img}} = data;
+  const {store:{title,Img}} = data;
   const {delivery:{order,tel}} = data;
   return (
     <StoreContainer>
@@ -34,7 +34,7 @@ const StoreSection = () => {
         <div className="allSet">
           <div className="store">
           <img src={title} alt="" />
-          <Link to=''><img src={img} alt="" /></Link>
+          <Link to=''><img src={Img} alt="" /></Link>
           </div>
           <div className="delivery">
           <img src={order} alt="" />
@@ -45,4 +45,4 @@ const StoreSection = () => {
     </StoreContainer>
 );
 };
-export default StoreSection;
+export default React.memo(StoreSection);

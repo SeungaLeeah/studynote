@@ -1,24 +1,22 @@
 import React from 'react';
 import Footer from './components/Footer';
-import NavBar from './components/NavBar';
 import Content from './pages/Content';
-import BannerSection from './components/BannerSection'
-import { Routes, Route } from 'react-router-dom';
+import BannerSection from './components/BannerSection';
+import HeaderNav from './components/HeaderNav';
 
 
 const App = () => {
   return (
     <>
     {/* NavBar */}  
-    <NavBar/> 
+    <HeaderNav/> 
 
     {/* MainBanner */}
     <BannerSection/>
 
     {/* Content */}
-    <Routes>
-      <Route path='/' element={<Content/>}/>
-    </Routes>
+    <Content/>
+
     {/* Footer */}
     <Footer/>
     </>
