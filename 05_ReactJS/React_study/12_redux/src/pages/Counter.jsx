@@ -1,11 +1,11 @@
-import React from 'react'
+import React,{memo} from 'react'
 
 // 상태값을 로드하기 위한 hook과 action함수를 dispatch할 hook함조
 import{useSelector, useDispatch} from 'react-redux';
 // Slice에 정의된 액션함수를 참조 => plus 와 minus가 상태값 갱신하는 함수이다.
 import {plus, minus} from '../slices/CounterSlice';
 
-const Counter = () => {
+const Counter = memo(() => {
   // 컴포넌트가 마운트 될 때 콘솔의 모든 내용을 삭제함(출력 결과가 복잡해 지는 것을 방지)
   React.useEffect(()=> console.clear(),[]);
 
@@ -33,9 +33,9 @@ const Counter = () => {
         width: '50px',
         textAlign: 'center'
       }}>{number}</h2>
-      <button onClick={(e)=>{dispatch(minus(3));}}></button>
+      <button onClick={(e)=>{dispatch(minus(3));}}>-3</button>
     </div>
-  )
-}
+  );
+});
 
-export default React.memo(Counter);
+export default Counter;

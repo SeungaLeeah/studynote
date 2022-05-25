@@ -14,7 +14,7 @@ const App = () => {
       </nav>
       <hr/>
       <Routes>
-        <Route path='/couter' element={<Counter/>}/>
+        <Route path='/counter' element={<Counter/>}/>
         <Route path='/department' element={<Department/>}></Route>
       </Routes>
     </div>

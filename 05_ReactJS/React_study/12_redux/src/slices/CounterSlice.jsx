@@ -1,5 +1,5 @@
 /** URL 1개당 Slice 1개이다. =>CRUD */
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from '@reduxjs/toolkit'
 
 /** Slice 정의 (Action함수 + Reducer의 개념) */
 const counterSlice = createSlice ({
@@ -14,7 +14,7 @@ const counterSlice = createSlice ({
     // 컴포넌트에서 이 함수를 호출할 때, 전달되는 파라미터는 action.payload로 전달된다.
     // initialState와 동일한 구조의 JSON을 리턴한다.
     reducers: {
-        pluse: (state, action) =>{
+        plus: (state, action) =>{
             /* state에는 기존에 저장 되어있는 상태값 initialState가 들어오고, 
             외부 이벤트 발생으로 부터 전달받은 값을 action에서 action.payload라는 하위 값으로 보내준다. */
             const numberValue = state.number + action.payload;
@@ -50,7 +50,7 @@ const counterSlice = createSlice ({
 });
 
 // 외부에서 사용할 수 있는 action함수들 내보내기
-export const {pluse, minus} = counterSlice.action;
+export const {plus, minus} = counterSlice.actions;
 
 // 리듀서 객체 내보내기 => reducers이 아닌 reducer임으로 주의해야함.
 export default counterSlice.reducer;
