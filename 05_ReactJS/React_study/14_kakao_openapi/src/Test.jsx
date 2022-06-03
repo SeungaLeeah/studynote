@@ -6,6 +6,7 @@ import { getKakaoSearch } from './slices/KakaoSlice';
 
 const Test =memo(()=>{
   const dispatch =useDispatch();
+  //const {meta, documents, loading, error} = useSelector((state)=> state.kakao) => 상태값 뽑아오기
   const {meta, documents, loading, error} = useSelector((state)=> state.kakao);
 
   React.useEffect(()=>{
@@ -19,6 +20,7 @@ const Test =memo(()=>{
 
   return (
     loading ? "loading..." :(
+      /* JSON.stringify란? =>  JavaScript 값이나 객체를 JSON 문자열로 변환 */
       error ? JSON.stringify(error): (
         <>
           <h1>Meta</h1>

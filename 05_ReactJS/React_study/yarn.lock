@@ -1026,10 +1026,10 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@7.18.0":
-  version "7.18.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.0.tgz#6d77142a19cb6088f0af662af1ada37a604d34ae"
-  integrity sha512-YMQvx/6nKEaucl0MY56mwIG483xk8SDNdlUwb2Ts6FUpr7fm85DxEmsY18LXBNhcTz6tO6JwZV8w1W06v8UKeg==
+"@babel/runtime@7.18.3":
+  version "7.18.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
+  integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2526,12 +2526,12 @@ axe-core@^4.3.5:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.4.2.tgz#dcf7fb6dea866166c3eab33d68208afe4d5f670c"
   integrity sha512-LVAaGp/wkkgYJcjmHsoKx4juT1aQvJyPcW09MLCjVTh3V2cc6PnyempiLMNH5iMdfIX/zdbjUx2KDjMLCTdPeA==
 
-axios-hooks@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/axios-hooks/-/axios-hooks-3.0.4.tgz#73aa7b234ef5bb70ffbf8b580eda72fa8c369bfb"
-  integrity sha512-uGHFJrRRWUhygijtf9Y84sKaVFblXFUlk1KxuHaACAfXfcMu2HyxIFGJ/1UhBKINz/rR0Ee4/9BAdrPDoyuoGw==
+axios-hooks@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/axios-hooks/-/axios-hooks-3.1.0.tgz#0b6152aa3acee5bd9e24b16a15e64a7c53053093"
+  integrity sha512-5/Q7qdA4pzI+JAwt7emeEC+wA0WfHzwd6JS0ThtZae/56/MOPkglHRcYWnOInNZeiM+toEIVbwDKrJSSkqzffQ==
   dependencies:
-    "@babel/runtime" "7.18.0"
+    "@babel/runtime" "7.18.3"
     dequal "2.0.2"
     lru-cache "6.0.0"
 

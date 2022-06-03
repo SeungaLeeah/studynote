@@ -22,10 +22,9 @@ ChartJs.register (
 
 const BarChartView =memo (({chartData})=> {
     /** 그래프 옵션 */
-
     const options={
         //indexAxis: 그래프 축 식별자
-        indexAxis:'y',
+        indexAxis:'x',
         responsive: true,
         plugins:{
             legend:{
@@ -41,7 +40,7 @@ const BarChartView =memo (({chartData})=> {
     /** chart에 표시될 데이처 (막대그래프용) */
     const data ={
         //x축에 나타날 항목들
-        label:chartData.movieNm,
+        labels:chartData.movieNm,
         // y축에 값을 비롯한 기타 옵션들
         datasets:[{
             //그래프 제목

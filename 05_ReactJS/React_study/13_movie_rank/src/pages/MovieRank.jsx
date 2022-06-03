@@ -39,6 +39,7 @@ const MovieRank = memo(() =>{
 
      // 이 컴포넌트가 화면에 마운트 되었는지 확인하기 위한 hook
      const mountedRef = useMountedRef();
+     
      // 그래프에 전달할 데이터
      const [chartData, setChartData]= useState();
 

@@ -71,7 +71,7 @@ const Titanic = () => {
 
     /** 드롭다운의 선택 상태를 저장하기 위한 상태변수 */
     const onSelectChange = React.useCallback(e =>{
-        e.preventDefaulte();
+        e.preventDefault();
 
         // 드롮다운의 입력값 취득
         const current = e.target;
