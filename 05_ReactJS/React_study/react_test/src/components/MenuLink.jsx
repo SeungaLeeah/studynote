@@ -36,7 +36,7 @@ const MenuLinkContainer = styled (NavLink)`
         URL이 현재 메뉴를 가르키는 경우(클론이 아닌 점에 주의)
         활성 메뉴에 적용되는 기본 클래스 이름이 'active'이다.
     */
-   &:active{
+   &.active{
        text-decoration: underline;
        color:#22b8cf;
 

@@ -1,4 +1,6 @@
 import React,{ memo } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import Top from './components/Top';
 import Covid19 from './pages/Covid19';
 
@@ -6,7 +8,9 @@ const App = memo(() =>{
     return (
       <div>
         <Top/>
-        <Covid19/>
+        <Routes>
+        <Route path="/covid/*" element={<Covid19 />} />
+        </Routes>
       </div>
   );
 });
