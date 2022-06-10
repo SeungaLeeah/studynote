@@ -1,0 +1,92 @@
+** SQL 연산자
+
+문1) 교수테이블(professor)에서 급여가 300~400만원 사이인 교수의 이름과 급여를 BETWEEN 연산자를 사용하여 조회하시오.
+----------------------------------
+SELECT name, sal FROM professor
+WHERE sal BETWEEN 300 AND 400;
+
+
+문2) 교수 테이블(professor)에서 직급이 조교수 또는 전임강사인 교수의 번호, 이름, 직급, 학과번호를 IN 연산자로 조회하시오.
+----------------------------------
+SELECT profno, name, position, deptno
+FROM professor
+WHERE position IN ('조교수', '전임강사');
+
+
+문3) 학과 이름에 '공학'이라는 단어가 포함된 모든 학과의 학과번호,이름, 위치를 조회하시오.
+----------------------------------
+SELECT deptno, dname, loc FROM department
+WHERE dname LIKE '%공학%';
+
+
+문4) 학생 테이블에는 해당 학생의 담당교수가 결정된 경우 교수번호가 함께 저장되어 있다.담당교수가 결정된 학생의 학번, 이름, 학년, 담당교수번호를 조회하시오.
+----------------------------------
+SELECT studno, name, grade, profno FROM student
+WHERE profno IS NOT NULL;
+
+
+문5) 102번 학과의 학생 중에서 4학년 학생이거나, 소속된 학과에 상관없이 1학년 학생들의 이름, 학년, 학과 번호를 출력하여라.
+----------------------------------
+SELECT name, grade, deptno FROM student
+WHERE deptno=102 AND grade=4 OR grade=1;
+
+
+
+
+** 정렬, 부분조회
+
+문1) 학생 테이블에서 학년을 내림차순으로 정렬하여 이름, 학년, 주민등록번호를 출력하여라.
+----------------------------------
+SELECT name, grade, idnum FROM student
+ORDER BY grade DESC;
+
+
+문2) 학생 테이블에서 101번 학과에 소속된 학생들의 이름, 학년, 학과번호를 생년월일이 빠른 순으로  출력하여라.
+----------------------------------
+SELECT name, grade, deptno FROM student
+WHERE deptno=101
+ORDER BY birthdate ASC;
+
+
+문3) 학생 테이블에서 이름, 학번, 학년을 학년 순으로 정렬하여 조회하시오. 단, 같은 학년에 대해서는 이름순으로 출력하시오.
+----------------------------------
+SELECT name, deptno, grade FROM student
+ORDER BY grade ASC, name ASC;
+
+
+문4) 교수 테이블에서 급여가 5번째로 높은 교수의 이름, 직급, 급여를 조회하시오.
+급여가 높은 순으로 정렬된 데이터의 4번째 위치부터 1건을 추출한다.
+----------------------------------
+SELECT name, position, sal FROM professor
+ORDER BY sal DESC
+LIMIT 4, 1;
+
+
+
+** 함수 (1)
+
+문1) 학생의 이름과 가운데 글자를 ‘*’로 변경한 이름을 조회하시오. 단 이름은 3글자로만 구성된다고 가정합니다.
+------------------------------------
+select name, concat(left(name, 1), '*', right(name, 1)) from student;
+
+
+문2) 학생의 이름과 주민번호를 조회하시오. 단 주민번호의 뒤 자리 7글자는 ‘*’로 표시하시오.
+------------------------------------
+select name, concat(left(idnum, 6), '*******') from student;
+
+
+
+
+** 함수 (2)
+
+문1) 1980년도 이후에 출생한 학생의 이름과 생년월일을 조회하시오.
+------------------------------------
+select name, birthdate from student
+where date_format(birthdate, '%Y') > 1980;
+
+
+문2) 101번 학과 학생들 중에서 최대 키와 최소 키를 출력하여라.
+------------------------------------
+SELECT MAX(height), MIN(height) FROM student
+WHERE deptno=101;
+

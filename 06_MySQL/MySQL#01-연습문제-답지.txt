@@ -1,0 +1,55 @@
+** 데이터베이스 살펴보기
+
+문1) 학생 테이블(student)과 교수 테이블(professor)의 구조를 확인하시오.
+----------------------------------
+desc student;
+desc professor;
+
+
+** 데이터 조회하기
+
+문1) 학생 테이블에서 학생 이름과 학생 번호를 조회하시오.
+----------------------------------
+SELECT name, studno FROM student;
+
+
+문2) 교수 테이블(professor)에서 직급(position)의 종류를 조회하시오.
+----------------------------------
+SELECT distinct position FROM professor;
+
+
+문3) department 테이블을 사용하여 deptno 를 부서 , dname를 부서명, loc 를 위치로 별명을 설정하여 출력하세요.
+----------------------------------
+SELECT deptno `부서`, dname `부서명`, loc `위치` FROM department;
+
+
+문4) 학생 태이블(student)에서 학생 이름(name)과 각 학생에 대한 표준 체중을 조회하시오.
+단, 표준 체중은 (키(height)-110)*0.9 로 구하시오.
+----------------------------------
+SELECT name, (height-110)*0.9 FROM student;
+
+
+문5) 학생테이블에서 학과번호가 101번인 학생들의 학번 , 이름, 학년을 출력하시오.
+----------------------------------
+SELECT studno, name, grade FROM student WHERE deptno=101;
+
+
+문6) 교수테이블에서 학과번호가 101번인 교수들의 교수번호, 이름, 급여를 출력하시오.
+----------------------------------
+SELECT profno, name, sal FROM professor WHERE deptno=101;
+
+
+문7) 학생테이블에서 키가 170 이상인 학생의 학번, 이름, 학년, 학과번호, 키를 출력하시오.
+----------------------------------
+SELECT studno, name, grade, deptno, height
+FROM student
+WHERE height >= 170;
+
+
+문8) 학생 테이블에서 1학년 이거나 몸무게가 70kg 이상인 학생만 검색하여 이름, 학번, 학년, 몸무게, 학과 번호를 출력하시오.
+----------------------------------
+SELECT name, studno, grade, weight, deptno
+FROM student
+WHERE grade=1 OR weight >= 70;
+
+
