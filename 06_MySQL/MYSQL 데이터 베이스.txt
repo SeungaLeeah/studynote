@@ -1,0 +1,70 @@
+MYSQL 데이터 베이스 관리
+
+데이터베이스 생성
+create database `데이터베이스이름` default charset `utf8`;
+
+
+데이터 베이스 삭제
+drop database `데이터베이스이름`;
+
+테이블 생성
+1. 컬럼을 나열할 때  PRIMARY KEY 명시
+CREATE TABLE `테이블이름`(
+	`column1` 데이터 타입 NOT NULL || NULL primary key auto_increment COMMENT `컬럼설명`,
+	`column2` 데이터 타입 NOT NULL || NULL COMMENT `컬럼설명`,
+	`column3` 데이터 타입 NOT NULL || NULL COMMENT `컬럼설명`,
+)	ENGINE=INNIDB DEFAULT CHARSET=`utf8` Comment='테이블설명'
+
+1. 컬럼 목록을 나열한 후  PRIMARY KEY 명시
+CREATE TABLE `테이블이름`(
+	`column1` 데이터 타입 NOT NULL || NULL auto_increment COMMENT `컬럼설명`,
+	`column2` 데이터 타입 NOT NULL || NULL COMMENT `컬럼설명`,
+	`column3` 데이터 타입 NOT NULL || NULL COMMENT `컬럼설명`,
+	primary key (`column1`)
+)	ENGINE=INNODB DEFAULT CHARSET=`utf8` Comment='테이블설명';
+
+
+테이블 삭제
+drop table `테이블 이름`
+
+
+1.mytable table생성
+
+ create TABLE `mytable`(
+`id` int(11) not null auto_increment,
+`memo` varchar(255) not null,
+`reg_date` datetime not null,
+primary key (`id`)
+) ENGINE=INNODB DEFAULT CHARSET=`utf8`;
+
+1-2. mytable table 삭제
+drop table `mytable`
+
+
+2. 회원명세서 데이터베이스 생성
+create database `members` default charset `utf8`;
+
+2-1회원명세서 table 생성
+CREATE TABLE `members`(
+	`id` int NOT NULL auto_increment COMMENT '일련번호',
+	`user_id` varchar(30) NOT NULL COMMENT '아이디',
+	`user_pw` varchar(255) NOT NULL COMMENT '비밀번호(암호화저장)',
+	`user_name` varchar(30) NOT NULL COMMENT '회원이름',
+	`email` varchar(255) NOT NULL COMMENT '이메일',
+	`phone` varchar(20) NOT NULL COMMENT '연락처',
+	`birthdat` date NOT NULL COMMENT '생년월일',
+	`gender` enum('M','F') NOT NULL COMMENT '성별(M=남자,F=여자)',
+	`postcode` char(5) NOT NULL COMMENT '우편번호',
+	`addr1` varchar(255) NOT NULL COMMENT '검색된 주소',
+	`addr2` varchar(255) NOT NULL COMMENT '나머지 주소',
+	`photo` blob NULL COMMENT '프로필사진정보{json=Uploaditem}',
+	`is_out` enum('Y','N') NOT NULL COMMENT '탈퇴여부(Y/N)',
+	`is_admin` enum('Y','N') NOT NULL COMMENT '관리자여부(Y/N)',
+	`login_date` datetime NULL COMMENT '마지막 로그인 일시',
+	`reg_date` datetime NOT NULL COMMENT '등록일시',
+	`edit_date` datetime NOT NULL COMMENT '변경일시',
+	primary key (`id`)
+)	ENGINE=INNODB DEFAULT CHARSET=`utf8` Comment='쇼핑몰 회원정보 명세 테이블';
+
+2-2. 회원명세서 table 삭제
+drop table `members`;
