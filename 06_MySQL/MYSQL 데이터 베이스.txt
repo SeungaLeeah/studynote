@@ -28,17 +28,19 @@ CREATE TABLE `테이블이름`(
 drop table `테이블 이름`
 
 
-1.mytable table생성
+1.mytable 데이터베이스 생성
+create database `mytable`;
 
- create TABLE `mytable`(
+1-1.mytable table생성
+create TABLE `mytable`(
 `id` int(11) not null auto_increment,
 `memo` varchar(255) not null,
 `reg_date` datetime not null,
 primary key (`id`)
-) ENGINE=INNODB DEFAULT CHARSET=`utf8`;
+) ENGINE=INNODB DEFAULT CHARSET `utf8`;
 
 1-2. mytable table 삭제
-drop table `mytable`
+drop table `mytable`;
 
 
 2. 회원명세서 데이터베이스 생성
@@ -68,3 +70,39 @@ CREATE TABLE `members`(
 
 2-2. 회원명세서 table 삭제
 drop table `members`;
+
+
+3. table 구조 변경하기
+1) 테이블의 이름을 변경한다.
+ALTER TABLE `테이블 이름` RENAME;
+
+2) 컬럼이나 제약조건을 추가한다.
+ALTER TABLE `테이블 이름` ADD;
+
+3) 컬럼을 수정한다.
+ALTER TABLE `테이블 이름` CHANGE;
+
+4) 컬럼이나 제약 조건을 삭제한다.
+ALTER TABLE `테이블 이름` DROP;
+
+4. ID 컬럼의 기본키 속성 해제하기
+- AUTO_INCREMENT 속성을 제거하기 위한 명령어
+ALTER TABLE `테이블 이름` CHANGE `id` `id` int NOT NULL;
+- 기본키를 해제할 경우 DROP PRIMARY KEY 명령어
+ALTER TABLE `테이블 속성` DROP PRIMARY KEY;
+
+5. ID 기본키 속성 추가하기
+- ID 컬럼에 기본키 설정
+ALTER TABLE `테이블 이름` ADD PRIMARY KEY (id);
+- AUTO_INCREMENT 속성 추가
+ALTER TABLE `테이블 이름` CHANGE id int NOT NULL AUTO_INCREMENT;
+
+6. 참조키 설정하기 => 참조키 설정시, 참조를 받고있는 데이터는 참조하고 있는 데이터가 삭제 전까지 삭제될 수 없다.
+=> 다른 테이블의 데이터를 참조하는 컬럼은 해당 컬럼의 데이터 중 하나를 저정해야만 한다.
+CREATE TABLE `테이블 이름`(
+ `컬럼이름` 데이터타입 [NOT NULL | NULL] [AUTO_INCREMENT] [COMMENT='컬럼설명'],
+ `컬럼이름` 데이터타입 [NOT NULL | NULL] [AUTO_INCREMENT] [COMMENT='컬럼설명'],
+[, PRIMARY KEY (`기본키 컬럼 이름`)]
+[, FOREIGN KEY (`참조키 컬럼이름`)
+	REFERENCES `대상테이블명` (`대상테이블의 컬럼명`)]
+) ENGINE=InnoDB DEFAULT CHARSET=`utf8` COMMENT='테이블 설명';
