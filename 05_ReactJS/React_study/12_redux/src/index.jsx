@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 /** 리덕스 구성을 위한 참조 */
 import { Provider } from 'react-redux';
-import store from './store';
+import store from './Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
