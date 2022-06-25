@@ -1,11 +1,13 @@
 /* 이벤트 핸들러 정의 부분 - 해당 이벤트가 발생하기 전까지는 호출되지 않는다. */
 // 시스템 내장 이벤트 --> 프로세스가 종료하는 시점
 
+// exit는 무조건 발생 시키는 사전에 약속된 이벤트 이다. --> 프로그램이 끝까지 실행되서 종료될 때, 자동으로 실행이 된다.
+// 어떤 조건이 충족되었을 때, Nodejs 자체가 강제 실행 시킨다.
 process.on('exit', ()=>{
     console.debug('exit 이벤트 발생함.');
 });
 
-// 사용자 정의 이벤트 ( a = Hello, b= World를 받음)
+// 사용자 정의 이벤트 --> (onSayHello를 통해 a = Hello, b= World를 받음)
 process.on('onSayHello', (a,b)=> {
     console.debug('onSayHello 이벤트 발생함 : %s %s', a,b);
 });
@@ -14,7 +16,7 @@ process.on('onSayHello', (a,b)=> {
 // 지정된 시간동안 대기 후, 콜백함수를 실행.
 setTimeout(()=>{
     console.debug('2초 후에 onSayHello 이벤트 전달 시도함.');
-    //개발자가 정의한 이벤트를 발생시키는 기능.
+    //개발자가 정의한 이벤트를 발생시키는 기능. 2초후에 onSayHello를 찾아가서 "Hello", "World"을 전달.
     process.emit('onSayHello', "Hello", "World"); // 이벤트 방행
 }, 2000);
 

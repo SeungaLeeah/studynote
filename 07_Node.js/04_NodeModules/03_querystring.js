@@ -6,7 +6,8 @@ import {URL, URLSearchParams} from 'url';
 const address = 'http://www.itpaper.co.kr/hello/world.html?a=123&b=456';
 const {searchParams} = new URL(address);
 console.debug(searchParams);
-//URL에서 추출한 모든 변수는 string타입이다.
+
+//URL에서 추출한 모든 변수는 string(문자열)타입이다.
 console.debug('요청 파라미터 중 a의 값 : %s (%s)', searchParams.get("a"), typeof searchParams.get("a"));
 console.debug('요청 파라미터 중 b의 값 : %s (%s)', searchParams.get("b"), typeof searchParams.get("b"));
 
