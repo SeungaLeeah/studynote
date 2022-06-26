@@ -1,5 +1,16 @@
-/** (1) 모듈참조 */
-import fs from 'fs';
-/** (2) 필요한 변수 생성 */
+import {mkdirs} from './helper/FileHelper.js';
+import path from 'path';
 
-/** (3) 파일이 존재할 경우에 파일 삭제 */
+// 상대경로 방식으로 폴더 생성하기
+// --> VSCode가 열고 있는 프로젝트 폴더 기준
+var target1 = './test/dir/make';
+console.log(target1);
+mkdirs(target1);
+
+//절대경로 방식으로 폴더 생성하기
+// __dirname --> VSCode가 열고 있는 프로젝트 폴더
+const __dirname = path.resolve();  
+console.log(__dirname)               // 현재 실행중인 폴더의 위치를 알려줌
+var target2 = path.join(__dirname, 'hello/node/js');
+console.log(target2);
+mkdirs(target2);
