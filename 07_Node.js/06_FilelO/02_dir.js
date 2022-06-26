@@ -2,7 +2,7 @@
 import fs from 'fs';
 
 /** (2) 필요한 변수 생성 */
-var target = './docs';
+var target = './docs';      
 
 if(!fs.existsSync(target)){
     // 파라미터 --> 경로, 퍼미션, 콜백함수
