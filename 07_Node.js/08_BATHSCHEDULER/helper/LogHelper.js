@@ -5,7 +5,7 @@ import {join, resolve} from 'path';
 import { mkdirs } from './FileHelper.js';
 
 /** (1) 설정파일 내용 가져오기 */
-dotenv.config({path: join(resolve(), "../config.env")})
+dotenv.config({path: join(resolve(), "./config.env")})
 
 /** (2) 로그가 저장될 폴더 생성 */
 mkdirs(process.env.LOG_PATH);
