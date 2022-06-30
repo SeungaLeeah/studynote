@@ -16,7 +16,7 @@ import serveFavicon from 'serve-favicon';   //favicon 처리
 import bodyParser from 'body-parser';   //POST 파라미터 처리
 import methodOverride from 'method-override';  //PUT 파라미터 처리
 import cookieParser from 'cookie-parser';   //Cookie 처리
-import expressSessoin from 'express-session';   //Session 처리
+import expressSession from 'express-session';   //Session 처리
 
 
 /*----------------------------------------------------------
@@ -99,6 +99,7 @@ app.use(methodOverride('_method'));  // HTML form
 /** 쿠키를 처리할 수 있는 객체 연결 */
 // cookie-parser는 데이터를 저장, 조회 할 때 암호화 처리를 동반한다.
 // 이때 암호화에 사용되는 key 문자열을 개발자가 정해야 한다.
+//COOKIE_ENCRYPT_KEY 는 상위 폴더 config.evn에 있다. => 암호화 키값을 알면 복구가 가능하다.
 app.use(cookieParser(process.env.COOKIE_ENCRYPT_KEY));
 
 /** HTTP,CSS,IMG,JS 등의 정적 파일을 URL에 노출시킬 폴더 연결 */
@@ -115,7 +116,7 @@ const router = express.Router();
 app.use('/', router);
 
 /** 세션 설정 */
-app.use(expressSessoin({
+app.use(expressSession({
     // 암호화 키
     secret: process.env.SESSION_ENCRYPT_KEY,
     // 세션이 초기화 되지 않더라도 새로 저장할지 여부 (일반적으로 false)
@@ -389,8 +390,8 @@ router
         let result_msg = null;
 
         if(login_ok){
-            req.session.userid=id;
-            req.session.userpw=pw;
+            req.session.userid = id;
+            req.session.userpw =pw;
             result_code = 200;
             result_msg = 'ok';
         }else{
