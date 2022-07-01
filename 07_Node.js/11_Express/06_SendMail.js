@@ -21,6 +21,11 @@ import methodOverride from 'method-override'    // PUT 파라미터 처리
 
 import cookieParser from 'cookie-parser';       // Cookie 처리
 
+import expressSession from 'express-session';   // Session 처리
+
+import nodemailer from 'nodemailer';    // 메일발송 --> app.use()로 추가 설정 필요없음.
+
+
 /*----------------------------------------------------------
 | 2) Express 객체 생성
 -----------------------------------------------------------*/
@@ -101,7 +106,19 @@ app.use(methodOverride('_method'));  // HTML form
 /** 쿠키를 처리할 수 있는 객체 연결 */
 // cookie-parser는 데이터를 저장, 조회 할 때 암호화 처리를 동반한다.
 // 이때 암호화에 사용되는 key 문자열을 개발자가 정해야 한다.
+//COOKIE_ENCRYPT_KEY 는 상위 폴더 config.evn에 있다. => 암호화 키값을 알면 복구가 가능하다.
 app.use(cookieParser(process.env.COOKIE_ENCRYPT_KEY));
+
+
+/** 세션 설정 */
+app.use(expressSession({
+    // 암호화 키
+    secret: process.env.SESSION_ENCRYPT_KEY,
+    // 세션이 초기화 되지 않더라도 새로 저장할지 여부 (일반적으로 false)
+    resave: false,
+    saveUninitialized: false
+}));
+
 
 /** HTTP,CSS,IMG,JS 등의 정적 파일을 URL에 노출시킬 폴더 연결 */
 // "http:// 아이피(혹은 도메인): 포트번호" 이후의 결고가 router에 등록되지 않은 경로라면 
@@ -115,6 +132,7 @@ app.use(serveFavicon(process.env.FAVICON_PATH));
 const router = express.Router();
 // 라우터를 express에 등록
 app.use('/', router);
+
 
 /*----------------------------------------------------------
 | 5) 각 URL별 백엔드 기능 정의
@@ -317,6 +335,169 @@ router
         res.clearCookie('my_msg_signed', {path: '/'});
         res.status(200).send('clear');
      });
+
+
+/** 05_Session.js */
+//Insomnia로 테스트
+router
+     .post('/session', (req, res, next)=>{
+        //POST로 전송된 변수값을 추출
+        const username = req.body.username;
+        const nickname = req.body.nickname;
+
+        // 세션 저장
+        req.session.username = username;
+        req.session.nickname = nickname;
+
+          // 결과 응답
+          const json = {rt : 'ok'};
+          res.status(200).send(json);
+      })
+      .get('/session', (req, res, next) => {
+          // 저장되어 있는 모든 session값 탐색
+          for (let key in req.session){
+              const str = '[session] ' + key + '=' + req.session[key];
+              logger.debug(str);
+          }
+
+        // 세션 데이터를 JSON으로 구성 후 클라이언트에게 응답으로 전송
+        const my_data = {
+            username: req.session.username,
+            nickname: req.session.nickname,
+        };
+        res.status(200).send(my_data);
+    })
+    .delete('/session', async(req, res, next) => {
+        let result = 'ok';
+        let code = 200;
+
+        try {
+            await req.session.destroy();
+        } catch (e) {
+            logger.error(e.message);
+            result = e.message;
+            code = 500;
+        }
+
+        const json = {rt:result};
+        res.status(code).send(json);
+    });
+
+// public/06_login.html
+router
+     .post('/session/login', (req, res, next)=>{
+        const id = req.body.userid;
+        const pw = req.body.userpw;
+
+        logger.debug('id=' + id);
+        logger.debug('pw=' + pw);
+
+        let login_ok = false;
+        if(id == 'node' && pw == '1234'){
+            logger.debug('로그인 성공');
+            login_ok = true;
+        }
+        let result_code = null;
+        let result_msg = null;
+
+        if(login_ok){
+            req.session.userid = id;
+            req.session.userpw =pw;
+            result_code = 200;
+            result_msg = 'ok';
+        }else{
+            result_code = 403;
+            result_msg = 'fail';
+        }
+
+        const json = {rt: result_msg};
+        res.status(result_code).send(json);
+     })
+     .delete('/session/login', async(req, res, next)=>{
+        let result ='ok';
+        let code = 200;
+
+        try{
+            await req.session.destroy();
+        }catch(e){
+            logger.error(e.message);
+            result = e.message;
+            code = 500;
+        }
+
+        const json = { rt: result};
+        res.status(code).send(json);
+     })
+     .get('/session/login', (req, res, next)=>{
+        const id = req.session.userid;
+        const pw = req.session.userpw;
+
+        let result_code = null;
+        let result_msg = null;
+
+        if(id !== undefined && pw !== undefined){
+            logger.debug('현재 로그인 중이 맞습니다.');
+            result_code = 200;
+            result_msg='fail';
+        }
+        const json = {rt: result_msg};
+        res.status(result_code).send(json);
+     });
+
+
+/** 06-SendMail */
+// public/06_mail.html
+router.post('/send_mail', async(req,res, next)=>{
+    /**1) 프론트엔드에서 전달한 사용자 입력값 */
+    const writer_name = req.body.writer_name;
+    // 이메일 값은 변동이 될 수 있음으로 let을 사용함
+    let writer_email= req.body.writer_email;
+    const receiver_name =req.body.receiver_name;
+    let receiver_email = req.body.receiver_email;
+    const subject = req.body.subject;
+    const content = req.body.content;
+
+    /** 2) 보내는 사람, 받는 사람의 메일 주소와 이름 */
+    // 보내는 사람의 이름과 주소
+    // --> 외부 SMTP 연동시 주의사항 - 발신주소가 로그인 계정과 다를 경우 발송이 거부됨
+    if(writer_name){
+        // ex) 이승아<leeah0913@gmail.com>
+        writer_email = writer_name + '<'+writer_email+'>';
+    }
+
+    // 받는 사람의 이름과 주소
+    if(receiver_email){
+        receiver_email= receiver_name+ '<'+receiver_email + '>';
+    }
+    /** 3) 메일 발송정보 구성 */
+    const send_info = {
+        from: writer_email,
+        to: receiver_email,
+        subject: subject,
+        html: content
+    }
+    /** 4) 발송에 필용한 서버 정보를 사용하여 발송객체 생성 */
+    const smtp = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        secure: true,
+        auth:{
+            user: process.env.SMTP_USERNAME,    // GMAIL 로그인에 사용하는 메일주소
+            pass: process.env.SMTP_PASSWORD,    // 앱 비밀번호
+        }
+    });
+    /** 5) 메일발송 요청 */
+    let rt = 200;
+    let rtMsg = "OK"
+
+    try{
+        await smtp.sendMail(send_info);
+    }catch(err){
+        rt=500 ;
+        rtMsg=err.message;
+    }
+    res.status(rt).send(rtMsg);
+});
 
 /*----------------------------------------------------------
 | 6) 설정한 내용을 기반으로 서버 구동 시작
