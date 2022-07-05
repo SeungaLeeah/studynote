@@ -1,0 +1,398 @@
+22/07/06 00:08:47 806 [debug]: --------------------------------------------------
+22/07/06 00:08:47 810 [debug]: |              Start Express Server              |
+22/07/06 00:08:47 810 [debug]: --------------------------------------------------
+22/07/06 00:08:47 811 [debug]: --------------------------------------------------
+22/07/06 00:08:52 435 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:08:52 436 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:08:52 437 [debug]: [GET] http://localhost:3001/helper_test/custom_error
+22/07/06 00:08:52 449 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+22/07/06 00:08:52 450 [debug]: --------------------------------------------------
+22/07/06 00:08:53 530 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:08:53 531 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:08:53 532 [debug]: [GET] http://localhost:3001/helper_test/custom_error
+22/07/06 00:08:53 536 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 00:08:53 536 [debug]: --------------------------------------------------
+22/07/06 00:10:00 840 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:10:00 841 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:10:00 842 [debug]: [GET] http://localhost:3001/helper_test/custom_error
+22/07/06 00:10:00 845 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 00:10:00 846 [debug]: --------------------------------------------------
+22/07/06 00:10:01 619 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:10:01 619 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:10:01 620 [debug]: [GET] http://localhost:3001/helper_test/custom_error
+22/07/06 00:10:01 622 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 00:10:01 622 [debug]: --------------------------------------------------
+22/07/06 00:10:02 768 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:10:02 769 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:10:02 769 [debug]: [GET] http://localhost:3001/helper_test/custom_error
+22/07/06 00:10:02 771 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/06 00:10:02 771 [debug]: --------------------------------------------------
+22/07/06 00:10:54 233 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:10:54 234 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:10:54 234 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:10:54 237 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 00:10:54 237 [debug]: --------------------------------------------------
+22/07/06 00:10:55 042 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:10:55 042 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:10:55 043 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:10:55 044 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/06 00:10:55 045 [debug]: --------------------------------------------------
+22/07/06 00:11:11 662 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:11:11 663 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:11:11 664 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:11:11 667 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 00:11:11 668 [debug]: --------------------------------------------------
+22/07/06 00:13:36 616 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:13:36 617 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:13:36 618 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:13:36 623 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 00:13:36 623 [debug]: --------------------------------------------------
+22/07/06 00:13:37 335 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:13:37 336 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:13:37 336 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:13:37 338 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/06 00:13:37 339 [debug]: --------------------------------------------------
+22/07/06 00:19:04 067 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:19:04 067 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:19:04 068 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:19:04 070 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 00:19:04 070 [debug]: --------------------------------------------------
+22/07/06 00:19:04 805 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:19:04 805 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:19:04 806 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:19:04 808 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 00:19:04 808 [debug]: --------------------------------------------------
+22/07/06 00:20:05 900 [debug]: --------------------------------------------------
+22/07/06 00:20:05 903 [debug]: |              Start Express Server              |
+22/07/06 00:20:05 904 [debug]: --------------------------------------------------
+22/07/06 00:20:05 905 [debug]: --------------------------------------------------
+22/07/06 00:20:10 813 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:20:10 814 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:20:10 815 [debug]: [GET] http://localhost:3001/api_test/custom_error
+22/07/06 00:20:10 824 [error]: [Error] 개발자가 직접 생성한 에러가 발생하였습니다.
+22/07/06 00:20:10 825 [error]: Error: 개발자가 직접 생성한 에러가 발생하였습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/ApiTest.js:13:19
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 00:20:10 833 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 19ms
+22/07/06 00:20:10 834 [debug]: --------------------------------------------------
+22/07/06 00:27:32 019 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:27:32 020 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:27:32 021 [debug]: [GET] http://localhost:3001/unknown
+22/07/06 00:27:32 026 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 00:27:32 027 [debug]: --------------------------------------------------
+22/07/06 00:29:43 601 [debug]: --------------------------------------------------
+22/07/06 00:29:43 605 [debug]: |              Start Express Server              |
+22/07/06 00:29:43 606 [debug]: --------------------------------------------------
+22/07/06 00:29:43 607 [debug]: --------------------------------------------------
+22/07/06 00:29:46 195 [debug]: 클라이언트가 접속했습니다.
+22/07/06 00:29:46 197 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 00:29:46 198 [debug]: [GET] http://localhost:3001/unknown
+22/07/06 00:29:46 207 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 00:29:46 208 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 00:29:46 219 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+22/07/06 00:29:46 219 [debug]: --------------------------------------------------
+22/07/06 01:09:40 808 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:09:40 809 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:09:40 810 [debug]: [GET] http://localhost:3001/api_test/make_result
+22/07/06 01:09:40 814 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:09:40 815 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:09:40 819 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/06 01:09:40 819 [debug]: --------------------------------------------------
+22/07/06 01:09:52 584 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:09:52 585 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:09:52 586 [debug]: [GET] http://localhost:3001/api_test/make_result
+22/07/06 01:09:52 587 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:09:52 588 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:09:52 591 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 01:09:52 591 [debug]: --------------------------------------------------
+22/07/06 01:09:53 529 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:09:53 530 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:09:53 531 [debug]: [GET] http://localhost:3001/api_test/make_result
+22/07/06 01:09:53 533 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:09:53 534 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:09:53 537 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 01:09:53 537 [debug]: --------------------------------------------------
+22/07/06 01:10:25 641 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:10:25 642 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:10:25 642 [debug]: [GET] http://localhost:3001/api_test/make_result
+22/07/06 01:10:25 644 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:10:25 645 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:10:25 648 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 01:10:25 648 [debug]: --------------------------------------------------
+22/07/06 01:10:53 296 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:10:53 297 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:10:53 297 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:10:53 299 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:10:53 299 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:10:53 302 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 01:10:53 304 [debug]: --------------------------------------------------
+22/07/06 01:10:54 198 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:10:54 198 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:10:54 199 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:10:54 200 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:10:54 200 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:10:54 203 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 01:10:54 204 [debug]: --------------------------------------------------
+22/07/06 01:11:33 453 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:11:33 454 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:11:33 455 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:11:33 456 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:11:33 456 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:11:33 459 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 01:11:33 460 [debug]: --------------------------------------------------
+22/07/06 01:12:29 102 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:12:29 103 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:12:29 104 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:12:29 106 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:12:29 107 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:12:29 111 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 01:12:29 112 [debug]: --------------------------------------------------
+22/07/06 01:14:10 337 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:14:10 337 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:14:10 338 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:14:10 340 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:14:10 341 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:14:10 345 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 01:14:10 346 [debug]: --------------------------------------------------
+22/07/06 01:14:11 023 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:14:11 024 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:14:11 025 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:14:11 026 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:14:11 026 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:14:11 030 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 01:14:11 030 [debug]: --------------------------------------------------
+22/07/06 01:21:04 963 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:21:04 963 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:21:04 964 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:21:04 965 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:21:04 966 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:21:04 969 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 01:21:04 970 [debug]: --------------------------------------------------
+22/07/06 01:21:05 742 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:21:05 742 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:21:05 743 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:21:05 744 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:21:05 744 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:21:05 747 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 01:21:05 748 [debug]: --------------------------------------------------
+22/07/06 01:21:06 492 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:21:06 492 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:21:06 493 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:21:06 494 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:21:06 495 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:21:06 498 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 01:21:06 498 [debug]: --------------------------------------------------
+22/07/06 01:21:07 338 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:21:07 339 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:21:07 339 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:21:07 341 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 01:21:07 342 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 01:21:07 345 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 01:21:07 346 [debug]: --------------------------------------------------
+22/07/06 01:21:24 519 [debug]: --------------------------------------------------
+22/07/06 01:21:24 522 [debug]: |              Start Express Server              |
+22/07/06 01:21:24 523 [debug]: --------------------------------------------------
+22/07/06 01:21:24 524 [debug]: --------------------------------------------------
+22/07/06 01:21:26 529 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:21:26 530 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:21:26 532 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200
+22/07/06 01:21:26 543 [debug]: [HTTP %s Params] %s=%s
+22/07/06 01:21:26 545 [debug]: [HTTP %s Params] %s=%s
+22/07/06 01:21:26 547 [error]: [Error] num2의 값이 없습니다.
+22/07/06 01:21:26 549 [error]: Error: num2의 값이 없습니다.
+    at RegexHelper.value (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:12:19)
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/ApiTest.js:30:25
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+22/07/06 01:21:26 561 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+22/07/06 01:21:26 562 [debug]: --------------------------------------------------
+22/07/06 01:22:12 594 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:22:12 595 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:22:12 596 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200&num2=hello
+22/07/06 01:22:12 600 [debug]: [HTTP %s Params] %s=%s
+22/07/06 01:22:12 600 [debug]: [HTTP %s Params] %s=%s
+22/07/06 01:22:12 601 [error]: [Error] num2는 숫자 형식만 가능합니다.
+22/07/06 01:22:12 602 [error]: Error: num2는 숫자 형식만 가능합니다.
+    at RegexHelper.field (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:30:19)
+    at RegexHelper.num (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:43:21)
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/ApiTest.js:31:25
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+22/07/06 01:22:12 605 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/06 01:22:12 606 [debug]: --------------------------------------------------
+22/07/06 01:23:12 589 [debug]: 클라이언트가 접속했습니다.
+22/07/06 01:23:12 590 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 01:23:12 590 [debug]: [GET] http://localhost:3001/api_test/make_result?num1=200&num2=500
+22/07/06 01:23:12 592 [debug]: [HTTP %s Params] %s=%s
+22/07/06 01:23:12 592 [debug]: [HTTP %s Params] %s=%s
+22/07/06 01:23:12 593 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 01:23:12 594 [debug]: --------------------------------------------------
