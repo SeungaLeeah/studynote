@@ -122,7 +122,7 @@ const DepartmentSlice = createSlice({
         }
     },
 
-    /** 단일행 데이터 조회를 위한 액션 함ya수 */
+    /** 단일행 데이터 조회를 위한 액션 함수 */
     [getItem.pending]: (state, {payload})=>{
         return{...state, loading: true}
     },
