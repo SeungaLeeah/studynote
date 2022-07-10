@@ -1,0 +1,33 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\leeah\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add dotenv winston winston-daily-rotate-file node-schedule dayjs express express-useragent serve-static serve-favicon body-parser
+
+PATH: 
+  C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Bandizip\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\mysql-8.0.29-winx64\bin;C:\Users\leeah\AppData\Local\Microsoft\WindowsApps;C:\Users\leeah\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leeah\AppData\Local\GitHubDesktop\bin;C:\Users\leeah\AppData\Roaming\npm;
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "13_MySQL",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

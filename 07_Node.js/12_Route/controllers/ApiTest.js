@@ -1,6 +1,8 @@
 import express from 'express';
 import BadRequestException from '../exceptions/BadRequestException.js';
 import regexHelper from '../helper/RegexHelper.js';
+import mysql2 from 'mysql2/promise';
+
 export default () => {
    
     const router = express.Router();
@@ -38,5 +40,41 @@ export default () => {
         res.sendResult({params1: num1, params2:num2, result: num1 + num2});
     });
 
+    // async-await가 사용이 많이 되기 때문에 라우팅에 async로 걸기
+    router.get('/department', async (req, res, next)=>{
+    
+    // 접속 정보 설정
+    const connectionInfo = {
+    host: process.env.DATABASE_HOST,       // MYSQL 서버주소(다른 PC인 경우 IP주소)
+    port: process.env.DATABASE_PORT,        // MYSQL 포트번호
+    user: process.env.DATABASE_USERNAME,    // MYSQL의 로그인 할 수 있는 계정이름
+    password: process.env.DATABASE_PASSWORD, // 비밀번호
+    database: process.env.DATABASE_SCHEMA,  // 사용하고자 하는 데이터베이스 이름
+    };
+    let dbcon = null;
+     
+     try{
+        dbcon =await mysql2.createConnection(connectionInfo);
+        await dbcon.connect();
+
+        const sql = "SELECT name, position, sal, date_format(hiredate, '%Y-%m-%d') AS hiredate FROM professor";
+        const [result1]= await dbcon.query(sql);
+        // console.log(result1);
+
+        // 기존에 JSON으로 전송방식
+        /* result1.map((v, i)=>{
+            console.log("$s$s\t 급여: %d만원\t 입사일: %s", v.name, v.position, v.sal, v.hiredate);
+        }); */
+
+        // 새로운 JSON전송방식
+        res.sendResult({item: result1});
+     }catch (err){
+        return next (err);
+     }finally{
+        if(dbcon){
+            dbcon.end();
+        }
+     }
+    });
     return router;
 };

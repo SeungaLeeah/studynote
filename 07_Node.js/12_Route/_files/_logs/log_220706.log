@@ -396,3 +396,960 @@
 22/07/06 01:23:12 592 [debug]: [HTTP %s Params] %s=%s
 22/07/06 01:23:12 593 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
 22/07/06 01:23:12 594 [debug]: --------------------------------------------------
+22/07/06 10:37:15 962 [debug]: --------------------------------------------------
+22/07/06 10:37:15 967 [debug]: |              Start Express Server              |
+22/07/06 10:37:15 969 [debug]: --------------------------------------------------
+22/07/06 10:37:15 970 [debug]: --------------------------------------------------
+22/07/06 10:37:24 103 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:37:24 104 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:37:24 106 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:37:24 141 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:37:24 142 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:37:24 145 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:37:24 146 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:37:24 160 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 56ms
+22/07/06 10:37:24 161 [debug]: --------------------------------------------------
+22/07/06 10:37:29 394 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:37:29 395 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:37:29 396 [debug]: [GET] http://localhost:3001/session
+22/07/06 10:37:29 401 [debug]: [session] cookie=[object Object]
+22/07/06 10:37:29 403 [debug]: [session] username=세션테스트
+22/07/06 10:37:29 403 [debug]: [session] nickname=session test
+22/07/06 10:37:29 404 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:37:29 405 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:54:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:37:29 411 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+22/07/06 10:37:29 412 [debug]: --------------------------------------------------
+22/07/06 10:37:57 804 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:37:57 805 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:37:57 806 [debug]: [GET] http://localhost:3001/session
+22/07/06 10:37:57 809 [debug]: [session] cookie=[object Object]
+22/07/06 10:37:57 809 [debug]: [session] username=세션테스트
+22/07/06 10:37:57 810 [debug]: [session] nickname=session test
+22/07/06 10:37:57 810 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:37:57 811 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:54:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:37:57 815 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/06 10:37:57 816 [debug]: --------------------------------------------------
+22/07/06 10:38:56 279 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:38:56 280 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:38:56 281 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:38:56 283 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:38:56 283 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:38:56 284 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:38:56 285 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:38:56 290 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/06 10:38:56 290 [debug]: --------------------------------------------------
+22/07/06 10:38:57 077 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:38:57 078 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:38:57 078 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:38:57 080 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:38:57 080 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:38:57 081 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:38:57 081 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:38:57 086 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 10:38:57 087 [debug]: --------------------------------------------------
+22/07/06 10:39:35 683 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:39:35 684 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:39:35 684 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:39:35 689 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:39:35 689 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:39:35 690 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:39:35 691 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:39:35 695 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 10:39:35 696 [debug]: --------------------------------------------------
+22/07/06 10:39:46 576 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:39:46 576 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:39:46 577 [debug]: [POST] http://localhost:3001/session/login
+22/07/06 10:39:46 579 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:39:46 579 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:39:46 580 [debug]: id=node
+22/07/06 10:39:46 580 [debug]: pw=1234
+22/07/06 10:39:46 582 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 10:39:46 582 [debug]: --------------------------------------------------
+22/07/06 10:39:48 015 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:39:48 015 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:39:48 016 [debug]: [POST] http://localhost:3001/session/login
+22/07/06 10:39:48 018 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:39:48 018 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:39:48 019 [debug]: id=node
+22/07/06 10:39:48 019 [debug]: pw=1234
+22/07/06 10:39:48 021 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 10:39:48 021 [debug]: --------------------------------------------------
+22/07/06 10:40:17 197 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:40:17 198 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:40:17 199 [debug]: [GET] http://localhost:3001/session
+22/07/06 10:40:17 201 [debug]: [session] cookie=[object Object]
+22/07/06 10:40:17 202 [debug]: [session] username=null
+22/07/06 10:40:17 203 [debug]: [session] nickname=null
+22/07/06 10:40:17 203 [debug]: [session] userid=node
+22/07/06 10:40:17 204 [debug]: [session] userpw=1234
+22/07/06 10:40:17 205 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:40:17 206 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:54:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:40:17 210 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/06 10:40:17 211 [debug]: --------------------------------------------------
+22/07/06 10:40:18 803 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:40:18 804 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:40:18 805 [debug]: [GET] http://localhost:3001/session
+22/07/06 10:40:18 809 [debug]: [session] cookie=[object Object]
+22/07/06 10:40:18 810 [debug]: [session] username=null
+22/07/06 10:40:18 810 [debug]: [session] nickname=null
+22/07/06 10:40:18 811 [debug]: [session] userid=node
+22/07/06 10:40:18 811 [debug]: [session] userpw=1234
+22/07/06 10:40:18 812 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:40:18 812 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:54:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:40:18 817 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+22/07/06 10:40:18 818 [debug]: --------------------------------------------------
+22/07/06 10:40:41 256 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:40:41 257 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:40:41 258 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:40:41 260 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:40:41 261 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:40:41 262 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:40:41 263 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:40:41 267 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/06 10:40:41 267 [debug]: --------------------------------------------------
+22/07/06 10:40:42 430 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:40:42 431 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:40:42 432 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:40:42 434 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:40:42 434 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:40:42 435 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:40:42 435 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:40:42 439 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 10:40:42 440 [debug]: --------------------------------------------------
+22/07/06 10:41:33 104 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:41:33 104 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:41:33 105 [debug]: [DELETE] http://localhost:3001/session/login
+22/07/06 10:41:33 108 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 10:41:33 108 [debug]: --------------------------------------------------
+22/07/06 10:41:37 554 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:41:37 555 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:41:37 555 [debug]: [POST] http://localhost:3001/session/login
+22/07/06 10:41:37 560 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:41:37 560 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:41:37 560 [debug]: id=node
+22/07/06 10:41:37 561 [debug]: pw=1234
+22/07/06 10:41:37 563 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 10:41:37 563 [debug]: --------------------------------------------------
+22/07/06 10:42:00 265 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:42:00 265 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:42:00 266 [debug]: [PUT] http://localhost:3001/session
+22/07/06 10:42:00 268 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 10:42:00 269 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 10:42:00 273 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 10:42:00 274 [debug]: --------------------------------------------------
+22/07/06 10:42:31 807 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:42:31 808 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:42:31 808 [debug]: [POST] http://localhost:3001/session/login
+22/07/06 10:42:31 810 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:42:31 810 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:42:31 811 [debug]: id=noded
+22/07/06 10:42:31 811 [debug]: pw=1234
+22/07/06 10:42:31 812 [error]: [Error] 아이디나 비밀번호를 확인하세요.
+22/07/06 10:42:31 812 [error]: Error: 아이디나 비밀번호를 확인하세요.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:129:27
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:42:31 817 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/06 10:42:31 817 [debug]: --------------------------------------------------
+22/07/06 10:42:37 055 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:42:37 056 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:42:37 057 [debug]: [POST] http://localhost:3001/session/login
+22/07/06 10:42:37 060 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:42:37 061 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:42:37 061 [debug]: id=node
+22/07/06 10:42:37 062 [debug]: pw=1234
+22/07/06 10:42:37 064 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 10:42:37 064 [debug]: --------------------------------------------------
+22/07/06 10:44:18 702 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:44:18 703 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:44:18 703 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:44:18 706 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:44:18 707 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:44:18 708 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:44:18 708 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:44:18 712 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/06 10:44:18 713 [debug]: --------------------------------------------------
+22/07/06 10:44:58 988 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:44:58 989 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:44:58 989 [debug]: [GET] http://localhost:3001/session
+22/07/06 10:44:58 991 [debug]: [session] cookie=[object Object]
+22/07/06 10:44:58 991 [debug]: [session] userid=node
+22/07/06 10:44:58 991 [debug]: [session] userpw=1234
+22/07/06 10:44:58 992 [debug]: [session] username=세션테스트
+22/07/06 10:44:58 992 [debug]: [session] nickname=session test
+22/07/06 10:44:58 993 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:44:58 993 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:54:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:44:58 997 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 10:44:58 997 [debug]: --------------------------------------------------
+22/07/06 10:58:00 427 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:58:00 428 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:58:00 429 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:58:00 432 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:00 433 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:00 434 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:58:00 435 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:58:00 439 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 10:58:00 440 [debug]: --------------------------------------------------
+22/07/06 10:58:01 208 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:58:01 209 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:58:01 210 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:58:01 213 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:01 213 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:01 214 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:58:01 214 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:58:01 220 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 10:58:01 221 [debug]: --------------------------------------------------
+22/07/06 10:58:37 610 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:58:37 611 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:58:37 612 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:58:37 615 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:37 616 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:37 616 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:58:37 617 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:58:37 622 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 10:58:37 623 [debug]: --------------------------------------------------
+22/07/06 10:58:38 350 [debug]: 클라이언트가 접속했습니다.
+22/07/06 10:58:38 351 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 10:58:38 352 [debug]: [POST] http://localhost:3001/session
+22/07/06 10:58:38 354 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:38 355 [debug]: [HTTP %s Params] %s=%s
+22/07/06 10:58:38 357 [error]: [TypeError] req.sendResult is not a function
+22/07/06 10:58:38 357 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 10:58:38 362 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 10:58:38 363 [debug]: --------------------------------------------------
+22/07/06 11:00:11 339 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:00:11 340 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:00:11 341 [debug]: [POST] http://localhost:3001/session
+22/07/06 11:00:11 343 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:00:11 344 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:00:11 345 [error]: [TypeError] req.sendResult is not a function
+22/07/06 11:00:11 345 [error]: TypeError: req.sendResult is not a function
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SessionController.js:33:17
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+    at router (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:47:12)
+22/07/06 11:00:11 352 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/06 11:00:11 353 [debug]: --------------------------------------------------
+22/07/06 11:01:20 898 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:01:20 899 [debug]: [client] ::ffff:192.168.45.57 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:01:20 901 [debug]: [GET] http://192.168.45.57:3001/page2
+22/07/06 11:01:20 905 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 11:01:20 905 [debug]: --------------------------------------------------
+22/07/06 11:01:26 423 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:01:26 424 [debug]: [client] ::ffff:192.168.45.57 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:01:26 425 [debug]: [GET] http://192.168.45.57:3001/cookid
+22/07/06 11:01:26 427 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/06 11:01:26 428 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/app.js:171:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:328:13)
+22/07/06 11:01:26 432 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/06 11:01:26 433 [debug]: --------------------------------------------------
+22/07/06 11:01:31 088 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:01:31 088 [debug]: [client] ::ffff:192.168.45.57 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:01:31 089 [debug]: [GET] http://192.168.45.57:3001/cookie
+22/07/06 11:01:31 092 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:01:31 093 [debug]: --------------------------------------------------
+22/07/06 11:02:15 992 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:02:15 993 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:02:15 993 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 11:02:15 999 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 11:02:16 000 [debug]: --------------------------------------------------
+22/07/06 11:02:34 859 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:02:34 860 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:02:34 860 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:02:34 863 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:02:34 865 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 11:02:34 865 [debug]: --------------------------------------------------
+22/07/06 11:02:37 338 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:02:37 339 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:02:37 339 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:02:37 341 [debug]: [cookies] my_msg=ddd
+22/07/06 11:02:37 341 [debug]: [signedCookies] my_msg_signed=ddd
+22/07/06 11:02:37 342 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 11:02:37 343 [debug]: --------------------------------------------------
+22/07/06 11:02:39 355 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:02:39 355 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:02:39 356 [debug]: [DELETE] http://localhost:3001/cookie
+22/07/06 11:02:39 358 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 11:02:39 359 [debug]: --------------------------------------------------
+22/07/06 11:02:48 303 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:02:48 304 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:02:48 305 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:02:48 309 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:02:48 311 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 11:02:48 312 [debug]: --------------------------------------------------
+22/07/06 11:02:49 688 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:02:49 688 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:02:49 689 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:02:49 690 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:02:49 691 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 11:02:49 692 [debug]: --------------------------------------------------
+22/07/06 11:03:26 520 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:03:26 521 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:03:26 522 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:03:26 524 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 11:03:26 525 [debug]: --------------------------------------------------
+22/07/06 11:04:37 155 [debug]: --------------------------------------------------
+22/07/06 11:04:37 158 [debug]: |              Start Express Server              |
+22/07/06 11:04:37 159 [debug]: --------------------------------------------------
+22/07/06 11:04:37 160 [debug]: --------------------------------------------------
+22/07/06 11:04:41 642 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:04:41 644 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:04:41 646 [debug]: [POST] http://localhost:3001/session
+22/07/06 11:04:41 671 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:04:41 672 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:04:41 682 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 39ms
+22/07/06 11:04:41 683 [debug]: --------------------------------------------------
+22/07/06 11:05:33 147 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:05:33 148 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:05:33 149 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:05:33 155 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:05:33 158 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/06 11:05:33 158 [debug]: --------------------------------------------------
+22/07/06 11:20:02 091 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:20:02 092 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:20:02 093 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:20:02 096 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:20:02 097 [debug]: --------------------------------------------------
+22/07/06 11:20:04 032 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:20:04 033 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:20:04 033 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:20:04 035 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:20:04 037 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:20:04 038 [debug]: --------------------------------------------------
+22/07/06 11:20:05 080 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:20:05 081 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:20:05 081 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:20:05 083 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 11:20:05 083 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 11:20:05 085 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:20:05 085 [debug]: --------------------------------------------------
+22/07/06 11:33:57 439 [debug]: --------------------------------------------------
+22/07/06 11:33:57 442 [debug]: |              Start Express Server              |
+22/07/06 11:33:57 443 [debug]: --------------------------------------------------
+22/07/06 11:33:57 444 [debug]: --------------------------------------------------
+22/07/06 11:34:01 358 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:34:01 359 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:34:01 360 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 11:34:01 370 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 11:34:01 371 [debug]: --------------------------------------------------
+22/07/06 11:34:07 569 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:34:07 570 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:34:07 571 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:34:07 586 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:34:07 591 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+22/07/06 11:34:07 592 [debug]: --------------------------------------------------
+22/07/06 11:34:08 935 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:34:08 936 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:34:08 937 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:34:08 941 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 11:34:08 942 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 11:34:08 943 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 11:34:08 944 [debug]: --------------------------------------------------
+22/07/06 11:37:18 294 [debug]: --------------------------------------------------
+22/07/06 11:37:18 298 [debug]: |              Start Express Server              |
+22/07/06 11:37:18 299 [debug]: --------------------------------------------------
+22/07/06 11:37:18 300 [debug]: --------------------------------------------------
+22/07/06 11:39:20 061 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:39:20 063 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:39:20 064 [debug]: [POST] http://localhost:3001/send_mail
+22/07/06 11:39:20 102 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:20 103 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:20 107 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:20 110 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:20 113 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:20 114 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:20 118 [error]: [Error] 발신자 메일주소를 입력하세요.
+22/07/06 11:39:20 119 [error]: Error: 발신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:12:19)
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SendMailController.js:19:21
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+22/07/06 11:39:20 137 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 74ms
+22/07/06 11:39:20 140 [debug]: --------------------------------------------------
+22/07/06 11:39:42 316 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:39:42 317 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:39:42 318 [debug]: [POST] http://localhost:3001/send_mail
+22/07/06 11:39:42 321 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:42 322 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:42 322 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:42 323 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:42 323 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:42 324 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:42 325 [error]: [Error] 발신자 메일주소를 입력하세요.
+22/07/06 11:39:42 325 [error]: Error: 발신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:12:19)
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SendMailController.js:19:21
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+22/07/06 11:39:42 329 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/06 11:39:42 330 [debug]: --------------------------------------------------
+22/07/06 11:39:43 634 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:39:43 635 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:39:43 635 [debug]: [POST] http://localhost:3001/send_mail
+22/07/06 11:39:43 637 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:43 637 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:43 638 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:43 638 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:43 638 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:43 639 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:39:43 639 [error]: [Error] 발신자 메일주소를 입력하세요.
+22/07/06 11:39:43 640 [error]: Error: 발신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:12:19)
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SendMailController.js:19:21
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+22/07/06 11:39:43 642 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 11:39:43 643 [debug]: --------------------------------------------------
+22/07/06 11:44:23 044 [debug]: --------------------------------------------------
+22/07/06 11:44:23 047 [debug]: |              Start Express Server              |
+22/07/06 11:44:23 047 [debug]: --------------------------------------------------
+22/07/06 11:44:23 048 [debug]: --------------------------------------------------
+22/07/06 11:44:26 108 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:44:26 109 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:44:26 110 [debug]: [POST] http://localhost:3001/send_mail
+22/07/06 11:44:26 133 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:26 134 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:26 135 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:26 135 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:26 136 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:26 137 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:26 139 [error]: [Error] 발신자 메일주소를 입력하세요.
+22/07/06 11:44:26 139 [error]: Error: 발신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:12:19)
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SendMailController.js:18:21
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+22/07/06 11:44:26 150 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 41ms
+22/07/06 11:44:26 152 [debug]: --------------------------------------------------
+22/07/06 11:44:27 331 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:44:27 332 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:44:27 333 [debug]: [POST] http://localhost:3001/send_mail
+22/07/06 11:44:27 336 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:27 336 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:27 337 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:27 337 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:27 338 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:27 338 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:27 339 [error]: [Error] 발신자 메일주소를 입력하세요.
+22/07/06 11:44:27 340 [error]: Error: 발신자 메일주소를 입력하세요.
+    at RegexHelper.value (file:///c:/Users/leeah/studynote/07_Node.js/12_Route/helper/RegexHelper.js:12:19)
+    at file:///c:/Users/leeah/studynote/07_Node.js/12_Route/controllers/SendMailController.js:18:21
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\studynote\07_Node.js\12_Route\node_modules\express\lib\router\index.js:175:3)
+22/07/06 11:44:27 343 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 11:44:27 344 [debug]: --------------------------------------------------
+22/07/06 11:44:51 031 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:44:51 032 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 11:44:51 033 [debug]: [POST] http://localhost:3001/send_mail
+22/07/06 11:44:51 036 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:51 036 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:51 037 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:51 037 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:51 038 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:51 038 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:44:54 240 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3208ms
+22/07/06 11:44:54 241 [debug]: --------------------------------------------------
+22/07/06 11:51:12 477 [debug]: --------------------------------------------------
+22/07/06 11:51:12 480 [debug]: |              Start Express Server              |
+22/07/06 11:51:12 481 [debug]: --------------------------------------------------
+22/07/06 11:51:12 482 [debug]: --------------------------------------------------
+22/07/06 11:57:00 376 [debug]: --------------------------------------------------
+22/07/06 11:57:00 381 [debug]: |              Start Express Server              |
+22/07/06 11:57:00 382 [debug]: --------------------------------------------------
+22/07/06 11:57:00 383 [debug]: --------------------------------------------------
+22/07/06 11:57:10 018 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:57:10 019 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:57:10 020 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:57:10 038 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:57:10 045 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+22/07/06 11:57:10 046 [debug]: --------------------------------------------------
+22/07/06 11:57:22 016 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:57:22 017 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:57:22 018 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 11:57:22 029 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/06 11:57:22 030 [debug]: --------------------------------------------------
+22/07/06 11:57:56 691 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:57:56 692 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:57:56 692 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:57:56 695 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:57:56 696 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:57:56 697 [debug]: --------------------------------------------------
+22/07/06 11:57:57 692 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:57:57 692 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:57:57 693 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:57:57 694 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:57:57 695 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 11:57:57 696 [debug]: --------------------------------------------------
+22/07/06 11:58:01 630 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:58:01 630 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:58:01 631 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:58:01 633 [debug]: [cookies] my_msg=안녀아세요
+22/07/06 11:58:01 633 [debug]: [signedCookies] my_msg_signed=안녀아세요
+22/07/06 11:58:01 634 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:58:01 635 [debug]: --------------------------------------------------
+22/07/06 11:58:16 317 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:58:16 318 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:58:16 319 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:58:16 320 [debug]: [cookies] my_msg=안녀아세요
+22/07/06 11:58:16 321 [debug]: [signedCookies] my_msg_signed=안녀아세요
+22/07/06 11:58:16 322 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:58:16 322 [debug]: --------------------------------------------------
+22/07/06 11:58:20 349 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:58:20 350 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:58:20 350 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 11:58:20 352 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/06 11:58:20 352 [debug]: --------------------------------------------------
+22/07/06 11:58:26 080 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:58:26 081 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:58:26 081 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:58:26 083 [debug]: [cookies] my_msg=안녀아세요
+22/07/06 11:58:26 083 [debug]: [signedCookies] my_msg_signed=안녀아세요
+22/07/06 11:58:26 084 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 11:58:26 084 [debug]: --------------------------------------------------
+22/07/06 11:58:43 282 [debug]: --------------------------------------------------
+22/07/06 11:58:43 286 [debug]: |              Start Express Server              |
+22/07/06 11:58:43 287 [debug]: --------------------------------------------------
+22/07/06 11:58:43 288 [debug]: --------------------------------------------------
+22/07/06 11:58:44 934 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:58:44 935 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:58:44 938 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 11:58:44 953 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+22/07/06 11:58:44 954 [debug]: --------------------------------------------------
+22/07/06 11:58:50 581 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:58:50 582 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:58:50 583 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:58:50 597 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:58:50 601 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 19ms
+22/07/06 11:58:50 602 [debug]: --------------------------------------------------
+22/07/06 11:58:51 640 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:58:51 644 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:58:51 645 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 11:58:51 653 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 11:58:51 654 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 11:58:51 655 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/06 11:58:51 656 [debug]: --------------------------------------------------
+22/07/06 11:59:55 578 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:59:55 579 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:59:55 580 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:59:55 581 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:59:55 583 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:59:55 583 [debug]: --------------------------------------------------
+22/07/06 11:59:56 843 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:59:56 843 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:59:56 844 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 11:59:56 846 [debug]: [HTTP %s Params] %s=%s
+22/07/06 11:59:56 847 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 11:59:56 848 [debug]: --------------------------------------------------
+22/07/06 11:59:58 575 [debug]: 클라이언트가 접속했습니다.
+22/07/06 11:59:58 575 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 11:59:58 576 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 11:59:58 580 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 11:59:58 581 [debug]: --------------------------------------------------
+22/07/06 12:00:04 890 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:00:04 891 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:00:04 891 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:00:04 893 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:00:04 894 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 12:00:04 894 [debug]: --------------------------------------------------
+22/07/06 12:00:06 114 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:00:06 115 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:00:06 116 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:00:06 118 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 12:00:06 119 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 12:00:06 121 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 12:00:06 121 [debug]: --------------------------------------------------
+22/07/06 12:01:28 452 [debug]: --------------------------------------------------
+22/07/06 12:01:28 456 [debug]: |              Start Express Server              |
+22/07/06 12:01:28 457 [debug]: --------------------------------------------------
+22/07/06 12:01:28 458 [debug]: --------------------------------------------------
+22/07/06 12:01:30 541 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:01:30 542 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:01:30 543 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:01:30 564 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:01:30 581 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 39ms
+22/07/06 12:01:30 583 [debug]: --------------------------------------------------
+22/07/06 12:01:31 617 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:01:31 618 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:01:31 618 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:01:31 622 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 12:01:31 623 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 12:01:31 625 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 12:01:31 626 [debug]: --------------------------------------------------
+22/07/06 12:01:33 678 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:01:33 679 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:01:33 679 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:01:33 681 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:01:33 682 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 12:01:33 682 [debug]: --------------------------------------------------
+22/07/06 12:01:34 856 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:01:34 856 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:01:34 857 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 12:01:34 863 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 12:01:34 863 [debug]: --------------------------------------------------
+22/07/06 12:01:39 860 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:01:39 860 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:01:39 861 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:01:39 863 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:01:39 865 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 12:01:39 865 [debug]: --------------------------------------------------
+22/07/06 12:01:41 094 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:01:41 095 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:01:41 095 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:01:41 097 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 12:01:41 097 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 12:01:41 098 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 12:01:41 099 [debug]: --------------------------------------------------
+22/07/06 12:02:20 000 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:02:20 000 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:02:20 001 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:02:20 003 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:02:20 004 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 12:02:20 005 [debug]: --------------------------------------------------
+22/07/06 12:09:06 298 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:09:06 299 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:09:06 300 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:09:06 301 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:09:06 302 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 12:09:06 303 [debug]: --------------------------------------------------
+22/07/06 12:09:07 410 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:09:07 411 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:09:07 412 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:09:07 414 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 12:09:07 415 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 12:09:07 416 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 12:09:07 417 [debug]: --------------------------------------------------
+22/07/06 12:10:30 044 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:10:30 045 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:10:30 045 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:10:30 049 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:10:30 052 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 12:10:30 053 [debug]: --------------------------------------------------
+22/07/06 12:10:30 889 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:10:30 890 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:10:30 890 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:10:30 892 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 12:10:30 893 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 12:10:30 895 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 12:10:30 896 [debug]: --------------------------------------------------
+22/07/06 12:12:47 632 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:12:47 633 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:12:47 634 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:12:47 635 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:12:47 637 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/06 12:12:47 638 [debug]: --------------------------------------------------
+22/07/06 12:15:03 283 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:15:03 283 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:15:03 284 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 12:15:03 288 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 12:15:03 288 [debug]: --------------------------------------------------
+22/07/06 12:15:11 395 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:15:11 395 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:15:11 396 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:15:11 397 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:15:11 398 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 12:15:11 398 [debug]: --------------------------------------------------
+22/07/06 12:15:12 531 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:15:12 531 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:15:12 532 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:15:12 533 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 12:15:12 533 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 12:15:12 534 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/06 12:15:12 534 [debug]: --------------------------------------------------
+22/07/06 12:15:40 300 [debug]: --------------------------------------------------
+22/07/06 12:15:40 304 [debug]: |              Start Express Server              |
+22/07/06 12:15:40 304 [debug]: --------------------------------------------------
+22/07/06 12:15:40 305 [debug]: --------------------------------------------------
+22/07/06 12:15:43 239 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:15:43 241 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:15:43 243 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 12:15:43 254 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+22/07/06 12:15:43 255 [debug]: --------------------------------------------------
+22/07/06 12:15:49 200 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:15:49 201 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:15:49 202 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:15:49 221 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:15:49 228 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 27ms
+22/07/06 12:15:49 229 [debug]: --------------------------------------------------
+22/07/06 12:15:51 619 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:15:51 620 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:15:51 621 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:15:51 624 [debug]: [cookies] my_msg=안녕하세요
+22/07/06 12:15:51 624 [debug]: [signedCookies] my_msg_signed=안녕하세요
+22/07/06 12:15:51 626 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 12:15:51 626 [debug]: --------------------------------------------------
+22/07/06 12:19:23 078 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:19:23 079 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 12:19:23 080 [debug]: [POST] http://localhost:3001/upload/single
+22/07/06 12:24:12 209 [debug]: --------------------------------------------------
+22/07/06 12:24:12 213 [debug]: |              Start Express Server              |
+22/07/06 12:24:12 214 [debug]: --------------------------------------------------
+22/07/06 12:24:12 215 [debug]: --------------------------------------------------
+22/07/06 12:24:14 587 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:24:14 588 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:24:14 590 [debug]: [GET] http://localhost:3001/04_cookie.html
+22/07/06 12:24:14 608 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 20ms
+22/07/06 12:24:14 610 [debug]: --------------------------------------------------
+22/07/06 12:24:18 659 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:24:18 660 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:24:18 661 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:24:18 683 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:24:18 698 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 38ms
+22/07/06 12:24:18 709 [debug]: --------------------------------------------------
+22/07/06 12:24:23 068 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:24:23 069 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:24:23 070 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:24:23 074 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:24:23 076 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/06 12:24:23 077 [debug]: --------------------------------------------------
+22/07/06 12:24:24 236 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:24:24 237 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:24:24 238 [debug]: [GET] http://localhost:3001/cookie
+22/07/06 12:24:24 240 [debug]: [cookies] my_msg=ddd
+22/07/06 12:24:24 241 [debug]: [signedCookies] my_msg_signed=ddd
+22/07/06 12:24:24 243 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/06 12:24:24 243 [debug]: --------------------------------------------------
+22/07/06 12:24:26 662 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:24:26 662 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/06 12:24:26 663 [debug]: [POST] http://localhost:3001/cookie
+22/07/06 12:24:26 665 [debug]: [HTTP %s Params] %s=%s
+22/07/06 12:24:26 667 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/06 12:24:26 667 [debug]: --------------------------------------------------
+22/07/06 12:25:12 481 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:25:12 482 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 12:25:12 483 [debug]: [POST] http://localhost:3001/upload/single
+22/07/06 12:29:51 302 [debug]: --------------------------------------------------
+22/07/06 12:29:51 308 [debug]: |              Start Express Server              |
+22/07/06 12:29:51 310 [debug]: --------------------------------------------------
+22/07/06 12:29:51 312 [debug]: --------------------------------------------------
+22/07/06 12:29:54 019 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:29:54 020 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 12:29:54 023 [debug]: [POST] http://localhost:3001/upload/single
+22/07/06 12:30:47 972 [debug]: --------------------------------------------------
+22/07/06 12:30:47 978 [debug]: |              Start Express Server              |
+22/07/06 12:30:47 979 [debug]: --------------------------------------------------
+22/07/06 12:30:47 981 [debug]: --------------------------------------------------
+22/07/06 12:30:50 358 [debug]: 클라이언트가 접속했습니다.
+22/07/06 12:30:50 359 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/06 12:30:50 361 [debug]: [POST] http://localhost:3001/upload/single

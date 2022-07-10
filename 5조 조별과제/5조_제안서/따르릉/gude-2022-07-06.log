@@ -1,0 +1,14 @@
+15:47:01:536 [WARN]	Request Failed. ErrorCode: 112029 errorMessage: Platform Status, Send Request Failed. WinHTTP Cannot Connect. last error code = 12029 
+15:47:01:796 [WARN]	Request Failed. ErrorCode: 112007 errorMessage: Platform Status, Send Request Failed. WinHTTP Name Not Resolved. last error code = 12007 
+15:48:05:336 [WARN]	Request Failed. ErrorCode: 29 errorMessage: Timeout, Send Request Failed t=63376
+15:50:32:820 [WARN]	Request Failed. ErrorCode: 112029 errorMessage: Platform Status, Send Request Failed. WinHTTP Cannot Connect. last error code = 12029 
+16:41:03:850 [WARN]	Request Failed. ErrorCode: 29 errorMessage: Timeout, Send Request Failed t=63143
+16:42:11:996 [WARN]	Request Failed. ErrorCode: 29 errorMessage: Timeout, Send Request Failed t=126242
+16:42:23:042 [WARN]	Request Failed. ErrorCode: 112007 errorMessage: Platform Status, Send Request Failed. WinHTTP Name Not Resolved. last error code = 12007 
+16:42:34:108 [WARN]	Request Failed. ErrorCode: 112007 errorMessage: Platform Status, Send Request Failed. WinHTTP Name Not Resolved. last error code = 12007 
+16:42:34:109 [WARN]	Request Failed. ErrorCode: 112007 errorMessage: Platform Status, Send Request Failed. WinHTTP Name Not Resolved. last error code = 12007 
+16:42:56:405 [WARN]	Request Failed. ErrorCode: 112007 errorMessage: Platform Status, Send Request Failed. WinHTTP Name Not Resolved. last error code = 12007 
+18:04:36:569 [WARN]	Request Failed. ErrorCode: 29 errorMessage: Timeout, Send Request Failed t=63176
+18:07:36:181 [WARN]	Request Failed. ErrorCode: 29 errorMessage: Timeout, Send Request Failed t=63305
+19:58:23:143 [WARN]	Request Failed. ErrorCode: 29 errorMessage: Timeout, Send Request Failed t=63214
+20:01:22:587 [WARN]	Request Failed. ErrorCode: 29 errorMessage: Timeout, Send Request Failed t=63110

@@ -33,8 +33,7 @@
                     // backend가 node인 경우 post, put, delete 파라미터 전송 방법
                     const response = await axios.post(backendUrl, { msg: userInput });
                     /**/
-                    document.getElementById('console').innerHTML = response.data;
-                } catch (error) {
+                    document.getElementById('console').innerHTML = response.data.rtmsg;                } catch (error) {
                     const errorMsg = '[' + error.response.status + '] ' + error.response.statusText;
                     alert(errorMsg);
                 }
@@ -45,6 +44,8 @@
                 try {
                     // Ajax 요청 보내기 -> 백엔드가 전달한 결과값이 response.data에 저장된다.
                     const {data} = await axios.get(backendUrl);
+                    console.log(data)
+                    
 
                     const html = '<h2>일반값: ' + data.my_msg + '</h2><h2>암호화: ' + data.my_msg_signed + '</h2>';
 
