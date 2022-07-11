@@ -93,8 +93,13 @@ const DepartmentSlice = createSlice({
   name: 'DepartmentSlice',
   initialState: {
     data: null,       
-    loading: false, 
-    error:null        
+    loading: false, // 로딩상태를 관리하기 위한 상태 메세지
+    error:null,     // 에러 여부를 관리하기 위한 상태 메세지
+    rt: null,
+    rtmsg: null,
+    pagenation: null,
+    item: null,
+    pubdate: null        
   },
   reducers: {},
   extraReducers: {
