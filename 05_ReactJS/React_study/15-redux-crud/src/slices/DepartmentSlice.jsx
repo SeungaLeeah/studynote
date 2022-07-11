@@ -1,7 +1,7 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit"
 import axios from 'axios';
 
-const API_URL = "http://localhost:3001/department";
+const API_URL = "http://192.168.0.35:3001/department";
 
 /** 다중행 데이터 조회를 위한 비동기 함수 (게시판 목록조회) */
 //DepartmentSlice안에 /getList를 만든다는 의미 
@@ -94,12 +94,7 @@ const DepartmentSlice = createSlice({
   initialState: {
     data: null,       
     loading: false, // 로딩상태를 관리하기 위한 상태 메세지
-    error:null,     // 에러 여부를 관리하기 위한 상태 메세지
-    rt: null,
-    rtmsg: null,
-    pagenation: null,
-    item: null,
-    pubdate: null        
+    error:null,     // 에러 여부를 관리하기 위한 상태 메세지       
   },
   reducers: {},
   extraReducers: {
@@ -121,8 +116,8 @@ const DepartmentSlice = createSlice({
             ...state,
             loading:false,
             error: {
-                code: payload?.status ? payload.status : 500,
-                message: payload?.statusText ? payload.statusText : 'Server Error' 
+                code: payload?.status ? payload.status:500,
+                message: payload?.statusText ? payload.statusText:'Server Error'
             }
         }
     },

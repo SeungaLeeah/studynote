@@ -6,6 +6,7 @@ import logger from './helper/LogHelper.js';
 import { myip, urlFormat } from './helper/UtilHelper.js';
 import WebHelper from './helper/WebHelper.js'
 import DBPool from './helper/DBPool.js';
+
 /** 내장모듈 */
 import url from 'url';
 import path from 'path';
@@ -15,7 +16,7 @@ import express from 'express'; // Express 본체
 import useragent from 'express-useragent'; // 클라이언트의 정보를 조회할 수 있는 기능
 import serveStatic from 'serve-static'; // 특정 폴더의 파일을 URL로 노출시킴
 import serveFavicon from 'serve-favicon'; // favicon 처리
-import bodyParser from 'body-parser'; // POST 파라미터 처리
+import bodyParser from 'body-parser'; // POST 파라미터 처
 import methodOverride from 'method-override'; // PUT 파라미터 처리
 import cookieParser from 'cookie-parser'; // Cookie 처리
 import expressSession from 'express-session'; // Session 처리
@@ -99,6 +100,8 @@ app.use((req, res, next) => {
 /*----------------------------------------------------------
  | 4) Express 객체의 추가 설정
  -----------------------------------------------------------*/
+app.use(cors());
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text()); // TEXT형식의 파라미터 수신 가능.
 app.use(bodyParser.json()); // JSON형식의 파라미터 수신 가능.
@@ -107,22 +110,24 @@ app.use(methodOverride('X-HTTP-Method-Override')); // Google/GData
 app.use(methodOverride('X-Method-Override')); // IBM
 app.use(methodOverride('_method')); // HTML form
 app.use(cookieParser(process.env.COOKIE_ENCRYPT_KEY));
-app.use(expressSession({secret: process.env.SESSION_ENCRYPT_KEY, resave: false,saveUninitialized: false}));
+
+app.use(expressSession({
+    secret: process.env.SESSION_ENCRYPT_KEY, 
+    resave: false,
+    saveUninitialized: false,
+    // store: sessionStore
+    }));
 app.use('/', serveStatic(process.env.PUBLIC_PATH));
 app.use(process.env.UPLOAD_URL, serveStatic(process.env.UPLOAD_DIR));
 app.use(process.env.THUMB_URL, serveStatic(process.env.THUMB_DIR));
 app.use(serveFavicon(process.env.FAVICON_PATH));
 app.use(WebHelper());
-app.use(cors());
 
 
 /*----------------------------------------------------------
  | 5) 각 URL별 백엔드 기능 정의
  -----------------------------------------------------------*/
 app.use(DepartmentController());
-
-app.use((err, req, res, next) => res.sendError(err));
-app.use("*", (req, res, next)=> res.sendError(new PageNotFoundException()));
 
 /** 컨트롤러에서 에러 발생 시 `next(에러객체)`를 호출했을 때 동잘할 처리 */
 app.use((err, req, res, next) => res.sendError(err));
@@ -133,6 +138,7 @@ app.use("*", (req, res, next)=>res.sendError(new PageNotFoundException()));
  | 6) 설정한 내용을 기반으로 서버 구동 시작
  -----------------------------------------------------------*/
 const ip = myip();
+console.log(ip);
 
 app.listen(process.env.PORT, () => {
     logger.debug('--------------------------------------------------');

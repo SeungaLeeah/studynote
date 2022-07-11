@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 // test 완료 후, 다시 /를 빼서 App으로 변경해놓기
-/**
+/**/
 import App from './App';
 /*/
 import App from './Test';
@@ -11,7 +11,7 @@ import App from './Test';
 
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './Store';
+import store from './store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

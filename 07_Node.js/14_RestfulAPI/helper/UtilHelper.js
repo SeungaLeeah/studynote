@@ -14,8 +14,7 @@ const myip = () => {
         const item = nets[attr];
 
         item.map((v, i) => {
-            // if (v.family == 'IPv4' && v.address != '127.0.0.1') {
-            if (v.family == 4 && v.address != '127.0.0.1') {
+            if (v.family == 'IPv4' && v.address != '127.0.0.1') {
                 ipAddress.push(v.address);
             }
         });
