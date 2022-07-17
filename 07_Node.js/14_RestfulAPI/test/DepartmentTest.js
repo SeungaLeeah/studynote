@@ -6,16 +6,16 @@ import departmentService from '../services/DepartmentService.js';
         let result = await departmentService.getList();
         console.log(result);
 
-        result = await departmentService.getItem({deptno: 240});
+        result = await departmentService.getItem({deptno: 248});
         console.log(result);
 
         result = await departmentService.addItem({dname: 'MVC학과', loc: '여긴어디?'});
         console.log(result);
 
-        result = await departmentService.editItem({deptno: 240, dname: 'MVC학과', loc: '여긴어디?'});
+        result = await departmentService.editItem({deptno: 237, dname: 'MVC학과', loc: '여긴어디?'});
         console.log(result);
 
-        await departmentService.deleteItem({deptno:240});
+        await departmentService.deleteItem({deptno:263});
 
         result = await departmentService.getCount();
         console.log(result);

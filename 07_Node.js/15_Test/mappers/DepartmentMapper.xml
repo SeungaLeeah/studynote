@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+@filename    : DepartmentMapper.xml
+@author      : 이승아 (leeah0913@gmail.com)
+@description : 특정 교수가 속한 학과 일괄 삭제
+-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Departmentmapper">
+
+    <!-- 특정 교수 속한 학과 일괄 삭제 -->
+    <delete id="deleteItemByProfno">
+        DELETE FROM department WHERE profno=#{profno};
+    </delete>
+
+</mapper>

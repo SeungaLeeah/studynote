@@ -1,0 +1,91 @@
+22/07/14 23:29:34 021 [debug]: --------------------------------------------------
+22/07/14 23:29:34 027 [debug]: |              Start Express Server              |
+22/07/14 23:29:34 027 [debug]: --------------------------------------------------
+22/07/14 23:29:34 029 [debug]: server address => http://192.168.152.1:3001
+22/07/14 23:29:34 029 [debug]: server address => http://192.168.172.1:3001
+22/07/14 23:29:34 030 [debug]: server address => http://192.168.45.221:3001
+22/07/14 23:29:34 031 [debug]: --------------------------------------------------
+22/07/14 23:29:45 409 [debug]: 클라이언트가 접속했습니다.
+22/07/14 23:29:45 411 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/14 23:29:45 413 [debug]: [POST] http://localhost:3001/department
+22/07/14 23:29:45 441 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:45 443 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:45 502 [info]: >> DATABASE 접속된 [threadId=13]
+22/07/14 23:29:45 503 [info]: >> Connection 임대됨 [threadId=13]
+22/07/14 23:29:45 506 [debug]: INSERT INTO department (dname, loc) VALUES ('공학과', '1041호');
+22/07/14 23:29:45 528 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='273';
+22/07/14 23:29:45 534 [info]: >> Connection 반납됨 [threadId=13]
+22/07/14 23:29:45 539 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 129ms
+22/07/14 23:29:45 539 [debug]: --------------------------------------------------
+22/07/14 23:29:49 137 [debug]: 클라이언트가 접속했습니다.
+22/07/14 23:29:49 138 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/14 23:29:49 138 [debug]: [PUT] http://localhost:3001/department/241
+22/07/14 23:29:49 141 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:49 142 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:49 143 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:49 144 [info]: >> Connection 임대됨 [threadId=13]
+22/07/14 23:29:49 145 [debug]: UPDATE department SET dname='수정된학과', loc='나는 누구?' WHERE deptno='241'
+22/07/14 23:29:49 149 [info]: >> Connection 반납됨 [threadId=13]
+22/07/14 23:29:49 150 [error]: [Error] 조회된 데이터가 없습니다.
+22/07/14 23:29:49 151 [error]: Error: 조회된 데이터가 없습니다.
+    at DepartmentService.editItem (file:///C:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/services/DepartmentService.js:108:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/controllers/DepartmentController.js:121:20
+22/07/14 23:29:49 154 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+22/07/14 23:29:49 154 [debug]: --------------------------------------------------
+22/07/14 23:29:52 951 [debug]: 클라이언트가 접속했습니다.
+22/07/14 23:29:52 952 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/14 23:29:52 952 [debug]: [GET] http://localhost:3001/department/205
+22/07/14 23:29:52 955 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:52 956 [info]: >> Connection 임대됨 [threadId=13]
+22/07/14 23:29:52 957 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='205';
+22/07/14 23:29:52 958 [info]: >> Connection 반납됨 [threadId=13]
+22/07/14 23:29:52 960 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/14 23:29:52 960 [debug]: --------------------------------------------------
+22/07/14 23:29:55 774 [debug]: 클라이언트가 접속했습니다.
+22/07/14 23:29:55 774 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/14 23:29:55 775 [debug]: [GET] http://localhost:3001/department?page=1&rows=20
+22/07/14 23:29:55 778 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/14 23:29:55 779 [debug]: --------------------------------------------------
+22/07/14 23:29:55 780 [debug]: 클라이언트가 접속했습니다.
+22/07/14 23:29:55 781 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/14 23:29:55 781 [debug]: [GET] http://localhost:3001/department/?page=1&rows=20
+22/07/14 23:29:55 784 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:55 784 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:55 785 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:29:55 785 [info]: >> Connection 임대됨 [threadId=13]
+22/07/14 23:29:55 789 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/14 23:29:55 792 [info]: >> Connection 반납됨 [threadId=13]
+22/07/14 23:29:55 793 [info]: >> Connection 임대됨 [threadId=13]
+22/07/14 23:29:55 795 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC  LIMIT 3, 20
+22/07/14 23:29:55 797 [info]: >> Connection 반납됨 [threadId=13]
+22/07/14 23:29:55 798 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+22/07/14 23:29:55 799 [debug]: --------------------------------------------------
+22/07/14 23:30:02 509 [debug]: 클라이언트가 접속했습니다.
+22/07/14 23:30:02 510 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/14 23:30:02 510 [debug]: [GET] http://localhost:3001/department
+22/07/14 23:30:02 512 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/14 23:30:02 513 [debug]: --------------------------------------------------
+22/07/14 23:30:02 516 [debug]: 클라이언트가 접속했습니다.
+22/07/14 23:30:02 516 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/14 23:30:02 517 [debug]: [GET] http://localhost:3001/department/
+22/07/14 23:30:02 518 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:30:02 518 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:30:02 519 [debug]: [HTTP %s Params] %s=%s
+22/07/14 23:30:02 519 [info]: >> Connection 임대됨 [threadId=13]
+22/07/14 23:30:02 520 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/14 23:30:02 521 [info]: >> Connection 반납됨 [threadId=13]
+22/07/14 23:30:02 522 [info]: >> Connection 임대됨 [threadId=13]
+22/07/14 23:30:02 523 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC  LIMIT 6, 10
+22/07/14 23:30:02 524 [info]: >> Connection 반납됨 [threadId=13]
+22/07/14 23:30:02 525 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/14 23:30:02 525 [debug]: --------------------------------------------------
+22/07/14 23:32:56 175 [info]: Database Pool is closed
+22/07/14 23:52:29 679 [info]: >> DATABASE 접속된 [threadId=21]
+22/07/14 23:52:29 682 [info]: >> Connection 임대됨 [threadId=21]
+22/07/14 23:52:29 688 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC
+22/07/14 23:52:29 696 [info]: >> Connection 반납됨 [threadId=21]
+22/07/14 23:52:29 728 [info]: >> Connection 임대됨 [threadId=21]
+22/07/14 23:52:29 731 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='240';
+22/07/14 23:52:29 733 [info]: >> Connection 반납됨 [threadId=21]
+22/07/14 23:52:29 738 [info]: Database Pool is closed

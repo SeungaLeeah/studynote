@@ -1,0 +1,30 @@
+22/07/15 03:20:46 238 [info]: >> DATABASE 접속된 [threadId=70]
+22/07/15 03:20:46 242 [info]: >> Connection 임대됨 [threadId=70]
+22/07/15 03:20:46 247 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='201';
+22/07/15 03:20:46 265 [debug]: SELECT deptno, dname, loc FROM department WHERE   dname LIKE concat('%', '풀스택', '%')  ORDER BY deptno DESC  LIMIT 0, 3
+22/07/15 03:20:46 271 [debug]: INSERT INTO department (dname, loc) VALUES ('풀스택', '1401호');
+22/07/15 03:20:46 277 [debug]: DELETE FROM department WHERE deptno='300';
+22/07/15 03:20:46 280 [debug]: UPDATE department SET dname='수정된학과', loc='수정된 위치' WHERE deptno='300'
+22/07/15 03:20:46 284 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/15 03:20:46 288 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d') as h_date, comm, p.deptno, dname, loc FROM professor as p INNER JOIN department as d ON p.deptno = d.deptno
+22/07/15 03:20:46 307 [info]: >> Connection 반납됨 [threadId=70]
+22/07/15 03:26:28 624 [info]: >> DATABASE 접속된 [threadId=72]
+22/07/15 03:26:28 628 [info]: >> Connection 임대됨 [threadId=72]
+22/07/15 03:26:28 632 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='201';
+22/07/15 03:26:28 643 [debug]: SELECT deptno, dname, loc FROM department WHERE   dname LIKE concat('%', '풀스택', '%')  ORDER BY deptno DESC  LIMIT 0, 3
+22/07/15 03:26:28 647 [debug]: INSERT INTO department (dname, loc) VALUES ('풀스택', '1401호');
+22/07/15 03:26:28 654 [debug]: DELETE FROM department WHERE deptno='300';
+22/07/15 03:26:28 657 [debug]: UPDATE department SET dname='수정된학과', loc='수정된 위치' WHERE deptno='300'
+22/07/15 03:26:28 659 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/15 03:26:28 663 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d') as h_date, comm, p.deptno, dname, loc FROM professor as p INNER JOIN department as d ON p.deptno = d.deptno
+22/07/15 03:26:28 683 [info]: >> Connection 반납됨 [threadId=72]
+22/07/15 10:01:27 650 [info]: >> DATABASE 접속된 [threadId=16]
+22/07/15 10:01:27 656 [info]: >> Connection 임대됨 [threadId=16]
+22/07/15 10:01:27 661 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='201';
+22/07/15 10:01:27 694 [debug]: SELECT deptno, dname, loc FROM department WHERE   dname LIKE concat('%', '풀스택', '%')  ORDER BY deptno DESC  LIMIT 0, 3
+22/07/15 10:01:27 702 [debug]: INSERT INTO department (dname, loc) VALUES ('풀스택', '1401호');
+22/07/15 10:01:27 715 [debug]: DELETE FROM department WHERE deptno='300';
+22/07/15 10:01:27 719 [debug]: UPDATE department SET dname='수정된학과', loc='수정된 위치' WHERE deptno='300'
+22/07/15 10:01:27 721 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/15 10:01:27 727 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d') as h_date, comm, p.deptno, dname, loc FROM professor as p INNER JOIN department as d ON p.deptno = d.deptno
+22/07/15 10:01:27 744 [info]: >> Connection 반납됨 [threadId=16]

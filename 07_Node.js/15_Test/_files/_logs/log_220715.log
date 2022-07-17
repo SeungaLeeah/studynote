@@ -1,0 +1,1363 @@
+22/07/15 00:01:05 137 [debug]: --------------------------------------------------
+22/07/15 00:01:05 141 [debug]: |              Start Express Server              |
+22/07/15 00:01:05 143 [debug]: --------------------------------------------------
+22/07/15 00:01:05 144 [debug]: server address => http://192.168.152.1:3001
+22/07/15 00:01:05 145 [debug]: server address => http://192.168.172.1:3001
+22/07/15 00:01:05 146 [debug]: server address => http://192.168.45.221:3001
+22/07/15 00:01:05 147 [debug]: --------------------------------------------------
+22/07/15 00:04:42 367 [info]: Database Pool is closed
+22/07/15 04:18:12 459 [info]: >> DATABASE 접속된 [threadId=99]
+22/07/15 04:18:12 464 [info]: >> Connection 임대됨 [threadId=99]
+22/07/15 04:18:12 472 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC
+22/07/15 04:18:12 479 [info]: >> Connection 반납됨 [threadId=99]
+22/07/15 04:18:12 513 [info]: >> Connection 임대됨 [threadId=99]
+22/07/15 04:18:12 519 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='240';
+22/07/15 04:18:12 525 [info]: >> Connection 반납됨 [threadId=99]
+22/07/15 04:18:12 531 [info]: Database Pool is closed
+22/07/15 04:18:35 791 [info]: >> DATABASE 접속된 [threadId=100]
+22/07/15 04:18:35 795 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 799 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC
+22/07/15 04:18:35 805 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 825 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 827 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='248';
+22/07/15 04:18:35 829 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 831 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 833 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+22/07/15 04:18:35 841 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='279';
+22/07/15 04:18:35 843 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 845 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 846 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?' WHERE deptno='240'
+22/07/15 04:18:35 848 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 852 [info]: Database Pool is closed
+22/07/15 04:19:25 548 [info]: >> DATABASE 접속된 [threadId=101]
+22/07/15 04:19:25 551 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 556 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC
+22/07/15 04:19:25 563 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 588 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 593 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='248';
+22/07/15 04:19:25 595 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 597 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 599 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+22/07/15 04:19:25 607 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='280';
+22/07/15 04:19:25 608 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 610 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 613 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?' WHERE deptno='237'
+22/07/15 04:19:25 616 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='237';
+22/07/15 04:19:25 617 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 620 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 622 [debug]: DELETE FROM student WHERE deptno='263';
+22/07/15 04:19:25 625 [debug]: DELETE FROM professor WHERE deptno='263';
+22/07/15 04:19:25 627 [debug]: DELETE FROM department WHERE deptno='263';
+22/07/15 04:19:25 630 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 631 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 633 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/15 04:19:25 639 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 640 [info]: Database Pool is closed
+22/07/15 04:19:48 405 [debug]: --------------------------------------------------
+22/07/15 04:19:48 408 [debug]: |              Start Express Server              |
+22/07/15 04:19:48 408 [debug]: --------------------------------------------------
+22/07/15 04:19:48 409 [debug]: server address => http://192.168.152.1:3001
+22/07/15 04:19:48 410 [debug]: server address => http://192.168.172.1:3001
+22/07/15 04:19:48 410 [debug]: server address => http://192.168.45.221:3001
+22/07/15 04:19:48 411 [debug]: --------------------------------------------------
+22/07/15 10:22:44 263 [debug]: --------------------------------------------------
+22/07/15 10:22:44 269 [debug]: |              Start Express Server              |
+22/07/15 10:22:44 270 [debug]: --------------------------------------------------
+22/07/15 10:22:44 271 [debug]: server address => http://192.168.152.1:3001
+22/07/15 10:22:44 271 [debug]: server address => http://192.168.172.1:3001
+22/07/15 10:22:44 272 [debug]: server address => http://192.168.45.221:3001
+22/07/15 10:22:44 273 [debug]: --------------------------------------------------
+22/07/15 10:23:19 400 [info]: Database Pool is closed
+22/07/15 10:23:20 244 [debug]: --------------------------------------------------
+22/07/15 10:23:20 248 [debug]: |              Start Express Server              |
+22/07/15 10:23:20 249 [debug]: --------------------------------------------------
+22/07/15 10:23:20 250 [debug]: server address => http://192.168.152.1:3001
+22/07/15 10:23:20 251 [debug]: server address => http://192.168.172.1:3001
+22/07/15 10:23:20 252 [debug]: server address => http://192.168.45.221:3001
+22/07/15 10:23:20 253 [debug]: --------------------------------------------------
+22/07/15 10:23:24 167 [info]: Database Pool is closed
+22/07/15 10:23:27 175 [debug]: --------------------------------------------------
+22/07/15 10:23:27 178 [debug]: |              Start Express Server              |
+22/07/15 10:23:27 179 [debug]: --------------------------------------------------
+22/07/15 10:23:27 180 [debug]: server address => http://192.168.152.1:3001
+22/07/15 10:23:27 181 [debug]: server address => http://192.168.172.1:3001
+22/07/15 10:23:27 182 [debug]: server address => http://192.168.45.221:3001
+22/07/15 10:23:27 182 [debug]: --------------------------------------------------
+22/07/15 10:23:32 893 [debug]: 클라이언트가 접속했습니다.
+22/07/15 10:23:32 895 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 10:23:32 897 [debug]: [PUT] http://localhost:3001/professior
+22/07/15 10:23:32 928 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 10:23:32 929 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 10:23:32 939 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 45ms
+22/07/15 10:23:32 939 [debug]: --------------------------------------------------
+22/07/15 10:23:39 824 [debug]: 클라이언트가 접속했습니다.
+22/07/15 10:23:39 825 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 10:23:39 826 [debug]: [POST] http://localhost:3001/department
+22/07/15 10:23:39 830 [debug]: [HTTP %s Params] %s=%s
+22/07/15 10:23:39 831 [debug]: [HTTP %s Params] %s=%s
+22/07/15 10:23:39 876 [info]: >> DATABASE 접속된 [threadId=18]
+22/07/15 10:23:39 877 [info]: >> Connection 임대됨 [threadId=18]
+22/07/15 10:23:39 878 [info]: >> Connection 반납됨 [threadId=18]
+22/07/15 10:23:39 879 [error]: [Error] Namespace [DepartmentMapper] not exists.
+22/07/15 10:23:39 879 [error]: Error: Namespace [DepartmentMapper] not exists.
+    at MybatisMapper.getStatement (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mybatis-mapper\index.js:86:52)
+    at DepartmentService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/DepartmentService.js:74:29)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/DepartmentController.js:89:20
+22/07/15 10:23:39 881 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 56ms
+22/07/15 10:23:39 882 [debug]: --------------------------------------------------
+22/07/15 10:23:42 513 [debug]: 클라이언트가 접속했습니다.
+22/07/15 10:23:42 513 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 10:23:42 514 [debug]: [PUT] http://localhost:3001/department/241
+22/07/15 10:23:42 516 [debug]: [HTTP %s Params] %s=%s
+22/07/15 10:23:42 517 [debug]: [HTTP %s Params] %s=%s
+22/07/15 10:23:42 518 [debug]: [HTTP %s Params] %s=%s
+22/07/15 10:23:42 519 [info]: >> Connection 임대됨 [threadId=18]
+22/07/15 10:23:42 520 [info]: >> Connection 반납됨 [threadId=18]
+22/07/15 10:23:42 520 [error]: [Error] Namespace [DepartmentMapper] not exists.
+22/07/15 10:23:42 521 [error]: Error: Namespace [DepartmentMapper] not exists.
+    at MybatisMapper.getStatement (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mybatis-mapper\index.js:86:52)
+    at DepartmentService.editItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/DepartmentService.js:104:29)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/DepartmentController.js:121:20
+22/07/15 10:23:42 523 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/15 10:23:42 524 [debug]: --------------------------------------------------
+22/07/15 10:27:32 586 [info]: Database Pool is closed
+22/07/15 10:27:40 350 [info]: >> DATABASE 접속된 [threadId=19]
+22/07/15 10:27:40 354 [info]: >> Connection 임대됨 [threadId=19]
+22/07/15 10:27:40 356 [info]: >> Connection 반납됨 [threadId=19]
+22/07/15 10:27:40 365 [info]: Database Pool is closed
+22/07/15 10:28:24 885 [info]: >> DATABASE 접속된 [threadId=20]
+22/07/15 10:28:24 888 [info]: >> Connection 임대됨 [threadId=20]
+22/07/15 10:28:24 890 [info]: >> Connection 반납됨 [threadId=20]
+22/07/15 10:28:24 895 [info]: Database Pool is closed
+22/07/15 10:34:07 044 [info]: >> DATABASE 접속된 [threadId=24]
+22/07/15 10:34:07 047 [info]: >> Connection 임대됨 [threadId=24]
+22/07/15 10:34:07 049 [info]: >> Connection 반납됨 [threadId=24]
+22/07/15 10:34:07 055 [info]: Database Pool is closed
+22/07/15 10:34:52 167 [debug]: --------------------------------------------------
+22/07/15 10:34:52 170 [debug]: |              Start Express Server              |
+22/07/15 10:34:52 171 [debug]: --------------------------------------------------
+22/07/15 10:34:52 172 [debug]: server address => http://192.168.152.1:3001
+22/07/15 10:34:52 173 [debug]: server address => http://192.168.172.1:3001
+22/07/15 10:34:52 174 [debug]: server address => http://192.168.45.221:3001
+22/07/15 10:34:52 175 [debug]: --------------------------------------------------
+22/07/15 10:35:48 564 [info]: Database Pool is closed
+22/07/15 10:38:38 508 [info]: >> DATABASE 접속된 [threadId=31]
+22/07/15 10:38:38 513 [info]: >> Connection 임대됨 [threadId=31]
+22/07/15 10:38:38 515 [info]: >> Connection 반납됨 [threadId=31]
+22/07/15 10:38:38 520 [info]: Database Pool is closed
+22/07/15 10:39:08 368 [info]: >> DATABASE 접속된 [threadId=32]
+22/07/15 10:39:08 372 [info]: >> Connection 임대됨 [threadId=32]
+22/07/15 10:39:08 375 [info]: >> Connection 반납됨 [threadId=32]
+22/07/15 10:39:08 380 [info]: Database Pool is closed
+22/07/15 10:40:46 584 [info]: >> DATABASE 접속된 [threadId=33]
+22/07/15 10:40:46 588 [info]: >> Connection 임대됨 [threadId=33]
+22/07/15 10:40:46 593 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:40:46 613 [info]: >> Connection 반납됨 [threadId=33]
+22/07/15 10:40:46 636 [info]: >> Connection 임대됨 [threadId=33]
+22/07/15 10:40:46 640 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:40:46 643 [info]: >> Connection 반납됨 [threadId=33]
+22/07/15 10:40:46 646 [info]: >> Connection 임대됨 [threadId=33]
+22/07/15 10:40:46 648 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah')
+22/07/15 10:40:46 650 [info]: >> Connection 반납됨 [threadId=33]
+22/07/15 10:40:46 656 [info]: Database Pool is closed
+22/07/15 10:43:44 775 [info]: >> DATABASE 접속된 [threadId=35]
+22/07/15 10:43:44 779 [info]: >> Connection 임대됨 [threadId=35]
+22/07/15 10:43:44 785 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:43:44 804 [info]: >> Connection 반납됨 [threadId=35]
+22/07/15 10:43:44 825 [info]: >> Connection 임대됨 [threadId=35]
+22/07/15 10:43:44 828 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:43:44 834 [info]: >> Connection 반납됨 [threadId=35]
+22/07/15 10:43:44 837 [info]: >> Connection 임대됨 [threadId=35]
+22/07/15 10:43:44 839 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah')
+22/07/15 10:43:44 842 [info]: >> Connection 반납됨 [threadId=35]
+22/07/15 10:43:44 850 [info]: Database Pool is closed
+22/07/15 10:46:29 612 [info]: >> DATABASE 접속된 [threadId=36]
+22/07/15 10:46:29 616 [info]: >> Connection 임대됨 [threadId=36]
+22/07/15 10:46:29 626 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:46:29 647 [info]: >> Connection 반납됨 [threadId=36]
+22/07/15 10:46:29 673 [info]: >> Connection 임대됨 [threadId=36]
+22/07/15 10:46:29 676 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:46:29 680 [info]: >> Connection 반납됨 [threadId=36]
+22/07/15 10:46:29 684 [info]: >> Connection 임대됨 [threadId=36]
+22/07/15 10:46:29 689 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah' '부교수' '200' #{ date_format(hiredate, '%Y-%m-%d')} '40')
+22/07/15 10:46:29 691 [info]: >> Connection 반납됨 [threadId=36]
+22/07/15 10:46:29 699 [info]: Database Pool is closed
+22/07/15 10:47:38 337 [info]: >> DATABASE 접속된 [threadId=37]
+22/07/15 10:47:38 343 [info]: >> Connection 임대됨 [threadId=37]
+22/07/15 10:47:38 350 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:47:38 375 [info]: >> Connection 반납됨 [threadId=37]
+22/07/15 10:47:38 412 [info]: >> Connection 임대됨 [threadId=37]
+22/07/15 10:47:38 463 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:47:38 494 [info]: >> Connection 반납됨 [threadId=37]
+22/07/15 10:47:38 502 [info]: >> Connection 임대됨 [threadId=37]
+22/07/15 10:47:38 518 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah' '부교수' '200' #{ hiredate} '40')
+22/07/15 10:47:38 533 [info]: >> Connection 반납됨 [threadId=37]
+22/07/15 10:47:38 540 [info]: Database Pool is closed
+22/07/15 10:48:14 867 [info]: >> DATABASE 접속된 [threadId=38]
+22/07/15 10:48:14 870 [info]: >> Connection 임대됨 [threadId=38]
+22/07/15 10:48:14 877 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:48:14 901 [info]: >> Connection 반납됨 [threadId=38]
+22/07/15 10:48:14 927 [info]: >> Connection 임대됨 [threadId=38]
+22/07/15 10:48:14 929 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:48:14 934 [info]: >> Connection 반납됨 [threadId=38]
+22/07/15 10:48:14 937 [info]: >> Connection 임대됨 [threadId=38]
+22/07/15 10:48:14 941 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 10:48:14 946 [info]: >> Connection 반납됨 [threadId=38]
+22/07/15 10:48:14 953 [info]: Database Pool is closed
+22/07/15 10:48:44 869 [info]: >> DATABASE 접속된 [threadId=39]
+22/07/15 10:48:44 873 [info]: >> Connection 임대됨 [threadId=39]
+22/07/15 10:48:44 880 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:48:44 899 [info]: >> Connection 반납됨 [threadId=39]
+22/07/15 10:48:44 922 [info]: >> Connection 임대됨 [threadId=39]
+22/07/15 10:48:44 925 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:48:44 930 [info]: >> Connection 반납됨 [threadId=39]
+22/07/15 10:48:44 933 [info]: >> Connection 임대됨 [threadId=39]
+22/07/15 10:48:44 938 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ hiredate}, '40')
+22/07/15 10:48:44 941 [info]: >> Connection 반납됨 [threadId=39]
+22/07/15 10:48:44 947 [info]: Database Pool is closed
+22/07/15 10:51:57 528 [info]: >> DATABASE 접속된 [threadId=41]
+22/07/15 10:51:57 532 [info]: >> Connection 임대됨 [threadId=41]
+22/07/15 10:51:57 541 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:51:57 568 [info]: >> Connection 반납됨 [threadId=41]
+22/07/15 10:51:57 597 [info]: >> Connection 임대됨 [threadId=41]
+22/07/15 10:51:57 603 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:51:57 618 [info]: >> Connection 반납됨 [threadId=41]
+22/07/15 10:51:57 624 [info]: >> Connection 임대됨 [threadId=41]
+22/07/15 10:51:57 633 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ hiredate}, '40')
+22/07/15 10:51:57 636 [info]: >> Connection 반납됨 [threadId=41]
+22/07/15 10:51:57 649 [info]: Database Pool is closed
+22/07/15 10:52:27 093 [info]: >> DATABASE 접속된 [threadId=42]
+22/07/15 10:52:27 097 [info]: >> Connection 임대됨 [threadId=42]
+22/07/15 10:52:27 104 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:52:27 122 [info]: >> Connection 반납됨 [threadId=42]
+22/07/15 10:52:27 147 [info]: >> Connection 임대됨 [threadId=42]
+22/07/15 10:52:27 150 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:52:27 153 [info]: >> Connection 반납됨 [threadId=42]
+22/07/15 10:52:27 156 [info]: >> Connection 임대됨 [threadId=42]
+22/07/15 10:52:27 158 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 10:52:27 160 [info]: >> Connection 반납됨 [threadId=42]
+22/07/15 10:52:27 171 [info]: Database Pool is closed
+22/07/15 10:53:53 428 [info]: >> DATABASE 접속된 [threadId=43]
+22/07/15 10:53:53 434 [info]: >> Connection 임대됨 [threadId=43]
+22/07/15 10:53:53 439 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 10:53:53 473 [info]: >> Connection 반납됨 [threadId=43]
+22/07/15 10:53:53 508 [info]: >> Connection 임대됨 [threadId=43]
+22/07/15 10:53:53 518 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:53:53 523 [info]: >> Connection 반납됨 [threadId=43]
+22/07/15 10:53:53 529 [info]: >> Connection 임대됨 [threadId=43]
+22/07/15 10:53:53 537 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 10:53:53 543 [info]: >> Connection 반납됨 [threadId=43]
+22/07/15 10:53:53 557 [info]: Database Pool is closed
+22/07/15 10:54:17 042 [info]: >> DATABASE 접속된 [threadId=44]
+22/07/15 10:54:17 050 [info]: >> Connection 임대됨 [threadId=44]
+22/07/15 10:54:17 062 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 10:54:17 165 [info]: >> Connection 반납됨 [threadId=44]
+22/07/15 10:54:17 227 [info]: >> Connection 임대됨 [threadId=44]
+22/07/15 10:54:17 235 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 10:54:17 242 [info]: >> Connection 반납됨 [threadId=44]
+22/07/15 10:54:17 248 [info]: >> Connection 임대됨 [threadId=44]
+22/07/15 10:54:17 254 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 10:54:17 259 [info]: >> Connection 반납됨 [threadId=44]
+22/07/15 10:54:17 267 [info]: Database Pool is closed
+22/07/15 10:55:16 098 [info]: >> DATABASE 접속된 [threadId=45]
+22/07/15 10:55:16 103 [info]: >> Connection 임대됨 [threadId=45]
+22/07/15 10:55:16 108 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 10:55:16 177 [info]: >> Connection 반납됨 [threadId=45]
+22/07/15 10:55:16 227 [info]: >> Connection 임대됨 [threadId=45]
+22/07/15 10:55:16 231 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 10:55:16 236 [info]: >> Connection 반납됨 [threadId=45]
+22/07/15 10:55:16 242 [info]: >> Connection 임대됨 [threadId=45]
+22/07/15 10:55:16 259 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', #{hiredate, '40')
+22/07/15 10:55:16 265 [info]: >> Connection 반납됨 [threadId=45]
+22/07/15 10:55:16 276 [info]: Database Pool is closed
+22/07/15 10:56:53 774 [info]: >> DATABASE 접속된 [threadId=46]
+22/07/15 10:56:53 778 [info]: >> Connection 임대됨 [threadId=46]
+22/07/15 10:56:53 786 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 10:56:53 804 [info]: >> Connection 반납됨 [threadId=46]
+22/07/15 10:56:53 831 [info]: >> Connection 임대됨 [threadId=46]
+22/07/15 10:56:53 834 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 10:56:53 837 [info]: >> Connection 반납됨 [threadId=46]
+22/07/15 10:56:53 841 [info]: >> Connection 임대됨 [threadId=46]
+22/07/15 10:56:53 844 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', #{hiredate, '40')
+22/07/15 10:56:53 846 [info]: >> Connection 반납됨 [threadId=46]
+22/07/15 10:56:53 855 [info]: Database Pool is closed
+22/07/15 10:57:16 991 [info]: >> DATABASE 접속된 [threadId=47]
+22/07/15 10:57:16 996 [info]: >> Connection 임대됨 [threadId=47]
+22/07/15 10:57:17 003 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 10:57:17 071 [info]: >> Connection 반납됨 [threadId=47]
+22/07/15 10:57:17 125 [info]: >> Connection 임대됨 [threadId=47]
+22/07/15 10:57:17 130 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 10:57:17 141 [info]: >> Connection 반납됨 [threadId=47]
+22/07/15 10:57:17 152 [info]: >> Connection 임대됨 [threadId=47]
+22/07/15 10:57:17 164 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', ' 1982-06-12', '40')
+22/07/15 10:57:17 178 [info]: >> Connection 반납됨 [threadId=47]
+22/07/15 10:57:17 188 [info]: Database Pool is closed
+22/07/15 10:57:49 052 [info]: >> DATABASE 접속된 [threadId=48]
+22/07/15 10:57:49 058 [info]: >> Connection 임대됨 [threadId=48]
+22/07/15 10:57:49 063 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 10:57:49 087 [info]: >> Connection 반납됨 [threadId=48]
+22/07/15 10:57:49 116 [info]: >> Connection 임대됨 [threadId=48]
+22/07/15 10:57:49 119 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 10:57:49 123 [info]: >> Connection 반납됨 [threadId=48]
+22/07/15 10:57:49 128 [info]: >> Connection 임대됨 [threadId=48]
+22/07/15 10:57:49 135 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', ' 1982-06-12', '40')
+22/07/15 10:57:49 141 [info]: >> Connection 반납됨 [threadId=48]
+22/07/15 10:57:49 158 [info]: Database Pool is closed
+22/07/15 10:58:54 866 [info]: >> DATABASE 접속된 [threadId=49]
+22/07/15 10:58:54 872 [info]: >> Connection 임대됨 [threadId=49]
+22/07/15 10:58:54 880 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 10:58:54 914 [info]: >> Connection 반납됨 [threadId=49]
+22/07/15 10:58:54 942 [info]: >> Connection 임대됨 [threadId=49]
+22/07/15 10:58:54 945 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 10:58:54 952 [info]: >> Connection 반납됨 [threadId=49]
+22/07/15 10:58:54 957 [info]: >> Connection 임대됨 [threadId=49]
+22/07/15 10:58:54 966 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', ' 1982-06-12', '40' '103')
+22/07/15 10:58:54 969 [info]: >> Connection 반납됨 [threadId=49]
+22/07/15 10:58:54 977 [info]: Database Pool is closed
+22/07/15 11:00:54 194 [info]: >> DATABASE 접속된 [threadId=50]
+22/07/15 11:00:54 200 [info]: >> Connection 임대됨 [threadId=50]
+22/07/15 11:00:54 207 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 11:00:54 229 [info]: >> Connection 반납됨 [threadId=50]
+22/07/15 11:00:54 259 [info]: >> Connection 임대됨 [threadId=50]
+22/07/15 11:00:54 267 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 11:00:54 271 [info]: >> Connection 반납됨 [threadId=50]
+22/07/15 11:00:54 274 [info]: >> Connection 임대됨 [threadId=50]
+22/07/15 11:00:54 277 [info]: >> Connection 반납됨 [threadId=50]
+22/07/15 11:00:54 288 [info]: Database Pool is closed
+22/07/15 11:01:29 622 [info]: >> DATABASE 접속된 [threadId=51]
+22/07/15 11:01:29 627 [info]: >> Connection 임대됨 [threadId=51]
+22/07/15 11:01:29 633 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 11:01:29 686 [info]: >> Connection 반납됨 [threadId=51]
+22/07/15 11:01:29 723 [info]: >> Connection 임대됨 [threadId=51]
+22/07/15 11:01:29 732 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 11:01:29 739 [info]: >> Connection 반납됨 [threadId=51]
+22/07/15 11:01:29 743 [info]: >> Connection 임대됨 [threadId=51]
+22/07/15 11:01:29 748 [info]: >> Connection 반납됨 [threadId=51]
+22/07/15 11:01:29 762 [info]: Database Pool is closed
+22/07/15 11:01:52 370 [info]: >> DATABASE 접속된 [threadId=52]
+22/07/15 11:01:52 375 [info]: >> Connection 임대됨 [threadId=52]
+22/07/15 11:01:52 383 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 11:01:52 404 [info]: >> Connection 반납됨 [threadId=52]
+22/07/15 11:01:52 429 [info]: >> Connection 임대됨 [threadId=52]
+22/07/15 11:01:52 433 [debug]: SELECT profno, name, userid, position, sal,hiredate, comm FROM professor WHERE profno='9901'
+22/07/15 11:01:52 436 [info]: >> Connection 반납됨 [threadId=52]
+22/07/15 11:01:52 440 [info]: >> Connection 임대됨 [threadId=52]
+22/07/15 11:01:52 446 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', ' 1982-06-12', '40')
+22/07/15 11:01:52 448 [info]: >> Connection 반납됨 [threadId=52]
+22/07/15 11:01:52 455 [info]: Database Pool is closed
+22/07/15 11:05:19 754 [debug]: --------------------------------------------------
+22/07/15 11:05:19 760 [debug]: |              Start Express Server              |
+22/07/15 11:05:19 761 [debug]: --------------------------------------------------
+22/07/15 11:05:19 762 [debug]: server address => http://192.168.152.1:3001
+22/07/15 11:05:19 764 [debug]: server address => http://192.168.172.1:3001
+22/07/15 11:05:19 765 [debug]: server address => http://192.168.45.221:3001
+22/07/15 11:05:19 766 [debug]: --------------------------------------------------
+22/07/15 11:05:33 654 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:05:33 657 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:05:33 660 [debug]: [POST] http://localhost:3001/department
+22/07/15 11:05:33 698 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:05:33 699 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:05:33 710 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 53ms
+22/07/15 11:05:33 714 [debug]: --------------------------------------------------
+22/07/15 11:05:37 837 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:05:37 847 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:05:37 848 [debug]: [GET] http://localhost:3001/department?page=1&rows=20
+22/07/15 11:05:37 855 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/15 11:05:37 856 [debug]: --------------------------------------------------
+22/07/15 11:05:37 866 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:05:37 868 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:05:37 869 [debug]: [GET] http://localhost:3001/department/?page=1&rows=20
+22/07/15 11:05:37 873 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:05:37 875 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:05:37 884 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+22/07/15 11:05:37 902 [debug]: --------------------------------------------------
+22/07/15 11:05:42 086 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:05:42 086 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:05:42 087 [debug]: [POST] http://localhost:3001/professior
+22/07/15 11:05:42 091 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:05:42 091 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:05:42 095 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/15 11:05:42 095 [debug]: --------------------------------------------------
+22/07/15 11:05:53 071 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:05:53 071 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:05:53 073 [debug]: [GET] http://localhost:3001/professior
+22/07/15 11:05:53 077 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:05:53 078 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:05:53 081 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/15 11:05:53 082 [debug]: --------------------------------------------------
+22/07/15 11:06:15 551 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:06:15 552 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:06:15 552 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 11:06:15 555 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/15 11:06:15 556 [debug]: --------------------------------------------------
+22/07/15 11:06:15 558 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:06:15 559 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:06:15 559 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 11:06:15 563 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:06:15 565 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:06:15 566 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:06:15 629 [info]: >> DATABASE 접속된 [threadId=53]
+22/07/15 11:06:15 630 [info]: >> Connection 임대됨 [threadId=53]
+22/07/15 11:06:15 636 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 11:06:15 647 [info]: >> Connection 반납됨 [threadId=53]
+22/07/15 11:06:15 648 [info]: >> Connection 임대됨 [threadId=53]
+22/07/15 11:06:15 654 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 11:06:15 679 [info]: >> Connection 반납됨 [threadId=53]
+22/07/15 11:06:15 696 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 136ms
+22/07/15 11:06:15 714 [debug]: --------------------------------------------------
+22/07/15 11:06:20 703 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:06:20 703 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:06:20 704 [debug]: [POST] http://localhost:3001/professior
+22/07/15 11:06:20 706 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:06:20 707 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:06:20 711 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/15 11:06:20 712 [debug]: --------------------------------------------------
+22/07/15 11:06:22 319 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:06:22 320 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:06:22 321 [debug]: [POST] http://localhost:3001/professior
+22/07/15 11:06:22 324 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:06:22 325 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:06:22 329 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/15 11:06:22 329 [debug]: --------------------------------------------------
+22/07/15 11:06:45 859 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:06:45 860 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:06:45 861 [debug]: [POST] http://localhost:3001/professior
+22/07/15 11:06:45 863 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:06:45 864 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:06:45 867 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/15 11:06:45 868 [debug]: --------------------------------------------------
+22/07/15 11:07:01 088 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:07:01 089 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/15 11:07:01 090 [debug]: [GET] http://localhost:3001/professior
+22/07/15 11:07:01 095 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:07:01 096 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:07:01 101 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/15 11:07:01 103 [debug]: --------------------------------------------------
+22/07/15 11:07:01 434 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:07:01 435 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/15 11:07:01 436 [debug]: [GET] http://localhost:3001/favicon.ico
+22/07/15 11:07:01 446 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/15 11:07:01 447 [debug]: --------------------------------------------------
+22/07/15 11:07:15 022 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:07:15 023 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:07:15 023 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 11:07:15 025 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/15 11:07:15 026 [debug]: --------------------------------------------------
+22/07/15 11:07:15 027 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:07:15 027 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:07:15 028 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 11:07:15 030 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:15 031 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:15 031 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:15 031 [info]: >> Connection 임대됨 [threadId=53]
+22/07/15 11:07:15 033 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 11:07:15 036 [info]: >> Connection 반납됨 [threadId=53]
+22/07/15 11:07:15 036 [info]: >> Connection 임대됨 [threadId=53]
+22/07/15 11:07:15 038 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 11:07:15 051 [info]: >> Connection 반납됨 [threadId=53]
+22/07/15 11:07:15 063 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 36ms
+22/07/15 11:07:15 064 [debug]: --------------------------------------------------
+22/07/15 11:07:23 034 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:07:23 034 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/15 11:07:23 035 [debug]: [GET] http://localhost:3001/professor
+22/07/15 11:07:23 037 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/15 11:07:23 037 [debug]: --------------------------------------------------
+22/07/15 11:07:23 040 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:07:23 041 [debug]: [client] ::1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/15 11:07:23 041 [debug]: [GET] http://localhost:3001/professor/
+22/07/15 11:07:23 043 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:23 044 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:23 044 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:23 045 [info]: >> Connection 임대됨 [threadId=53]
+22/07/15 11:07:23 046 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 11:07:23 047 [info]: >> Connection 반납됨 [threadId=53]
+22/07/15 11:07:23 048 [info]: >> Connection 임대됨 [threadId=53]
+22/07/15 11:07:23 049 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 11:07:23 062 [info]: >> Connection 반납됨 [threadId=53]
+22/07/15 11:07:23 075 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
+22/07/15 11:07:23 076 [debug]: --------------------------------------------------
+22/07/15 11:07:49 605 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:07:49 606 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:07:49 607 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:07:49 609 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:49 610 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:49 610 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:49 611 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:49 611 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:49 612 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:07:49 613 [error]: [Error] 교수 입사일을 적어주세요.
+22/07/15 11:07:49 614 [error]: Error: 교수 입사일을 적어주세요.
+    at RegexHelper.value (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:12:19)
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:104:25
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (c:\Users\leeah\node_modules\express\lib\router\index.js:175:3)
+22/07/15 11:07:49 620 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+22/07/15 11:07:49 621 [debug]: --------------------------------------------------
+22/07/15 11:08:12 252 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:08:12 253 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:08:12 254 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:08:12 256 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:12 257 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:12 257 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:12 258 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:12 259 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:12 261 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:12 263 [error]: [Error] 교수 입사일 숫자로만 입력이 가능합니다.
+22/07/15 11:08:12 264 [error]: Error: 교수 입사일 숫자로만 입력이 가능합니다.
+    at RegexHelper.field (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:30:19)
+    at RegexHelper.num (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:43:21)
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:105:25
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+22/07/15 11:08:12 267 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+22/07/15 11:08:12 268 [debug]: --------------------------------------------------
+22/07/15 11:08:19 574 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:08:19 575 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:08:19 575 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:08:19 577 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:19 578 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:19 578 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:19 579 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:19 579 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:19 580 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:08:19 581 [info]: >> Connection 임대됨 [threadId=53]
+22/07/15 11:08:19 582 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', '19950913', '40')
+22/07/15 11:08:19 585 [info]: >> Connection 반납됨 [threadId=53]
+22/07/15 11:08:19 586 [error]: [Error] Field 'deptno' doesn't have a default value
+22/07/15 11:08:19 588 [error]: Error: Field 'deptno' doesn't have a default value
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:118:20
+22/07/15 11:08:19 590 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+22/07/15 11:08:19 591 [debug]: --------------------------------------------------
+22/07/15 11:09:54 143 [info]: Database Pool is closed
+22/07/15 11:10:00 653 [debug]: --------------------------------------------------
+22/07/15 11:10:00 657 [debug]: |              Start Express Server              |
+22/07/15 11:10:00 657 [debug]: --------------------------------------------------
+22/07/15 11:10:00 660 [debug]: server address => http://192.168.152.1:3001
+22/07/15 11:10:00 660 [debug]: server address => http://192.168.172.1:3001
+22/07/15 11:10:00 661 [debug]: server address => http://192.168.45.221:3001
+22/07/15 11:10:00 662 [debug]: --------------------------------------------------
+22/07/15 11:10:04 457 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:10:04 458 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:10:04 460 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 11:10:04 475 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+22/07/15 11:10:04 476 [debug]: --------------------------------------------------
+22/07/15 11:10:04 487 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:10:04 488 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:10:04 489 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 11:10:04 494 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:04 496 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:04 496 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:04 571 [info]: >> DATABASE 접속된 [threadId=54]
+22/07/15 11:10:04 572 [info]: >> Connection 임대됨 [threadId=54]
+22/07/15 11:10:04 579 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 11:10:04 586 [info]: >> Connection 반납됨 [threadId=54]
+22/07/15 11:10:04 588 [info]: >> Connection 임대됨 [threadId=54]
+22/07/15 11:10:04 594 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 11:10:04 613 [info]: >> Connection 반납됨 [threadId=54]
+22/07/15 11:10:04 631 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 143ms
+22/07/15 11:10:04 635 [debug]: --------------------------------------------------
+22/07/15 11:10:14 860 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:10:14 861 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:10:14 862 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:10:14 887 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:14 888 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:14 889 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:14 889 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:14 891 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:14 893 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:14 897 [error]: [Error] 교수 입사일 숫자로만 입력이 가능합니다.
+22/07/15 11:10:14 899 [error]: Error: 교수 입사일 숫자로만 입력이 가능합니다.
+    at RegexHelper.field (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:30:19)
+    at RegexHelper.num (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:43:21)
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:105:25
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+22/07/15 11:10:14 907 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 46ms
+22/07/15 11:10:14 916 [debug]: --------------------------------------------------
+22/07/15 11:10:33 089 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:10:33 090 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:10:33 090 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:10:33 094 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:33 095 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:33 095 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:33 096 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:33 097 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:33 097 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:10:33 098 [info]: >> Connection 임대됨 [threadId=54]
+22/07/15 11:10:33 100 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 11:10:33 102 [info]: >> Connection 반납됨 [threadId=54]
+22/07/15 11:10:33 102 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 11:10:33 103 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:118:20
+22/07/15 11:10:33 107 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+22/07/15 11:10:33 108 [debug]: --------------------------------------------------
+22/07/15 11:11:15 701 [info]: Database Pool is closed
+22/07/15 11:11:16 513 [info]: >> DATABASE 접속된 [threadId=55]
+22/07/15 11:11:16 518 [info]: >> Connection 임대됨 [threadId=55]
+22/07/15 11:11:16 524 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 11:11:16 543 [info]: >> Connection 반납됨 [threadId=55]
+22/07/15 11:11:16 564 [info]: >> Connection 임대됨 [threadId=55]
+22/07/15 11:11:16 566 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 11:11:16 569 [info]: >> Connection 반납됨 [threadId=55]
+22/07/15 11:11:16 573 [info]: >> Connection 임대됨 [threadId=55]
+22/07/15 11:11:16 575 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 11:11:16 579 [info]: >> Connection 반납됨 [threadId=55]
+22/07/15 11:11:16 587 [info]: Database Pool is closed
+22/07/15 11:13:46 406 [info]: >> DATABASE 접속된 [threadId=56]
+22/07/15 11:13:46 410 [info]: >> Connection 임대됨 [threadId=56]
+22/07/15 11:13:46 415 [debug]: SELECT profno, name, userid, position, sal, hiredate comm FROM professor ORDER BY profno DESC
+22/07/15 11:13:46 432 [info]: >> Connection 반납됨 [threadId=56]
+22/07/15 11:13:46 449 [info]: >> Connection 임대됨 [threadId=56]
+22/07/15 11:13:46 451 [debug]: SELECT profno, name, userid, position, sal, hiredate comm FROM professor WHERE profno='9901'
+22/07/15 11:13:46 456 [info]: >> Connection 반납됨 [threadId=56]
+22/07/15 11:13:46 458 [info]: >> Connection 임대됨 [threadId=56]
+22/07/15 11:13:46 462 [debug]: INSERT INTO professor (name, userid, position, sal,hiredata, comm) VALUES ('이승아', 'leeah', '부교수', '200', ' 1982-06-12', '40')
+22/07/15 11:13:46 466 [info]: >> Connection 반납됨 [threadId=56]
+22/07/15 11:13:46 473 [info]: Database Pool is closed
+22/07/15 11:14:57 690 [info]: >> DATABASE 접속된 [threadId=57]
+22/07/15 11:14:57 694 [info]: >> Connection 임대됨 [threadId=57]
+22/07/15 11:14:57 700 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 11:14:57 718 [info]: >> Connection 반납됨 [threadId=57]
+22/07/15 11:14:57 739 [info]: >> Connection 임대됨 [threadId=57]
+22/07/15 11:14:57 770 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 11:14:57 777 [info]: >> Connection 반납됨 [threadId=57]
+22/07/15 11:14:57 789 [info]: >> Connection 임대됨 [threadId=57]
+22/07/15 11:14:57 791 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 11:14:57 793 [info]: >> Connection 반납됨 [threadId=57]
+22/07/15 11:14:57 803 [info]: Database Pool is closed
+22/07/15 11:15:23 346 [info]: >> DATABASE 접속된 [threadId=58]
+22/07/15 11:15:23 349 [info]: >> Connection 임대됨 [threadId=58]
+22/07/15 11:15:23 356 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 11:15:23 377 [info]: >> Connection 반납됨 [threadId=58]
+22/07/15 11:15:23 398 [info]: >> Connection 임대됨 [threadId=58]
+22/07/15 11:15:23 405 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor WHERE profno='9901'
+22/07/15 11:15:23 407 [info]: >> Connection 반납됨 [threadId=58]
+22/07/15 11:15:23 412 [info]: >> Connection 임대됨 [threadId=58]
+22/07/15 11:15:23 414 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 11:15:23 415 [info]: >> Connection 반납됨 [threadId=58]
+22/07/15 11:15:23 423 [info]: Database Pool is closed
+22/07/15 11:24:22 025 [debug]: --------------------------------------------------
+22/07/15 11:24:22 029 [debug]: |              Start Express Server              |
+22/07/15 11:24:22 031 [debug]: --------------------------------------------------
+22/07/15 11:24:22 033 [debug]: server address => http://192.168.152.1:3001
+22/07/15 11:24:22 033 [debug]: server address => http://192.168.172.1:3001
+22/07/15 11:24:22 034 [debug]: server address => http://192.168.45.221:3001
+22/07/15 11:24:22 035 [debug]: --------------------------------------------------
+22/07/15 11:24:26 936 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:24:26 937 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:24:26 939 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 11:24:26 956 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 19ms
+22/07/15 11:24:26 956 [debug]: --------------------------------------------------
+22/07/15 11:24:26 966 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:24:26 967 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:24:26 968 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 11:24:26 973 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:24:26 974 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:24:26 974 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:24:27 035 [info]: >> DATABASE 접속된 [threadId=59]
+22/07/15 11:24:27 036 [info]: >> Connection 임대됨 [threadId=59]
+22/07/15 11:24:27 041 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 11:24:27 046 [info]: >> Connection 반납됨 [threadId=59]
+22/07/15 11:24:27 048 [info]: >> Connection 임대됨 [threadId=59]
+22/07/15 11:24:27 050 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 11:24:27 065 [info]: >> Connection 반납됨 [threadId=59]
+22/07/15 11:24:27 093 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 126ms
+22/07/15 11:24:27 121 [debug]: --------------------------------------------------
+22/07/15 11:25:26 550 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:25:26 551 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:25:26 551 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:25:26 570 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:26 571 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:26 572 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:26 572 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:26 573 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:26 573 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:26 575 [error]: [Error] 교수 입사일 숫자로만 입력이 가능합니다.
+22/07/15 11:25:26 576 [error]: Error: 교수 입사일 숫자로만 입력이 가능합니다.
+    at RegexHelper.field (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:30:19)
+    at RegexHelper.num (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:43:21)
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:105:25
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+22/07/15 11:25:26 579 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+22/07/15 11:25:26 580 [debug]: --------------------------------------------------
+22/07/15 11:25:53 065 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:25:53 066 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:25:53 066 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:25:53 068 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:53 068 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:53 069 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:53 069 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:53 070 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:53 070 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:25:53 071 [info]: >> Connection 임대됨 [threadId=59]
+22/07/15 11:25:53 073 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 11:25:53 075 [info]: >> Connection 반납됨 [threadId=59]
+22/07/15 11:25:53 076 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 11:25:53 076 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:118:20
+22/07/15 11:25:53 078 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+22/07/15 11:25:53 079 [debug]: --------------------------------------------------
+22/07/15 11:26:09 427 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:26:09 428 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:26:09 429 [debug]: [POST] http://localhost:3001/professor
+22/07/15 11:26:09 432 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:26:09 433 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:26:09 433 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:26:09 434 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:26:09 434 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:26:09 435 [debug]: [HTTP %s Params] %s=%s
+22/07/15 11:26:09 436 [error]: [Error] 교수 입사일 숫자로만 입력이 가능합니다.
+22/07/15 11:26:09 436 [error]: Error: 교수 입사일 숫자로만 입력이 가능합니다.
+    at RegexHelper.field (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:30:19)
+    at RegexHelper.num (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/helper/RegexHelper.js:43:21)
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:105:25
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at next (c:\Users\leeah\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (c:\Users\leeah\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:346:12)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+22/07/15 11:26:09 439 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/15 11:26:09 440 [debug]: --------------------------------------------------
+22/07/15 11:26:13 747 [debug]: 클라이언트가 접속했습니다.
+22/07/15 11:26:13 747 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 11:26:13 748 [debug]: [PUT] http://localhost:3001/professor
+22/07/15 11:26:13 750 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 11:26:13 751 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 11:26:13 754 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/15 11:26:13 755 [debug]: --------------------------------------------------
+22/07/15 13:21:32 674 [info]: Database Pool is closed
+22/07/15 13:21:38 369 [debug]: --------------------------------------------------
+22/07/15 13:21:38 375 [debug]: |              Start Express Server              |
+22/07/15 13:21:38 375 [debug]: --------------------------------------------------
+22/07/15 13:21:38 377 [debug]: server address => http://192.168.152.1:3001
+22/07/15 13:21:38 377 [debug]: server address => http://192.168.172.1:3001
+22/07/15 13:21:38 378 [debug]: server address => http://192.168.45.221:3001
+22/07/15 13:21:38 379 [debug]: --------------------------------------------------
+22/07/15 13:21:46 470 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:21:46 536 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:21:46 539 [debug]: [PUT] http://localhost:3001/professor
+22/07/15 13:21:46 659 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 13:21:46 695 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 13:21:46 779 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 243ms
+22/07/15 13:21:46 856 [debug]: --------------------------------------------------
+22/07/15 13:21:53 816 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:21:53 829 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:21:53 831 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:21:53 843 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:21:53 845 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:21:53 845 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:21:53 846 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:21:53 848 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:21:53 849 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:21:53 935 [info]: >> DATABASE 접속된 [threadId=60]
+22/07/15 13:21:53 937 [info]: >> Connection 임대됨 [threadId=60]
+22/07/15 13:21:53 943 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:21:53 946 [info]: >> Connection 반납됨 [threadId=60]
+22/07/15 13:21:53 947 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:21:53 949 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:21:53 952 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 123ms
+22/07/15 13:21:53 963 [debug]: --------------------------------------------------
+22/07/15 13:22:02 124 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:22:02 125 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:22:02 126 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 13:22:02 134 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/15 13:22:02 136 [debug]: --------------------------------------------------
+22/07/15 13:22:02 138 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:22:02 139 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:22:02 140 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 13:22:02 146 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:02 147 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:02 147 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:02 148 [info]: >> Connection 임대됨 [threadId=60]
+22/07/15 13:22:02 154 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 13:22:02 206 [info]: >> Connection 반납됨 [threadId=60]
+22/07/15 13:22:02 208 [info]: >> Connection 임대됨 [threadId=60]
+22/07/15 13:22:02 211 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 13:22:02 229 [info]: >> Connection 반납됨 [threadId=60]
+22/07/15 13:22:02 249 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 110ms
+22/07/15 13:22:02 250 [debug]: --------------------------------------------------
+22/07/15 13:22:13 766 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:22:13 767 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:22:13 767 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:22:13 771 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:13 772 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:13 773 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:13 773 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:13 774 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:13 774 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:22:13 775 [info]: >> Connection 임대됨 [threadId=60]
+22/07/15 13:22:13 777 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:22:13 778 [info]: >> Connection 반납됨 [threadId=60]
+22/07/15 13:22:13 779 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:22:13 780 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:22:13 782 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+22/07/15 13:22:13 783 [debug]: --------------------------------------------------
+22/07/15 13:23:25 431 [info]: Database Pool is closed
+22/07/15 13:23:26 455 [debug]: --------------------------------------------------
+22/07/15 13:23:26 459 [debug]: |              Start Express Server              |
+22/07/15 13:23:26 460 [debug]: --------------------------------------------------
+22/07/15 13:23:26 461 [debug]: server address => http://192.168.152.1:3001
+22/07/15 13:23:26 462 [debug]: server address => http://192.168.172.1:3001
+22/07/15 13:23:26 463 [debug]: server address => http://192.168.45.221:3001
+22/07/15 13:23:26 464 [debug]: --------------------------------------------------
+22/07/15 13:23:31 267 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:23:31 268 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:23:31 270 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:23:31 298 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:31 300 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:31 302 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:31 303 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:31 305 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:31 306 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:31 403 [info]: >> DATABASE 접속된 [threadId=61]
+22/07/15 13:23:31 404 [info]: >> Connection 임대됨 [threadId=61]
+22/07/15 13:23:31 410 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', '1995-909-13', '40')
+22/07/15 13:23:31 412 [info]: >> Connection 반납됨 [threadId=61]
+22/07/15 13:23:31 414 [error]: [Error] Incorrect datetime value: '1995-909-13' for column 'hiredate' at row 1
+22/07/15 13:23:31 416 [error]: Error: Incorrect datetime value: '1995-909-13' for column 'hiredate' at row 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:23:31 426 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 158ms
+22/07/15 13:23:31 427 [debug]: --------------------------------------------------
+22/07/15 13:23:41 895 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:23:41 896 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:23:41 897 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:23:41 901 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:41 901 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:41 902 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:41 902 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:41 903 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:41 903 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:41 904 [info]: >> Connection 임대됨 [threadId=61]
+22/07/15 13:23:41 907 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', '1995-09-13', '40')
+22/07/15 13:23:41 908 [info]: >> Connection 반납됨 [threadId=61]
+22/07/15 13:23:41 909 [error]: [Error] Field 'deptno' doesn't have a default value
+22/07/15 13:23:41 910 [error]: Error: Field 'deptno' doesn't have a default value
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:23:41 912 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+22/07/15 13:23:41 913 [debug]: --------------------------------------------------
+22/07/15 13:23:46 457 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:23:46 458 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:23:46 459 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 13:23:46 465 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/15 13:23:46 466 [debug]: --------------------------------------------------
+22/07/15 13:23:46 468 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:23:46 468 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:23:46 469 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 13:23:46 472 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:46 472 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:46 473 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:46 474 [info]: >> Connection 임대됨 [threadId=61]
+22/07/15 13:23:46 477 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 13:23:46 483 [info]: >> Connection 반납됨 [threadId=61]
+22/07/15 13:23:46 484 [info]: >> Connection 임대됨 [threadId=61]
+22/07/15 13:23:46 487 [debug]: SELECT profno, name, userid, position, sal, hiredate, comm FROM professor ORDER BY profno DESC
+22/07/15 13:23:46 501 [info]: >> Connection 반납됨 [threadId=61]
+22/07/15 13:23:46 514 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 46ms
+22/07/15 13:23:46 515 [debug]: --------------------------------------------------
+22/07/15 13:23:53 786 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:23:53 787 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:23:53 787 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:23:53 790 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:53 791 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:53 791 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:53 792 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:53 792 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:53 793 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:23:53 794 [info]: >> Connection 임대됨 [threadId=61]
+22/07/15 13:23:53 795 [debug]: INSERT INTO professor (name, userid, position, sal, hiredate, comm) VALUES ('이승아', 'leeah', '부교수', '200', '1995-09-13', '40')
+22/07/15 13:23:53 796 [info]: >> Connection 반납됨 [threadId=61]
+22/07/15 13:23:53 797 [error]: [Error] Field 'deptno' doesn't have a default value
+22/07/15 13:23:53 797 [error]: Error: Field 'deptno' doesn't have a default value
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:23:53 799 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+22/07/15 13:23:53 800 [debug]: --------------------------------------------------
+22/07/15 13:24:35 200 [info]: Database Pool is closed
+22/07/15 13:24:38 549 [debug]: --------------------------------------------------
+22/07/15 13:24:38 554 [debug]: |              Start Express Server              |
+22/07/15 13:24:38 555 [debug]: --------------------------------------------------
+22/07/15 13:24:38 557 [debug]: server address => http://192.168.152.1:3001
+22/07/15 13:24:38 559 [debug]: server address => http://192.168.172.1:3001
+22/07/15 13:24:38 560 [debug]: server address => http://192.168.45.221:3001
+22/07/15 13:24:38 561 [debug]: --------------------------------------------------
+22/07/15 13:24:44 072 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:24:44 073 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:24:44 075 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 13:24:44 087 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+22/07/15 13:24:44 087 [debug]: --------------------------------------------------
+22/07/15 13:24:44 095 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:24:44 096 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:24:44 097 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 13:24:44 101 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:44 102 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:44 102 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:44 146 [info]: >> DATABASE 접속된 [threadId=62]
+22/07/15 13:24:44 147 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:24:44 154 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 13:24:44 163 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:24:44 164 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:24:44 167 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 13:24:44 184 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:24:44 201 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 105ms
+22/07/15 13:24:44 203 [debug]: --------------------------------------------------
+22/07/15 13:24:51 772 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:24:51 773 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:24:51 774 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:24:51 801 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:51 805 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:51 809 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:51 810 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:51 811 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:51 811 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:51 813 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:24:51 815 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:24:51 818 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:24:51 821 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:24:51 822 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:24:51 825 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 52ms
+22/07/15 13:24:51 826 [debug]: --------------------------------------------------
+22/07/15 13:24:58 614 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:24:58 615 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:24:58 616 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:24:58 621 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:58 621 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:58 622 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:58 622 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:58 623 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:58 623 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:24:58 624 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:24:58 627 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:24:58 629 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:24:58 630 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:24:58 631 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:24:58 633 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+22/07/15 13:24:58 634 [debug]: --------------------------------------------------
+22/07/15 13:25:30 256 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:25:30 257 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:25:30 258 [debug]: [GET] http://localhost:3001/professior
+22/07/15 13:25:30 260 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 13:25:30 261 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 13:25:30 264 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/15 13:25:30 265 [debug]: --------------------------------------------------
+22/07/15 13:25:31 205 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:25:31 206 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:25:31 206 [debug]: [GET] http://localhost:3001/professior
+22/07/15 13:25:31 208 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 13:25:31 208 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 13:25:31 211 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/15 13:25:31 211 [debug]: --------------------------------------------------
+22/07/15 13:26:26 975 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:26:26 976 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:26:26 977 [debug]: [POST] http://localhost:3001/department
+22/07/15 13:26:26 979 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 13:26:26 980 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 13:26:26 983 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/15 13:26:26 983 [debug]: --------------------------------------------------
+22/07/15 13:26:31 322 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:26:31 322 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:26:31 323 [debug]: [GET] http://localhost:3001/department?page=1&rows=20
+22/07/15 13:26:31 325 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/15 13:26:31 326 [debug]: --------------------------------------------------
+22/07/15 13:26:31 328 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:26:31 329 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:26:31 330 [debug]: [GET] http://localhost:3001/department/?page=1&rows=20
+22/07/15 13:26:31 332 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 13:26:31 333 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 13:26:31 337 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/15 13:26:31 337 [debug]: --------------------------------------------------
+22/07/15 13:26:34 204 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:26:34 205 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:26:34 205 [debug]: [PUT] http://localhost:3001/department/241
+22/07/15 13:26:34 208 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 13:26:34 208 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 13:26:34 211 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/15 13:26:34 212 [debug]: --------------------------------------------------
+22/07/15 13:26:37 293 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:26:37 294 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:26:37 294 [debug]: [GET] http://localhost:3001/department/205
+22/07/15 13:26:37 296 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 13:26:37 297 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 13:26:37 301 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/15 13:26:37 301 [debug]: --------------------------------------------------
+22/07/15 13:38:58 969 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:38:58 969 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:38:58 970 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:38:58 973 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:38:58 974 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:38:58 975 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:38:58 975 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:38:58 976 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:38:58 977 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:38:58 978 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:38:58 980 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:38:58 981 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:38:58 981 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:38:58 982 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:38:58 987 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 18ms
+22/07/15 13:38:58 987 [debug]: --------------------------------------------------
+22/07/15 13:40:50 047 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:40:50 047 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:40:50 048 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:40:50 049 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:50 050 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:50 051 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:50 051 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:50 052 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:50 052 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:50 053 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:40:50 054 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:40:50 055 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:40:50 056 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:40:50 056 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:40:50 058 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/15 13:40:50 059 [debug]: --------------------------------------------------
+22/07/15 13:40:51 351 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:40:51 351 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:40:51 352 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:40:51 354 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:51 355 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:51 355 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:51 356 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:51 356 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:51 356 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:40:51 357 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:40:51 358 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:40:51 360 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:40:51 360 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:40:51 361 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:40:51 364 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+22/07/15 13:40:51 364 [debug]: --------------------------------------------------
+22/07/15 13:44:48 021 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:44:48 022 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:44:48 023 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:44:48 025 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:44:48 025 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:44:48 026 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:44:48 026 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:44:48 027 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:44:48 027 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:44:48 028 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:44:48 030 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:44:48 031 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:44:48 032 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:44:48 033 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:44:48 035 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+22/07/15 13:44:48 036 [debug]: --------------------------------------------------
+22/07/15 13:59:24 106 [debug]: 클라이언트가 접속했습니다.
+22/07/15 13:59:24 106 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 13:59:24 107 [debug]: [POST] http://localhost:3001/professor
+22/07/15 13:59:24 110 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:59:24 110 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:59:24 111 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:59:24 111 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:59:24 112 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:59:24 112 [debug]: [HTTP %s Params] %s=%s
+22/07/15 13:59:24 113 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 13:59:24 114 [debug]: INSERT INTO professor (name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', #{ date_format(hiredate, '%Y-%m-%d')}, '40')
+22/07/15 13:59:24 115 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 13:59:24 116 [error]: [Error] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+22/07/15 13:59:24 117 [error]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(hiredate, '%Y-%m-%d'), comm) VALUES ('이승아', 'leeah', '부교수', '200', ' at line 1
+    at PromisePoolConnection.query (c:\Users\leeah\studynote\07_Node.js\15_Test\node_modules\mysql2\promise.js:93:22)
+    at ProfessorService.addItem (file:///c:/Users/leeah/studynote/07_Node.js/15_Test/services/ProfessorService.js:76:50)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///c:/Users/leeah/studynote/07_Node.js/15_Test/controllers/ProfessorController.js:117:20
+22/07/15 13:59:24 120 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+22/07/15 13:59:24 120 [debug]: --------------------------------------------------
+22/07/15 14:00:18 091 [debug]: 클라이언트가 접속했습니다.
+22/07/15 14:00:18 092 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 14:00:18 092 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/15 14:00:18 094 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/15 14:00:18 095 [debug]: --------------------------------------------------
+22/07/15 14:00:18 096 [debug]: 클라이언트가 접속했습니다.
+22/07/15 14:00:18 097 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 14:00:18 097 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/15 14:00:18 099 [debug]: [HTTP %s Params] %s=%s
+22/07/15 14:00:18 100 [debug]: [HTTP %s Params] %s=%s
+22/07/15 14:00:18 100 [debug]: [HTTP %s Params] %s=%s
+22/07/15 14:00:18 101 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 14:00:18 103 [debug]: SELECT COUNT(*) AS cnt FROM professor
+22/07/15 14:00:18 105 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 14:00:18 105 [info]: >> Connection 임대됨 [threadId=62]
+22/07/15 14:00:18 107 [debug]: SELECT profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d'), comm FROM professor ORDER BY profno DESC
+22/07/15 14:00:18 118 [info]: >> Connection 반납됨 [threadId=62]
+22/07/15 14:00:18 129 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+22/07/15 14:00:18 130 [debug]: --------------------------------------------------
+22/07/15 14:00:27 770 [debug]: 클라이언트가 접속했습니다.
+22/07/15 14:00:27 771 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 14:00:27 771 [debug]: [GET] http://localhost:3001/professior
+22/07/15 14:00:27 773 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 14:00:27 773 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 14:00:27 776 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/15 14:00:27 777 [debug]: --------------------------------------------------
+22/07/15 14:00:44 980 [debug]: 클라이언트가 접속했습니다.
+22/07/15 14:00:44 980 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/15 14:00:44 981 [debug]: [GET] http://localhost:3001/professior/9908
+22/07/15 14:00:44 983 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/15 14:00:44 983 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/15_Test/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/15 14:00:44 986 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/15 14:00:44 986 [debug]: --------------------------------------------------

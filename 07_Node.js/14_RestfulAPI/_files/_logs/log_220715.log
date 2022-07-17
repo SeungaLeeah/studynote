@@ -1,0 +1,62 @@
+22/07/15 00:01:05 137 [debug]: --------------------------------------------------
+22/07/15 00:01:05 141 [debug]: |              Start Express Server              |
+22/07/15 00:01:05 143 [debug]: --------------------------------------------------
+22/07/15 00:01:05 144 [debug]: server address => http://192.168.152.1:3001
+22/07/15 00:01:05 145 [debug]: server address => http://192.168.172.1:3001
+22/07/15 00:01:05 146 [debug]: server address => http://192.168.45.221:3001
+22/07/15 00:01:05 147 [debug]: --------------------------------------------------
+22/07/15 00:04:42 367 [info]: Database Pool is closed
+22/07/15 04:18:12 459 [info]: >> DATABASE 접속된 [threadId=99]
+22/07/15 04:18:12 464 [info]: >> Connection 임대됨 [threadId=99]
+22/07/15 04:18:12 472 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC
+22/07/15 04:18:12 479 [info]: >> Connection 반납됨 [threadId=99]
+22/07/15 04:18:12 513 [info]: >> Connection 임대됨 [threadId=99]
+22/07/15 04:18:12 519 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='240';
+22/07/15 04:18:12 525 [info]: >> Connection 반납됨 [threadId=99]
+22/07/15 04:18:12 531 [info]: Database Pool is closed
+22/07/15 04:18:35 791 [info]: >> DATABASE 접속된 [threadId=100]
+22/07/15 04:18:35 795 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 799 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC
+22/07/15 04:18:35 805 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 825 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 827 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='248';
+22/07/15 04:18:35 829 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 831 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 833 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+22/07/15 04:18:35 841 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='279';
+22/07/15 04:18:35 843 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 845 [info]: >> Connection 임대됨 [threadId=100]
+22/07/15 04:18:35 846 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?' WHERE deptno='240'
+22/07/15 04:18:35 848 [info]: >> Connection 반납됨 [threadId=100]
+22/07/15 04:18:35 852 [info]: Database Pool is closed
+22/07/15 04:19:25 548 [info]: >> DATABASE 접속된 [threadId=101]
+22/07/15 04:19:25 551 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 556 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC
+22/07/15 04:19:25 563 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 588 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 593 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='248';
+22/07/15 04:19:25 595 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 597 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 599 [debug]: INSERT INTO department (dname, loc) VALUES ('MVC학과', '여긴어디?');
+22/07/15 04:19:25 607 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='280';
+22/07/15 04:19:25 608 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 610 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 613 [debug]: UPDATE department SET dname='MVC학과', loc='여긴어디?' WHERE deptno='237'
+22/07/15 04:19:25 616 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='237';
+22/07/15 04:19:25 617 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 620 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 622 [debug]: DELETE FROM student WHERE deptno='263';
+22/07/15 04:19:25 625 [debug]: DELETE FROM professor WHERE deptno='263';
+22/07/15 04:19:25 627 [debug]: DELETE FROM department WHERE deptno='263';
+22/07/15 04:19:25 630 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 631 [info]: >> Connection 임대됨 [threadId=101]
+22/07/15 04:19:25 633 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/15 04:19:25 639 [info]: >> Connection 반납됨 [threadId=101]
+22/07/15 04:19:25 640 [info]: Database Pool is closed
+22/07/15 04:19:48 405 [debug]: --------------------------------------------------
+22/07/15 04:19:48 408 [debug]: |              Start Express Server              |
+22/07/15 04:19:48 408 [debug]: --------------------------------------------------
+22/07/15 04:19:48 409 [debug]: server address => http://192.168.152.1:3001
+22/07/15 04:19:48 410 [debug]: server address => http://192.168.172.1:3001
+22/07/15 04:19:48 410 [debug]: server address => http://192.168.45.221:3001
+22/07/15 04:19:48 411 [debug]: --------------------------------------------------
