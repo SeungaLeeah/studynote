@@ -5,7 +5,7 @@ import dayjs from 'dayjs';
 import noimg from '../assets/img/noImg.png';
 
 const ListItemContainer = styled.li`
-    -webkit-font-smoothing: antialiadsed;
+    -webkit-font-smoothing: antialiased;
     border-top: 1px solid #eee;
 
     &:last-child{

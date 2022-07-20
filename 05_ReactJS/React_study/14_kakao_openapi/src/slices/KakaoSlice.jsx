@@ -4,11 +4,11 @@ import axios from 'axios';
 const API_URL={
   // 카카오는 meta와 document 기본 구조가 같음으로 5개를 하나의 슬라이스로 불러옴
   // https 는 보안문서 임으로 기존의 http와 다름, book만 v3로 다르다.
-  web: "https://dapi.kakao.com/v2/search/web",
-  blog: "https://dapi.kakao.com/v2/search/blog",
-  cafe: "https://dapi.kakao.com/v2/search/cafe",
-  book: "https://dapi.kakao.com/v3/search/book",
-  image: "https://dapi.kakao.com/v2/search/image",
+  web: 'https://dapi.kakao.com/v2/search/web',
+  blog: 'https://dapi.kakao.com/v2/search/blog',
+  cafe: 'https://dapi.kakao.com/v2/search/cafe',
+  book: 'https://dapi.kakao.com/v3/search/book',
+  image: 'https://dapi.kakao.com/v2/search/image',
 };
 
 // 발급 받은 API 키 준비

@@ -41,7 +41,7 @@ const KakaoSearch = memo(() =>{
     //리덕스를 통한 검색 결과 상태 조회 => 리덕스는 검색어가 존재 할 때만 작용되야함(ajax 처리)
     const dispatch = useDispatch();
     const {meta, documents, loading, error} = useSelector((state)=> state.kakao);
-
+console.log(documents);
     //페이지 번호 상태값
     const [page, setPage] = React.useState(1);
     //무한 스크롤 관련(ref(참조변수) inView(boolean)변수를 가져옴)
@@ -53,17 +53,17 @@ const KakaoSearch = memo(() =>{
         //setPage(p) 상태값으로 감지 = 초기 상태값은 1
         setPage(p);
         dispatch(getKakaoSearch({
-            api:api,
+            api: api,
             query: query,
             //page번호를 변수화 시킴
-            page:p,
-            size:api ==='image' ? 80:50
+            page: p,
+            size:api ==='image' ? 80 : 50
         }));
-    },[api, query, dispatch]);
+    },[dispatch, api, query]);
     //검색어가 전달되었을 경우 hook
     useEffect(()=>{
         //페이지가 열리면 맨 위로 보낸다음 페이지 1
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         //1) getContent(1)이 (p=1)로 값을 보내고, 
         //2) (p=1)이 setPage(p) 와 page:p로 값을 보내 1페이지 상태를 설정
         //3)setPage(p) 값을 getContent(page+1)에 대입하면 2가 됨
@@ -72,7 +72,7 @@ const KakaoSearch = memo(() =>{
         getContent(1);
     },[getContent, api, query]);
     //사용자가 마지막 요소를 보고 있고, 로딩 중이 아니라면
-    React.useEffect(()=>{
+    useEffect(()=>{
         //loading이 아닐 경우에만
         if(inView && !loading){
             getContent(page+1);
@@ -88,7 +88,7 @@ const KakaoSearch = memo(() =>{
         {error ? (
             <ErrorView error={error}/>
             /* 그 밖에 document가 있다면 <></> 안에를 실행  */
-        ):document && (
+        ):documents && (
             //ListContainer는 ul태그를 뜻함
             // ListContainer api 값을 설정해서 styled component에서 props 값이 설정됨
             <ListContainer api={api}>
@@ -100,7 +100,7 @@ const KakaoSearch = memo(() =>{
                     // {}괄호는 jsx문법에서 자바스크립트를 쓰기위해 사용하는 괄호이고, ...()는 ()안에 모든게 복제가 됨
                     {...(!meta?.is_end && !loading && documents.length -1 === i ? { inview: ref}:{})}/>
                     //마지막 인덱스는 documents.length -1까지만 존재함 documents.length -1값이 현재 인덱스와 같다면
-                    //{}안에서 어떤 props를 조건에 따라 명시하고 싶다면, props를 Json으로 {inview(props이름): ref(props값)} 제시하면 inview={ref}으로 바뀜
+                    //{}안에서 어떤 props를 조건에 따라 명시하고 싶다면, props를 Json으로 {inView(props이름): ref(props값)} 제시하면 inView={ref}으로 바뀜
                 ) : (
                     //ListItem은 통합(이미지 외 모든 것들에 적용됨)
                     <ListItem key={i} type={api} item={v}
