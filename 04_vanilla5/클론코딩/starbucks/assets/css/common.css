@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* @filename   : common.scss
+* @author      : 이승아
+* @description : 스타벅스 클론코딩
+ */
+/* Main Color */
+/* Default */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+html,
+body {
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.setAll {
+  width: 100%;
+  margin: none;
+}
+
+.blind {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+button {
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+
+.clean::after {
+  content: '';
+  display: block;
+  float: none;
+  clear: both;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  color: inherit;
+}
+
+li > a {
+  display: block;
+}
+
+.text_blind {
+  text-indent: -9999px;
+}

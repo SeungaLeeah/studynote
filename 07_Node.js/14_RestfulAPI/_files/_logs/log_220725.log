@@ -1,0 +1,136 @@
+22/07/25 16:49:11 760 [debug]: --------------------------------------------------
+22/07/25 16:49:11 764 [debug]: |              Start Express Server              |
+22/07/25 16:49:11 765 [debug]: --------------------------------------------------
+22/07/25 16:49:11 766 [debug]: server address => http://192.168.152.1:3001
+22/07/25 16:49:11 766 [debug]: server address => http://192.168.172.1:3001
+22/07/25 16:49:11 766 [debug]: server address => http://192.168.45.61:3001
+22/07/25 16:49:11 767 [debug]: --------------------------------------------------
+22/07/25 16:49:34 000 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:49:34 002 [debug]: [client] ::ffff:192.168.152.1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:49:34 004 [debug]: [GET] http://192.168.152.1:3001/
+22/07/25 16:49:34 019 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/25 16:49:34 020 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/25 16:49:34 029 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+22/07/25 16:49:34 030 [debug]: --------------------------------------------------
+22/07/25 16:49:36 686 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:49:36 687 [debug]: [client] ::ffff:192.168.172.1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:49:36 687 [debug]: [GET] http://192.168.172.1:3001/
+22/07/25 16:49:36 689 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/25 16:49:36 690 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/25 16:49:36 691 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/25 16:49:36 692 [debug]: --------------------------------------------------
+22/07/25 16:49:36 798 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:49:36 798 [debug]: [client] ::ffff:192.168.172.1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:49:36 799 [debug]: [GET] http://192.168.172.1:3001/favicon.ico
+22/07/25 16:49:36 806 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/25 16:49:36 806 [debug]: --------------------------------------------------
+22/07/25 16:49:38 580 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:49:38 580 [debug]: [client] ::ffff:192.168.45.61 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:49:38 581 [debug]: [GET] http://192.168.45.61:3001/
+22/07/25 16:49:38 582 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/25 16:49:38 582 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/25 16:49:38 583 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/25 16:49:38 584 [debug]: --------------------------------------------------
+22/07/25 16:49:38 680 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:49:38 680 [debug]: [client] ::ffff:192.168.45.61 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:49:38 681 [debug]: [GET] http://192.168.45.61:3001/favicon.ico
+22/07/25 16:49:38 683 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/25 16:49:38 684 [debug]: --------------------------------------------------
+22/07/25 16:49:59 757 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:49:59 757 [debug]: [client] ::ffff:192.168.45.61 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:49:59 758 [debug]: [GET] http://192.168.45.61:3001/
+22/07/25 16:49:59 759 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/25 16:49:59 759 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/25 16:49:59 760 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/25 16:49:59 761 [debug]: --------------------------------------------------
+22/07/25 16:51:12 016 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:51:12 017 [debug]: [client] ::ffff:192.168.45.61 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:51:12 017 [debug]: [GET] http://192.168.45.61:3001/department
+22/07/25 16:51:12 019 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/25 16:51:12 019 [debug]: --------------------------------------------------
+22/07/25 16:51:12 022 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:51:12 022 [debug]: [client] ::ffff:192.168.45.61 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/25 16:51:12 022 [debug]: [GET] http://192.168.45.61:3001/department/
+22/07/25 16:51:12 023 [debug]: [HTTP %s Params] %s=%s
+22/07/25 16:51:12 024 [debug]: [HTTP %s Params] %s=%s
+22/07/25 16:51:12 024 [debug]: [HTTP %s Params] %s=%s
+22/07/25 16:51:12 112 [info]: >> DATABASE 접속된 [threadId=8]
+22/07/25 16:51:12 112 [info]: >> Connection 임대됨 [threadId=8]
+22/07/25 16:51:12 116 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/25 16:51:12 157 [info]: >> Connection 반납됨 [threadId=8]
+22/07/25 16:51:12 157 [info]: >> Connection 임대됨 [threadId=8]
+22/07/25 16:51:12 159 [debug]: SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC  LIMIT 7, 10
+22/07/25 16:51:12 163 [info]: >> Connection 반납됨 [threadId=8]
+22/07/25 16:51:12 164 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 142ms
+22/07/25 16:51:12 164 [debug]: --------------------------------------------------
+22/07/25 16:58:49 843 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:58:49 843 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/25 16:58:49 843 [debug]: [GET] http://localhost:3001/professor?page=1&rows=20
+22/07/25 16:58:49 847 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/25 16:58:49 848 [debug]: --------------------------------------------------
+22/07/25 16:58:49 852 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:58:49 854 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/25 16:58:49 854 [debug]: [GET] http://localhost:3001/professor/?page=1&rows=20
+22/07/25 16:58:49 855 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/25 16:58:49 855 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/25 16:58:49 856 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/25 16:58:49 856 [debug]: --------------------------------------------------
+22/07/25 16:58:55 987 [debug]: 클라이언트가 접속했습니다.
+22/07/25 16:58:55 988 [debug]: [client] ::ffff:127.0.0.1 / unknown / insomnia (2022.4.2) / unknown
+22/07/25 16:58:55 988 [debug]: [GET] http://localhost:3001/department/205
+22/07/25 16:58:55 992 [debug]: [HTTP %s Params] %s=%s
+22/07/25 16:58:55 993 [info]: >> Connection 임대됨 [threadId=8]
+22/07/25 16:58:55 994 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='205';
+22/07/25 16:58:55 999 [info]: >> Connection 반납됨 [threadId=8]
+22/07/25 16:58:56 000 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/25 16:58:56 001 [debug]: --------------------------------------------------

@@ -1,0 +1,46 @@
+22/07/21 09:59:09 562 [debug]: --------------------------------------------------
+22/07/21 09:59:09 565 [debug]: |              Start Express Server              |
+22/07/21 09:59:09 565 [debug]: --------------------------------------------------
+22/07/21 09:59:09 566 [debug]: server address => http://192.168.152.1:3001
+22/07/21 09:59:09 567 [debug]: server address => http://192.168.172.1:3001
+22/07/21 09:59:09 567 [debug]: server address => http://192.168.45.61:3001
+22/07/21 09:59:09 568 [debug]: --------------------------------------------------
+22/07/21 09:59:21 316 [debug]: 클라이언트가 접속했습니다.
+22/07/21 09:59:21 319 [debug]: [client] ::ffff:192.168.152.1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/21 09:59:21 322 [debug]: [GET] http://192.168.152.1:3001/
+22/07/21 09:59:21 334 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/21 09:59:21 336 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/21 09:59:21 350 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+22/07/21 09:59:21 351 [debug]: --------------------------------------------------
+22/07/21 09:59:33 825 [debug]: 클라이언트가 접속했습니다.
+22/07/21 09:59:33 826 [debug]: [client] ::ffff:192.168.152.1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/21 09:59:33 827 [debug]: [GET] http://192.168.152.1:3001/
+22/07/21 09:59:33 828 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/21 09:59:33 829 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///c:/Users/leeah/studynote/07_Node.js/14_RestfulAPI/app.js:136:46
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+    at c:\Users\leeah\node_modules\express\lib\router\index.js:286:9
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:365:14)
+    at param (c:\Users\leeah\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (c:\Users\leeah\node_modules\express\lib\router\index.js:421:3)
+    at next (c:\Users\leeah\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (c:\Users\leeah\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (c:\Users\leeah\node_modules\express\lib\router\index.js:328:13)
+22/07/21 09:59:33 832 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/21 09:59:33 833 [debug]: --------------------------------------------------
+22/07/21 09:59:33 862 [debug]: 클라이언트가 접속했습니다.
+22/07/21 09:59:33 862 [debug]: [client] ::ffff:192.168.152.1 / Windows 10.0 / Chrome (103.0.0.0) / Microsoft Windows
+22/07/21 09:59:33 863 [debug]: [GET] http://192.168.152.1:3001/favicon.ico
+22/07/21 09:59:33 873 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/21 09:59:33 874 [debug]: --------------------------------------------------
