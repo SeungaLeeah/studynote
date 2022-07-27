@@ -63,7 +63,6 @@ button {
 a {
   all: unset;
   cursor: pointer;
-  color: inherit;
 }
 
 li > a {
@@ -74,30 +73,30 @@ li > a {
   text-indent: -9999px;
 }
 
-/* Footer 통합 구현 */
-h3,
-img {
+/* Footer */
+footer {
+  width: 100%;
+  height: 534px;
+  line-height: 22px;
+}
+
+footer h3,
+footer img {
   font-size: 14px;
   font-weight: 500;
   padding: 15px 0 5px 0;
   letter-spacing: 1px;
 }
 
-a {
+footer a {
   color: #fff;
   word-spacing: -3px;
   letter-spacing: -1px;
   font-size: 12px;
 }
 
-a:hover {
+footer a:hover {
   text-decoration: underline;
-}
-
-footer {
-  width: 100%;
-  height: 534px;
-  line-height: 22px;
 }
 
 footer .footer-container {
@@ -198,6 +197,10 @@ footer .footer-container .policy .footer-buttons li button {
   padding: 7px 20px;
   border-radius: 3px;
   text-align: center;
+}
+
+footer .footer-container .policy .footer-buttons li button a {
+  color: #fff;
 }
 
 footer .footer-container .policy .company-number {

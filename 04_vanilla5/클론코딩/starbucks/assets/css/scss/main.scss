@@ -3,8 +3,10 @@
 * @description : 스타벅스 클론코딩
  */
 
-@import './common.scss', './footer.scss', './menu.scss' ;
+ //공통 CSS 묶음
+ @import './menu.scss','./common.scss', './footer.scss';
 
+//----- Main -----
 /* 공통적용 */
 .all_info_btn{
     font-size: 15px;
@@ -25,19 +27,21 @@
     flex-direction: column;
     z-index: 99999px;
    img:first-child{
+    margin-top: 150px;
     position: absolute;
-    right: 13%;
+    right: 5%;
     cursor: pointer;
     position: fixed;
-    z-index: 1000px;
+    z-index: 99999px;
    }
    img:last-child{
+    margin-top: 150px;
     position: absolute;
-    right: 13%;
+    right: 5%;
     cursor: pointer;
     position: fixed;
     top: 100px;
-    z-index: 1000px;
+    z-index: 99999px;
    }
 }
 
@@ -45,6 +49,7 @@
 main{
     width: 100%;
     height: 100%;
+    margin-top: 120px;
 
     /* Season new */
       .season_new{
@@ -68,17 +73,17 @@ main{
         .new-drinks{
             display: flex;
             position: relative;
-
             .text-img{
                 display: block;
                 margin-top: 150px;
+                margin-left: -100px;
                 @include fadeIn(".5s");
                 button{
                     border: 2px solid white;
                     background-color: $colorNewGreen;
                     color: white;
                     text-align: center;
-                    margin-top: 30px;
+                    margin-top: 20px;
                     margin-left: 70px;
                     @include fadeIn("2.5s");
                     &:hover{
@@ -95,7 +100,7 @@ main{
             }
             .drink_chamomile{
                 position: absolute;
-                left: 320px;
+                left: 280px;
                 top: 30px;
                 @include fadeIn("1s");
             }
@@ -107,45 +112,326 @@ main{
             }
         }    
       }
-      .notices{
+      .notices{ 
         width: 100%; 
         height: 65px;
-        display: flex;
         position: relative;
         display: flex;
         justify-content: center;
-
+   
         .notices_left{  
             background-color: black;
-            width: 50%;
+            width: 55.5%;
             height: 65px;
-            
-            .notices_title{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: white;
-            }
-            .notices_slide{
+            position: absolute;    
+            left: 0;     
+            display: flex;
+
+            .plus_btn{
+                position: absolute;
+                right: 20px;
+                top: 13px;
                 a{
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 18px;
-                    position: absolute;
-                    right: 20px;
-                    top: 50%;
-                    transform: translate(-50%);
-                    background: url("../../img/btn_notice_plus.jpg");
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
-        }  
+            .notices_container{
+                display: flex;
+                justify-content: center;
+                width: 80px;
+        
+                .text_title{
+                align-items: center;
+                font-size: 17px;
+                font-weight: bold;
+                color: white;
+                position: absolute;
+                top: 23px;
+                }
+            }
+            .notices_slide{
+                display: inline-block;
+                width:40%;
+                height: 1;
+                height: 16px;
+                top: 25px;
+                left: -25%;
+                color: white;
+                position: relative;
+                overflow: hidden;
+                margin-left: 30px;
+                
+                .notices_list{
+                    position: absolute;
+        
+                    font-size: 14px;
+                    font-weight: bold;
+                    li{
+                        height: 14px;
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
         .notices_right{
-            background-color: aqua;
-            width: 50%;
+            display: flex;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            width: 44.6%;
             height: 65px;
+
+            .promotion{
+                width: 100%;
+                .promotion_wrap{
+                    display: flex;
+                    justify-content: center;
+
+                    .promotion_title{
+                        margin-top: 23px;
+                        padding: 0 50px;
+                        h3{
+                        font-size: 17px;
+                        font-weight: bold;
+                        }
+                    }
+                    .promotion_btn{
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+        .promotion_banner{
+            width: 100%;
+            height: 658px;
+            background-color: $colorLightgray;
+            .promotion_contents{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                position: relative;
+                .contents_slide{
+                    button{
+                        position: absolute;
+                        bottom: 20px;
+                        left: 290px;
+                        background-color: $colorLightgray;
+                        border: 2px solid black;
+                        font-size: 14px;
+                       
+                        &:hover{
+                            color: white;
+                            transition: background-color 1s;
+                            background-color: black; 
+                        }
+                    }
+                    .promotion_arrow_btn{
+                        position: absolute;
+                        display: flex;
+                        flex-direction: row;
+                     .arrow_left_btn{
+                        border-radius: 25%;
+                        border: 1px solid black;
+                        width: 30px;
+                        height: 30px;
+                     }
+                    }    
+                }
+            }
+            .promotion_pause{
+                width: 100%;
+                margin-top: 10px;
+                .promotion_info_btn{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .promotion_on_btn{
+                    padding: 0 5px;
+                }
+                }
+            }
         }
     }
 
+    /* reward */
+    .reward{
+        width: 100%;
+        height: 240px;
+        background-color: $colorDarkGreen;
+        .reward_conents{
+            height: 170px;
+            width: 1080px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 40px;
+            color: white;
+            img{
+                width: 180px;
+                height: 160px;
+            }
+            .reward_info{
+                width: 793px;
+                .reward_info_text1{
+                    width: 100%;
+                    padding-bottom: 15px;
+                    font-size: 26px;
+                    font-weight: 500;
+                }
+                .reward_info_item{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    .reward_info_text2{
+                        line-height: 25px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    .reward_info_buttons{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-left: 18%;
+                        
+                        .singup{
+                            background-color: $colorLightGreen;
+                            color: white;
+                            height: 35px;
+                            border-radius: 5px;
+                            padding: 0 20px;
+                            font-size: 14px;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .login{
+                            background-color: $colorDarkGreen;
+                            color: white;
+                            height: 35px;
+                            margin-left: 10px;
+                            border-radius: 5px;
+                            border: 2px solid white;
+                            padding: 0 20px;
+                            font-size: 14px;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                hr{
+                    margin: 15px 0;
+                    width: 100%;
+                    height: 0.5px;
+                    background-color: $colorDarkGray;
+                    border: 0 none;
+                }
+            }
+        .reward_gift{
+            display: flex;
+            flex-direction: row;
+            .reward_info_text3{
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 500;
+            }
+            .reward_btn{
+                margin-left: 5%;
+                .gift_btn{
+                    background-color: $colorDarkGreen;
+                    color: white;
+                    height: 40px;
+                    margin-left: 10px;
+                    border-radius: 5px;
+                    border: 2px solid white;
+                    padding: 0 23px;
+                    font-size: 14px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        }
+    }
+    .voyage{
+        position: relative;
+        height: 572px;
+        background: url("../img/2022_Summer2_bean_bg.jpg") center center no-repeat;
+        .voyageContainer{
+            display: flex;
+            justify-content: space-evenly;
+            
+            .new_bean{
+                position: absolute;
+                animation-name: left-move;
+                left: 30%;
+                top: 13%;
+                img{
+                    width: 200px;
+                }
+            }
 
+            .bean_info{
+                position: absolute;
+                right: 18%;
+                top: 30%;
+                .bean_info_btn{
+                    margin-top: 30px;
+                    width: 130px;
+                    border-radius: 5px;
+                    border: 2px solid white;
+                    color: white;
+                    &:hover{
+                        background-color: white;
+                        color: $colorNewDkGreen;
+                        transition: background-color 1s;
+                    }
+                    
+                }
+            }
+        }
+    }
+    @keyframes left-move {
+        from{
+            left: 0;
+        }
+        to{
+            left: 30%;
+        }
+    }
+    .reserve{
+        position: relative;
+        background: url("../img/reserve_2022_indonesia_visual_bg.jpg") center top no-repeat;
+        overflow: hidden;
+        height: 400px;
+        &::before,
+        &::after{
+            position: absolute;
+            bottom: 0;
+            display: block;
+            content: " ";
+        }
+
+        &::before{
+            background: url("../img/reserve_2022_indonesia_leaf1.png") left bottom no-repeat;
+            top: 3%;
+            left: -12%;
+            width: 425px;
+            height: 392px;
+        }
+        &::after{
+            background: url("../img/reserve_2022_indonesia_leaf2.png") left bottom no-repeat;
+            bottom: -1%;
+            right: -16%;
+            width: 482px;
+            height: 400px;
+        }
+    }
 }
-
