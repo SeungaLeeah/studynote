@@ -776,7 +776,7 @@ footer .footer-container .policy .copyright {
 }
 
 /* side card */
-#side_info {
+.side_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,10 +784,9 @@ footer .footer-container .policy .copyright {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 99999px;
 }
 
-#side_info img:first-child {
+.side_info img:first-child {
   margin-top: 150px;
   position: absolute;
   right: 5%;
@@ -796,7 +795,7 @@ footer .footer-container .policy .copyright {
   z-index: 99999px;
 }
 
-#side_info img:last-child {
+.side_info img:last-child {
   margin-top: 150px;
   position: absolute;
   right: 5%;
@@ -1262,6 +1261,7 @@ main .voyage .voyageContainer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 100%;
 }
 
 main .voyage .voyageContainer .new_bean {
@@ -1343,4 +1343,220 @@ main .reserve::after {
   right: -16%;
   width: 482px;
   height: 400px;
+}
+
+main .reserve .reserve_coffee {
+  position: absolute;
+  left: -100px;
+  bottom: 0;
+}
+
+main .reserve .indonesia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  width: 500px;
+}
+
+main .reserve .indonesia img {
+  width: 500px;
+  padding-bottom: 20px;
+}
+
+main .reserve .indonesia .reserve_info {
+  position: absolute;
+  right: 110px;
+  bottom: -40px;
+  border: 2px solid #b9813e;
+  color: #b9813e;
+  border-radius: 5px;
+  width: 135px;
+  text-align: center;
+}
+
+main .reserve .indonesia .reserve_info:hover {
+  background-color: #b9813e;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  color: white;
+}
+
+main .pick {
+  background: url("../img/fav_prod_bg_new.jpg") no-repeat 50% 100%;
+  height: 800px;
+  position: relative;
+}
+
+main .pick .pick_container {
+  width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 20%;
+  left: 8%;
+}
+
+main .pick .pick_container .pick_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .pick .pick_container .pick_title .maintxt {
+  padding-bottom: 40px;
+}
+
+main .pick .pick_container .pick_title .pick_info {
+  padding-top: 40px;
+}
+
+main .pick .pick_container .pick_title .pick_info a {
+  border: 2px solid white;
+  padding: 8px 25px;
+  color: white;
+}
+
+main .pick .pick_container .pick_title .pick_info a:hover {
+  background-color: white;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  color: black;
+}
+
+main .reserve_magazine {
+  height: 400px;
+  background-size: 100% auto;
+  background-color: white;
+  background: url("../img/reserve_bg_pc.png") bottom no-repeat;
+}
+
+main .reserve_magazine .magazine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .reserve_magazine .magazine .magazine_info {
+  margin-top: 50px;
+}
+
+main .reserve_magazine .magazine .magazine_info .magazine_info_btn {
+  padding-top: 20px;
+  text-align: center;
+}
+
+main .reserve_magazine .magazine .magazine_info .magazine_info_btn a {
+  border: 2px solid black;
+  padding: 8px 25px;
+  color: black;
+}
+
+main .reserve_magazine .magazine .magazine_info .magazine_info_btn a:hover {
+  background-color: black;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  color: white;
+}
+
+main .store {
+  height: 400px;
+  background: url("../img/store_bg.jpg");
+}
+
+main .store .store_container {
+  width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .store .store_container .store_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+  height: 100%;
+}
+
+main .store .store_container .store_img .store1 {
+  position: absolute;
+}
+
+main .store .store_container .store_img .store2 {
+  position: absolute;
+  left: 350px;
+  margin-top: 130px;
+  width: 220px;
+  height: 220px;
+}
+
+main .store .store_container .bean_bg {
+  background: url("../img/store_exp_img03.png") center no-repeat;
+}
+
+main .store .store_container .left_store {
+  background: url("../img/store_exp_img04.png") no-repeat;
+}
+
+main .store .store_container .store_text {
+  position: absolute;
+  right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 6%;
+}
+
+main .store .store_container .store_text .store_text1 {
+  padding-bottom: 18px;
+}
+
+main .store .store_container .store_text .store_search {
+  padding-top: 20px;
+}
+
+main .store .store_container .store_text .store_search a {
+  border: 2px solid black;
+  padding: 8px 30px;
+  color: black;
+}
+
+main .store .store_container .store_text .store_search a:hover {
+  background-color: black;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  color: white;
 }

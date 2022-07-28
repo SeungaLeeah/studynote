@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/b8c071f28b.js" crossorigin="anonymous"></script>
     <!-- css 적용 -->
     <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +23,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <!-- AOS 라이브러리 적용 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 <!-- NAV -->
 <!-- 메인메뉴 -->
-<nav class="blind">
+<nav >
     <div id="header-menu" class="header-menu">
     <div id="menubar" class="inner">  
             <div class="main-logo">
@@ -563,10 +565,10 @@
 <!-- coffee_bean -->
     <section id="voyage" class="voyage">
         <div class="voyageContainer inner">
-            <div class="new_bean">
+            <div class="new_bean" data-aos-duration="1000" data-aos-delay="300" data-aos="fade-right"  data-aos-easing="ease-in-sine">
                 <img src="./assets/img/m_2022_Summer2_bean_bean_02.png" alt="원두"/>
             </div>
-            <div class="bean_info">
+            <div class="bean_info" data-aos-duration="1000" data-aos-delay="300" data-aos="fade-left"  data-aos-easing="ease-in-sine">
                 <img src="./assets/img/2022_Summer2_bean_text.png" alt="원두설명"/>
                 <p class="text_blind">드넓은 대양의 상징</p>
                 <h2 class="text_blind">보야지 블렌드</h2>
@@ -596,8 +598,8 @@
 <!-- pick_your_favorite -->
     <section id="pick" class="pick">
         <div class="pick_container inner">
-            <div class="pick_title">
-                <img src="./assets/img/fav_prod_txt01.png" alt="메인 텍스트"/>
+            <div class="pick_title" data-aos-duration="1000" data-aos-delay="300" data-aos="fade-right"  data-aos-easing="ease-in-sine">
+                <img class="maintxt" src="./assets/img/fav_prod_txt01.png" alt="메인 텍스트"/>
                 <p class="text_blind">PICK YOUR FAVORITE</p>
                 <img src="./assets/img/fav_prod_txt02.png" alt="서브 텍스트"/>
                 <h3 class="text_blind">다양한 메뉴를 스타벅스에서 즐겨보세요</h3>
@@ -638,16 +640,18 @@
     <section id="store" class="store">
         <div class="store_container inner">
             <div class="store_img">
-                <img src="./assets/img/store_exp_img01.png" />
-                <img src="./assets/img/store_exp_img02.png" />
-                <img src="./assets/img/store_exp_img03.png" />
-                <img src="./assets/img/store_exp_img04.png" />
+                <img class="store1" src="./assets/img/store_exp_img02.png" />
+                <img class="store2" src="./assets/img/store_exp_img01.png" />
+            </div>
+            <div class="bean_bg">
+            </div>
+            <div class="left_store">
             </div>
             <div class="store_text">
-                <img src="./assets/img/store_txt01.png" class="store_title1"/>
+                <img  class="store_text1" src="./assets/img/store_txt01.png" class="store_title1"/>
                 <h3 class="text_blind">스타벅스를 가까이에서 경험해보세요</h3>
                 <h4 class="text_blind">고객과 가장 가까이 있는 매장을 찾아보세요</h4>
-                <img src="./assets/img/store_txt02.png" class="store_title2"/>
+                <img class="store_text2" src="./assets/img/store_txt02.png" class="store_title2"/>
                 <p class="text_blind">
                     차별화된 커피 경험을 누릴 수 있는 <b>리저브 매장</b><br/>
                     다양한 방법으로 편리하게 즐길 수 있는 <b>드라이브 스루 매장</b><br/>
@@ -771,6 +775,9 @@
 </footer>
 
 <!-- script -->
+<script>
+    AOS.init();
+  </script>
     <script src="/assets/js/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/assets/js/footer.js"></script>

@@ -22,10 +22,9 @@
 }
 
 /* side card */
-#side_info{
+.side_info{
     display: flex;
     flex-direction: column;
-    z-index: 99999px;
    img:first-child{
     margin-top: 150px;
     position: absolute;
@@ -367,7 +366,7 @@ main{
         .voyageContainer{
             display: flex;
             justify-content: space-evenly;
-            
+            width: 100%;
             .new_bean{
                 position: absolute;
                 animation-name: left-move;
@@ -432,6 +431,165 @@ main{
             right: -16%;
             width: 482px;
             height: 400px;
+        }
+        .reserve_coffee{
+            position: absolute;
+            left: -100px;
+            bottom: 0;
+            
+        }
+        .indonesia{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            width: 500px;
+
+            img{
+                width: 500px;
+                padding-bottom: 20px;
+            }
+            .reserve_info{
+                position: absolute;
+                right: 110px;
+                bottom: -40px;
+                border: 2px solid #b9813e;
+                color: #b9813e;
+                border-radius: 5px;
+                width: 135px;
+                text-align: center;
+                &:hover{
+                    background-color: #b9813e;
+                    transition: background-color 1s;
+                    color: white;
+                }
+            }
+        }
+    }
+    .pick{
+    background: url("../img/fav_prod_bg_new.jpg") no-repeat 50% 100% ;    
+    height: 800px;  
+    
+    position: relative;
+    .pick_container{
+        width: 1280px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        bottom: 20%;
+        left: 8%;
+            .pick_title{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
+                .maintxt{
+                padding-bottom: 40px;
+                }
+                .pick_info{
+                    padding-top: 40px;
+                    a{
+                        border: 2px solid white;
+                        padding: 8px 25px;
+                        color: white;
+                        &:hover{
+                            background-color: white;
+                            transition: background-color 1s;
+                            color: black;
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+    .reserve_magazine{
+        height: 400px;
+        background-size: 100% auto;
+        background-color: white;
+        background: url("../img/reserve_bg_pc.png") bottom no-repeat;
+        .magazine{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .magazine_info{
+                margin-top: 50px;
+                .magazine_info_btn{
+                    padding-top: 20px;
+                    text-align: center;
+                    a{
+                        border: 2px solid black;
+                        padding: 8px 25px;
+                        color: black;
+                        &:hover{
+                            background-color: black;
+                            transition: background-color 1s;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .store{
+        height: 400px;
+        background: url("../img/store_bg.jpg");
+
+        .store_container{
+            width: 1280px;
+            display: flex;
+            justify-content: space-between;
+
+            .store_img{
+                display: flex;
+                margin-left: 100px;
+                height: 100%;
+                
+                .store1{
+                    position: absolute;
+                }
+                
+                .store2{
+                    position: absolute;
+                    left: 350px;
+                    margin-top: 130px;
+                    width: 220px;
+                    height: 220px;
+                }
+            }
+                .bean_bg{
+                    background: url("../img/store_exp_img03.png") center no-repeat;
+                }
+                .left_store{
+                    background: url("../img/store_exp_img04.png") no-repeat;
+                }
+            
+            .store_text{
+                position: absolute;
+                right: 20%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 6%;
+                .store_text1{
+                    padding-bottom: 18px;
+                }
+                .store_search{
+                    padding-top: 20px;
+                    
+                    a{
+                        border: 2px solid black;
+                        padding: 8px 30px;
+                        color: black;
+                        &:hover{
+                            background-color: black;
+                            transition: background-color 1s;
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
 }
