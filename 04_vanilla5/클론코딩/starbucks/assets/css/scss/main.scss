@@ -7,49 +7,34 @@
  @import './menu.scss','./common.scss', './footer.scss';
 
 //----- Main -----
-/* 공통적용 */
-.all_info_btn{
-    font-size: 15px;
-    line-height: 34px;
-    padding: 1px 30px;
-    letter-spacing: -1px;
-    border-radius: 5px;
-    text-align: center;
-
-    &:hover{
-        text-decoration: underline;
-    }
-}
-
-/* side card */
-.side_info{
-    display: flex;
-    flex-direction: column;
-   img:first-child{
-    margin-top: 150px;
-    position: absolute;
-    right: 5%;
-    cursor: pointer;
-    position: fixed;
-    z-index: 99999px;
-   }
-   img:last-child{
-    margin-top: 150px;
-    position: absolute;
-    right: 5%;
-    cursor: pointer;
-    position: fixed;
-    top: 100px;
-    z-index: 99999px;
-   }
-}
 
 /* main */
 main{
     width: 100%;
     height: 100%;
-    margin-top: 120px;
+    position: relative;
+    top: 126px;
+    /* side card */
+.side_info{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99999;
+    top: 180px;
+    right: -5%;
+   .first_card{
+    width: 300px;
 
+    right: 5%;
+    cursor: pointer;
+
+   }
+   .second_card{
+    width: 300px;
+    cursor: pointer;
+    top: 100px;
+   }
+}
     /* Season new */
       .season_new{
           width: 100%;
@@ -84,10 +69,14 @@ main{
                     text-align: center;
                     margin-top: 20px;
                     margin-left: 70px;
+                    padding: 8px 30px;
+                    border-radius: 5px;
+                    font-size: 14px;
                     @include fadeIn("2.5s");
                     &:hover{
                         background-color: white;
                         color: $colorNewGreen;
+                        text-decoration: underline;
                     }
                 }              
             }
@@ -223,11 +212,13 @@ main{
                         background-color: $colorLightgray;
                         border: 2px solid black;
                         font-size: 14px;
-                       
+                        padding: 8px 30px;
+                        border-radius: 5px;
                         &:hover{
                             color: white;
                             transition: background-color 1s;
                             background-color: black; 
+                            text-decoration: underline;
                         }
                     }
                     .promotion_arrow_btn{
@@ -387,10 +378,13 @@ main{
                     border-radius: 5px;
                     border: 2px solid white;
                     color: white;
+                    padding: 8px 10px;
+                    text-align: center;
                     &:hover{
                         background-color: white;
                         color: $colorNewDkGreen;
                         transition: background-color 1s;
+                        text-decoration: underline;
                     }
                     
                 }
@@ -406,37 +400,37 @@ main{
         }
     }
     .reserve{
+        
         position: relative;
         background: url("../img/reserve_2022_indonesia_visual_bg.jpg") center top no-repeat;
         overflow: hidden;
         height: 400px;
-        &::before,
-        &::after{
+        .reserve_bg_left{
             position: absolute;
-            bottom: 0;
-            display: block;
-            content: " ";
-        }
-
-        &::before{
             background: url("../img/reserve_2022_indonesia_leaf1.png") left bottom no-repeat;
-            top: 3%;
+            top: 10px;
             left: -12%;
             width: 425px;
             height: 392px;
         }
-        &::after{
+        .reserve_bg_right{
+            position: absolute;
             background: url("../img/reserve_2022_indonesia_leaf2.png") left bottom no-repeat;
-            bottom: -1%;
-            right: -16%;
+            top: 10px;
+            left: 1200px;
             width: 482px;
             height: 400px;
+            z-index: 9;
+
         }
+
         .reserve_coffee{
             position: absolute;
-            left: -100px;
-            bottom: 0;
-            
+            background:url("../img/reserve_2022_indonesia_visual3.png") right bottom no-repeat;
+            top: 10px;
+            left: 300px;
+            width: 100%;
+            height: 400px;
         }
         .indonesia{
             display: flex;
@@ -459,9 +453,10 @@ main{
                 border-radius: 5px;
                 width: 135px;
                 text-align: center;
+                padding: 8px 5px;
                 &:hover{
                     background-color: #b9813e;
-                    transition: background-color 1s;
+                    text-decoration: underline;
                     color: white;
                 }
             }
@@ -492,12 +487,14 @@ main{
                     padding-top: 40px;
                     a{
                         border: 2px solid white;
+                        border-radius: 5px;
                         padding: 8px 25px;
                         color: white;
                         &:hover{
                             background-color: white;
                             transition: background-color 1s;
                             color: black;
+                            text-decoration: underline;
                         }
                     }
                 
@@ -521,12 +518,14 @@ main{
                     text-align: center;
                     a{
                         border: 2px solid black;
+                        border-radius: 5px;
                         padding: 8px 25px;
                         color: black;
                         &:hover{
                             background-color: black;
                             transition: background-color 1s;
                             color: white;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -534,13 +533,14 @@ main{
         }
     }
     .store{
-        height: 400px;
+        height: 526px;
         background: url("../img/store_bg.jpg");
 
         .store_container{
             width: 1280px;
             display: flex;
             justify-content: space-between;
+            
 
             .store_img{
                 display: flex;
@@ -553,17 +553,28 @@ main{
                 
                 .store2{
                     position: absolute;
-                    left: 350px;
+                    left: 250px;
                     margin-top: 130px;
                     width: 220px;
                     height: 220px;
                 }
             }
                 .bean_bg{
-                    background: url("../img/store_exp_img03.png") center no-repeat;
+                    position: absolute;
+                    right: 500px;
+                    bottom: 425px;
+                    
+                    background: url("../img/store_exp_img03.png") center bottom no-repeat;
+                    width: 400px;
+                    height: 100px;
                 }
                 .left_store{
-                    background: url("../img/store_exp_img04.png") no-repeat;
+                    position: absolute;
+                    bottom: 30px;
+                    right: 300px;
+                    background: url("../img/store_exp_img04.png") right top no-repeat;
+                    width: 400px;
+                    height: 200px;
                 }
             
             .store_text{
@@ -578,14 +589,16 @@ main{
                 .store_search{
                     padding-top: 20px;
                     
-                    a{
+                    .bg_black{
                         border: 2px solid black;
                         padding: 8px 30px;
+                        border-radius: 5px;
                         color: black;
                         &:hover{
                             background-color: black;
                             transition: background-color 1s;
                             color: white;
+                            text-decoration: underline;
                         }
                     }
                 }

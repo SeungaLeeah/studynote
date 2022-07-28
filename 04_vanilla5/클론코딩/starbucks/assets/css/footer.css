@@ -20,7 +20,7 @@
 html,
 body {
   min-width: 100%;
-  max-width: 100%;
+  max-width: 1519px;
   position: relative;
 }
 
@@ -70,7 +70,17 @@ li > a {
 }
 
 .text_blind {
-  text-indent: -9999px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
 }
 
 /* Footer */

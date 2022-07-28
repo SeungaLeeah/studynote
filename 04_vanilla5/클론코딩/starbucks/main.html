@@ -29,8 +29,8 @@
 <body>
 <!-- NAV -->
 <!-- 메인메뉴 -->
-<nav >
-    <div id="header-menu" class="header-menu">
+<header>
+    <nav id="header-menu" class="header-menu">
     <div id="menubar" class="inner">  
             <div class="main-logo">
                 <a href="#">
@@ -61,7 +61,7 @@
                 </ul>
         </div>
     </div>
-</div>
+</nav>
 
 <!-- 서브메뉴 -->
     <div id="sub-menubar" class="sub-menubar">
@@ -392,16 +392,20 @@
         </div>
     </div>        
 </div>
-</nav>
-
-<!-- side card -->
-<div id="side_info" class="side_info">
-    <img src="./assets/img/firstcard.png" alt="현대카드"/>
-    <img src="./assets/img/secondcard.png" alt="단체및기업구매"/>
-</div>
+</header>
 
 <!-- Main -->
 <main>
+    
+<!-- side card -->
+<div id="side_info" class="side_info">
+    <div id="first_card" class="first_card">
+        <img src="./assets/img/firstcard.png" alt="현대카드"/>
+    </div>
+    <div id="second_card" class="second_card">
+        <img src="./assets/img/secondcard.png" alt="단체및기업구매"/>
+    </div>
+</div>
     <div id="container" class="containern">
     <!-- Season new-->
     <section id="season_new" class="season_new">
@@ -409,7 +413,7 @@
             <div class="text-img">
                 <p class="text_blind">FIND YOUR TASTE</p>
                 <img src="./assets/img/2022_Summer2_main_title.png" alt="text-img">
-                <button class="all_info_btn" type="button">자세히 보기</button>
+                <button type="button">자세히 보기</button>
             </div>
             <div class="drink_mugwor_cream">
                 <p class="text_blind">우리 쑥 크림 프라푸치노 with 콜드브루</p>
@@ -466,7 +470,7 @@
                     <div class="contents_slide">
                         <a href="#">
                             <img src="./assets/img/jGfjTs_20220725135743171.jpg" alt="summerEvent">
-                            <button class="all_info_btn" type="button">자세히 보기</button>
+                            <button type="button">자세히 보기</button>
                             <h2 class="text_blind">
                                 나만의 힐링 플레이스, 스타벅스에서 여름의 끝자락을 더 시원하게!
                                 <p class="text_blind">기간: 2022년 7월 26일(화)~ 2022년 9월 1일(목)</p>
@@ -476,7 +480,7 @@
                     <div class="contents_slide">
                         <a href="#">
                             <img src="./assets/img/Y7YBKr_20220404160419657.jpg" alt="reserve_summer">
-                            <button class="all_info_btn" type="button">자세히 보기</button>
+                            <button type="button">자세히 보기</button>
                             <h2 class="text_blind">
                                 STARBUCKS RESERVE SUMMER 스타벅스 리저브 서머 원두&커피
                                 <p class="text_blind">기간:2022년 4월 5일~ 2022년 8월 25일</p>
@@ -486,7 +490,7 @@
                     <div class="contents_slide">
                         <a href="#">
                             <img src="./assets/img/wW63vb_20211231154557623.jpg" alt="bonus_star">
-                            <button class="all_info_btn" type="button">자세히 보기</button>
+                            <button type="button">자세히 보기</button>
                             <h2 class="text_blind">
                                 회원 계정에 등록된 스타벅스 카드로 결제 시, 1만원당 별 1개를 즉시 추가로 드립니다.
                                 <p class="text_blind">기간:2022년 1월1일~2022년 12월 31일</p>
@@ -577,7 +581,7 @@
                 </p>
 
             <div class="bean_info_btn">
-                <a class="all_info_btn" href="#">자세히 보기</a>
+                <a href="#">자세히 보기</a>
             </div>
         </div>
         </div>
@@ -585,12 +589,14 @@
 
 <!-- new_reserve --> 
     <section id="reserve" class="reserve">
-        <div class="reserve_image" data-animation="fade-in 1000">
-        <img class="reserve_coffee" src="./assets/img/reserve_2022_indonesia_visual3.png" alt="커피사진"/>
+        <div class="reserve_bg_left" data-aos="zoom-up" data-animation="fade-in 1000" data-aos-duration="1500" data-aos-delay="500"></div>
+        <div class="reserve_bg_right" data-aos="zoom-up" data-animation="fade-in 1000" data-aos-duration="1500" data-aos-delay="500"></div>
+        <div class="reserve_image">
+        <div class="reserve_coffee" data-aos="zoom-up" data-animation="fade-in 1000" data-aos-duration="1500" data-aos-delay="500"></div>
             <div class="indonesia inner">
                 <img src="./assets/img/reserve_2022_indonesia_title.png" class="reserve_title"/>
                 <p class="text_blind">INDONESIA WEST JAVA</p>
-                <div class="reserve_info"><a href="#" class="all_info_btn">자세히 보기</a></div>
+                <div class="reserve_info"><a href="#">자세히 보기</a></div>
             </div>
         </div>
     </section>
@@ -610,7 +616,7 @@
                     소중한 사람에게 마음을 전하는 가장 좋은 방법 <b>스타벅스 카드</b><br/>
             </p>
                 <div class="pick_info">
-                    <a href="#" class="all_info_btn">자세히 보기</a>
+                    <a href="#">자세히 보기</a>
                 </div>
             </div>
             <div class="pick_img">
@@ -627,11 +633,11 @@
                 <h2 class="text_blind">RESERVE MAGAZINE</h2>
                 <p class="text_blind">리저브 매거진에서 일상 속 특별함을 만나보세요.</p>
                 <div class="magazine_info_btn">
-                    <a href="#" class="all_info_btn bg_black">자세히 보기</a>
+                    <a href="#" class=" bg_black">자세히 보기</a>
                 </div>
             </div>
             <div class="magazine_img">
-                <img src="./assets/img/reserve_visual_pc_220119.png">
+                <img data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-in-sine" src="./assets/img/reserve_visual_pc_220119.png">
             </div>
         </div>
     </section>
@@ -639,26 +645,24 @@
 <!-- store -->
     <section id="store" class="store">
         <div class="store_container inner">
-            <div class="store_img">
+            <div class="store_img" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-sine" >
                 <img class="store1" src="./assets/img/store_exp_img02.png" />
                 <img class="store2" src="./assets/img/store_exp_img01.png" />
             </div>
-            <div class="bean_bg">
-            </div>
-            <div class="left_store">
-            </div>
+            <div class="bean_bg"></div>
+            <div class="left_store"></div>
             <div class="store_text">
-                <img  class="store_text1" src="./assets/img/store_txt01.png" class="store_title1"/>
+                <img data-aos-duration="1000" data-aos-delay="300" data-aos="fade-left" data-aos-easing="ease-in-sine" class="store_text1" src="./assets/img/store_txt01.png" class="store_title1"/>
                 <h3 class="text_blind">스타벅스를 가까이에서 경험해보세요</h3>
                 <h4 class="text_blind">고객과 가장 가까이 있는 매장을 찾아보세요</h4>
-                <img class="store_text2" src="./assets/img/store_txt02.png" class="store_title2"/>
+                <img class="store_text2" src="./assets/img/store_txt02.png" class="store_title2" data-aos-duration="1500" data-aos-delay="300" data-aos="fade-left"  data-aos-easing="ease-in-sine"/>
                 <p class="text_blind">
                     차별화된 커피 경험을 누릴 수 있는 <b>리저브 매장</b><br/>
                     다양한 방법으로 편리하게 즐길 수 있는 <b>드라이브 스루 매장</b><br/>
                     함께해서 더 따뜻할 수 있는 지역사회 소통 공간 <b>커뮤니티 매장</b><br/>
                 </p>
-                <div class="store_search">
-                    <a href="#" class="all_info_btn bg_black">매장 찾기</a>
+                <div class="store_search" data-aos-duration="2000" data-aos-delay="300" data-aos="fade-left"  data-aos-easing="ease-in-sine">
+                    <a href="#" class="bg_black">매장 찾기</a>
                 </div>
             </div>
         </div>
